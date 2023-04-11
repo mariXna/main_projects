@@ -1,0 +1,445 @@
+{
+  "title": "business",
+  "action": "/table/items/put",
+  "description": "E-commerce",
+  "method": "POST",
+  "hideBlock": {
+
+  "data": {
+  "id_business_model": 
+  {
+    "1": [
+      "1"
+    ],
+    "2": [
+      "1"
+    ],
+    "3": [
+      "1"
+    ],
+    "4": [
+      "1"
+    ]
+  }
+  },
+  "defaultBlocks": [
+                "1"
+              ]
+  },
+  "blocks":[
+  {
+    "id": 1,
+    "title": "Business info",
+    "description": "- gather basic information about the business, such as its name, location, and contact information",
+    "columns": [
+    {
+      "name": "business_name",
+      "required": true,
+      "type": "text",
+      "title": "Business Name"
+    },
+    {
+      "name": "business_model",
+      "required": false,
+      "type": "select",
+      "title": "What is your business model?",
+      "data": [
+        {
+          "title": "Dropshipping",
+          "label": "Dropshipping",
+          "value": "1"
+        },
+        {
+          "title": "Inventory-based",
+          "label": "Inventory-based",
+          "value": "2"
+        },
+        {
+          "title": "Subscription-based",
+          "label": "Subscription-based",
+          "value": "3"
+        },
+        {
+          "title": "Marketplace",
+          "label": "Marketplace",
+          "value": "4"
+        },
+        {
+          "title": "Private label",
+          "label": "Private label",
+          "value": "5"
+        }
+        ]
+        }, 
+        {  
+          "name": "commerce_type",
+          "required": true,
+          "type": "select",
+          "title": "What is your type of commerce?",
+          "data": [
+          {
+            "title": "B2B",
+            "label": "B2B",
+            "value": "1"
+          },
+          {
+            "title": "B2C",
+            "label": "B2C",
+            "value": "2"
+          }
+        ]}
+     ], "buttons": [
+        {
+          "title": "Next",
+          "type": "custom",
+          "disabled": "onkey",
+          "OnClick": "return Next(this, 2);"
+        }
+      ]
+
+    }, 
+    {
+      "id": 2,
+      "title": "Product info",
+      "description": "- gather information about the products the business sells, such as the type of products, the target audience, and any unique selling points",
+      "columns": [
+      {
+        "name": "product_type",
+        "required": true,
+        "type": "select",
+        "title": "What type of products will you be selling?",
+        "data": [
+          {
+            "title": "Apparel and accessories",
+            "label": "Apparel and accessories",
+            "value": "1"
+          },
+          {
+            "title": "Beauty and personal care",
+            "label": "Beauty and personal care",
+            "value": "2"
+          },
+          {
+            "title": "Electronics",
+            "label": "Electronics",
+            "value": "3"
+          },
+          {
+            "title": "Home and kitchen",
+            "label": "Home and kitchen",
+            "value": "4"
+          },
+          {
+            "title": "Sports and outdoors",
+            "label": "Sports and outdoors",
+            "value": "5"
+          },
+          {
+            "title": "Toys and games",
+            "label": "Toys and games",
+            "value": "6"
+          },
+          {
+            "title": "Health and wellness",
+            "label": "Health and wellness",
+            "value": "7"
+          }, 
+          {
+            "title": "Other",
+            "label": "Other",
+            "value": "8"
+          }
+        ]
+      }, 
+      {
+        "name": "target_audience",
+        "required": true,
+        "type": "boolean",
+        "title": "Do you have target audience?",
+        "data": [
+          {
+            "title": "Yes",
+            "label": "Yes",
+            "value": "1"
+          },
+          {
+            "title": "No",
+            "label": "No",
+            "value": "0"
+          }
+        ]
+      }
+    ], 
+    "buttons": [
+    {
+      "title": "Prev",
+      "type": "prev",
+      "disabled": "onkey",
+      "OnClick": "return Prev(this, 1);"
+    },
+    {
+      "title": "Next",
+      "type": "custom",
+      "disabled": "onkey",
+      "OnClick": "m = (document.getElementsByName('target_audience')[0].value === '1' ? 3 : 4); return Next(this, m);"
+    }
+  ]},
+  {
+    "id": 3,
+    "title": "Product info",
+    "description": "- gather information about the products the business sells, such as the type of products, the target audience, and any unique selling points",
+    "columns": [
+    {
+      "name": "age_range",
+      "required": true,
+      "title": "Choose age range:",
+      "type": "select",
+      "data": [
+      {
+        "title": "<5",
+        "label": "<5",
+        "value": "1"
+      },
+      {
+        "title": "5-10",
+        "label": "5-10",
+        "value": "2"
+      },
+      {
+        "title": "10-15",
+        "label": "10-15",
+        "value": "3"
+      }, 
+      {
+        "title": "15-20",
+        "label": "15-20",
+        "value": "4"
+      },
+      {
+        "title": "20-30",
+        "label": "20-30",
+        "value": "4"
+      },
+      {
+        "title": "30-50",
+        "label": "30-50",
+        "value": "4"
+      },
+      {
+        "title": ">50",
+        "label": ">50",
+        "value": "4"
+      }]
+    },
+    {
+      "name": "gender",
+      "required": true,
+      "type": "select",
+      "title": "Choose gender:",
+      "data": [
+      {
+      "title": "Men",
+      "label": "Men",
+      "value": "1"
+      },
+      {
+        "title": "Woman",
+        "label": "Woman",
+        "value": "2"
+      }]
+      },
+      {
+        "name": "income",
+        "required": true,
+        "type": "select",
+        "title": "Choose income level:",
+        "data": [
+        {
+          "title": "Low",
+          "label": "Low",
+          "value": "1"
+        },
+        {
+          "title": "Middle",
+          "label": "Middle",
+          "value": "2"
+        },
+        {
+          "title": "Upper",
+          "label": "Upper",
+          "value": "3"
+        }]
+      }
+      ], 
+      
+        "buttons": [
+        {
+          "title": "Prev",
+          "type": "prev",
+          "disabled": "onkey",
+          "OnClick": "return Prev(this, 2);"
+        },
+        {
+          "title": "Next",
+          "type": "custom",
+          "disabled": "onkey",
+          "OnClick": "return Next(this, 4);"
+        }
+      ]},
+  {
+    "id": 4,
+    "title": "Branding and Web Design",
+    "required": false,
+    "description": "- gather information about the business's branding, such as its logo, color scheme, and overall style - gather information about the desired design of the website, such as layout, typography, and images",
+    "columns": [
+      {
+        "name": "menu",
+        "type": "checkbox",
+        "title": "Menu"
+      },
+      {
+        "name": "search_bar",
+        "type": "checkbox",
+        "title": "Search bar"
+      },
+      {
+        "name": "home_button",
+        "type": "checkbox",
+        "title": "Home button"
+      },
+      {
+        "name": "breadcrumbs",
+        "type": "checkbox",
+        "title": "Breadcrumbs"
+      },
+      {
+        "name": "call_to_action_buttons",
+        "type": "checkbox",
+        "title": "Call-to-action buttons"
+      },
+      {
+        "name": "footer",
+        "type": "checkbox",
+        "title": "Checkout"
+      },
+      {
+        "name": "navigation_labels",
+        "type": "checkbox",
+        "title": "Navigation labels"
+      }
+       ], 
+       "buttons": [
+          {
+            "title": "Prev",
+            "type": "prev",
+            "disabled": "onkey",
+            "OnClick": "m = (document.getElementsByName('target_audience')[0].value === '1' ? 3 : 2); return Prev(this, m);"
+          },
+          {
+            "title": "Next",
+            "type": "custom",
+            "disabled": "onkey",
+            "OnClick": "return Next(this, 5);"
+          }
+        ]},
+        {
+          "id": 5,
+          "title": "Features",
+          "description": "- gather information about the desired features of the website, such as the ability to search for products, filter by category, and add items to a cart",
+          "columns": [
+          {
+            "name": "product_information",
+            "type": "checkbox",
+            "title": "Product information"
+          },
+          {
+            "name": "product_reviews",
+            "type": "checkbox",
+            "title": "Product reviews"
+          },
+          {
+            "name": "checkout",
+            "type": "checkbox",
+            "title": "Checkout"
+          },
+          {
+            "name": "shipping",
+            "type": "checkbox",
+            "title": "Shipping"
+          },
+          {        
+            "name": "order_tracking",
+            "type": "checkbox",
+            "title": "Order tracking"
+          },
+          {
+            "name": "customer_account",
+           "type": "checkbox",
+            "title": "Customer account"
+          },
+          {
+            "name": "live_chat",
+            "type": "checkbox",
+            "title": "Live chat"
+          },
+          {
+            "name": "integration_with_socoial_media",
+            "type": "checkbox",
+            "title": "Integration with social media platforms"
+          }
+          ], 
+          "buttons": [
+          {
+            "title": "Prev",
+            "type": "prev",
+            "disabled": "onkey",
+            "OnClick": "return Prev(this, 4);"
+          },
+          {
+            "title": "Next",
+            "type": "custom",
+            "disabled": "onkey",
+            "OnClick": "return Next(this, 6);"
+          }
+        ]},
+        {
+        "id": 6,
+        "title": "Payment and Shipping",
+        "description": "- gather information about the business's preferred payment and shipping methods, as well as any other relevant policies",
+        "columns": [
+        {  
+          "name": "Credit/Debit cards",
+          "type": "checkbox",
+          "title": "Credit/Debit cards"
+        },
+        {
+          "name": "PayPal",
+          "type": "checkbox",
+          "title": "PayPal"
+        },
+        {
+          "name": "Digital wallets (Apple, Google, Samsung)",
+          "type": "checkbox",
+          "title": "Digital wallets (Apple, Google, Samsung)"
+        },
+        {
+          "name": "Cash on delivery",
+          "type": "checkbox",
+          "title": "Cash on delivery"
+        }
+        ], 
+        "buttons": [
+        {
+          "title": "Prev",
+          "type": "prev",
+          "disabled": "onkey",
+          "OnClick": "return Prev(this, 5);"
+        }, 
+        {
+          "title": "Save",
+          "type": "submit"
+        }
+      ]
+    }
+  ]
+}
