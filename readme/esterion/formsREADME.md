@@ -63,12 +63,12 @@ Each block with select, number, text input type should contain "id", "title", "d
 Blocks with "textarea" or "file" type contain "id", "title" and "columns". "Columns" contain "name" , "required" (if needed).
 
 {
-                "id": *number,
+                "id": *number*,
                 "title": "",
                 "columns": [
                   {
                     "name": "",
-                    "required": boolean
+                    "required": boolean,
                     "error": {
                       "message": ""
                     },
