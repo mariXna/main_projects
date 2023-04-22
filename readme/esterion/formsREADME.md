@@ -68,10 +68,14 @@ Blocks with "textarea" or "file" type contain "id", "title" and "columns". "Colu
                 "columns": [
                   {
                     "name": "",
+<<<<<<< HEAD
                     "required": boolean,
                     "error": {
                       "message": ""
                     },
+=======
+                    "required": boolean
+>>>>>>> 5e259d18bd79fde305ad16fff49afcbdbd0401ad
                     "type": "textarea"/"file",
                     "title": ""
                   },
