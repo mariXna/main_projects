@@ -103,9 +103,6 @@
                 {
                   "name": "id_material",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
                   "type": "select",
                   "title": "Name of material",
                   "data": [
@@ -120,9 +117,6 @@
                 {
                     "name": "id_brand",
                     "required": true,
-                    "error": {
-                      "message": "Field is required"
-                    },
                     "type": "select",
                     "title": "Material brand",
                     "data": [
@@ -137,9 +131,6 @@
                 {
                   "name": "batch_number",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
                   "type": "text",
                   "title": "Batch number"
                 },
@@ -194,10 +185,6 @@
                   {
                     "name": "hardness",
                     "required": true,
-                    "error": {
-                      "pattern": "only float number more than zero",  
-                      "message": "Value can't be less than 0"
-                    },
                     "min": 0,
                     "type": "number",
                     "title": "Value of hardness"                  
@@ -228,11 +215,6 @@
                     },
                     {
                       "name": "density",
-                      
-                      "error": {
-                        "pattern": "only float number more than zero",
-                        "message": "Value can't be less than 400"
-                      },
                       "min": 400,
                       "max": 3500,  
                       "type": "number", 
@@ -247,10 +229,7 @@
                     {
                       "name":"ptr",
                       "required": true,
-                      "error": {
-                        "pattern": "only float number more than zero",  
-                        "message": "Value can't be less than 0"
-                      },
+                      
                       "min":  0,
                       "type": "number", 
                       "title": "PTR, g/10 min (ISO 1133)"
