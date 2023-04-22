@@ -63,6 +63,7 @@ Then define "blocks", all blocks that will be used in this form.
         ]
     }
 ]
+
 Each column contains "buttons" : "prev", "next" with function Prev or Next and button "Save" with  type "submit".
 
 Each block with select, number, text input type should contain "id", "title", "description" and "columns" array. Each "column" contain "name", "title", "required"(if needed), "pattern" (if needed for errors indication), "suggestions" (if needed for displaying input options), "value", "type" and "data". "Data" contains "title", "label", "value", "disabled" (if needed).
