@@ -1,10 +1,10 @@
 {
-    "title": "items",
-    "action": "/table/items/put",
-    "description": "type_of_material",
-    "method": "POST",
-    "hideBlock": {
-    "data": {
+  "title": "items",
+  "action": "/table/items/put",
+  "description": "type_of_material",
+  "method": "POST",
+  "hideBlock": {
+  "data": {
         "id_type_material": {
             "1": [
               "0", "1", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "-3", "-2", "-1"
