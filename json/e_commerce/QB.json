@@ -88,7 +88,8 @@
             "value": "2"
           }
         ]}
-     ], "buttons": [
+     ], 
+     "buttons": [
         {
           "title": "Next",
           "type": "custom",

@@ -915,7 +915,7 @@
                     "min":  0,
                     "max": 100,
                     "type": "number", 
-                    "title": "% of of compression set at 23 °C"
+                    "title": "% of compression set at 23 °C"
                   }]},
                   { 
                     "id": 27,
@@ -950,7 +950,7 @@
                     "min":  0,
                     "max": 100,
                     "type": "number", 
-                    "title": "% of of compression set at 70 °C"
+                    "title": "% of compression set at 70 °C"
                   }]},
                   { 
                     "id": 28,
@@ -985,7 +985,7 @@
                     "min":  0,
                     "max": 100,
                     "type": "number", 
-                    "title": "% of of compression set at 100 °C"
+                    "title": "% of compression set at 100 °C"
                   }]},
                   { 
                     "id": 29,
