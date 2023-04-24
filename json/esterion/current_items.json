@@ -450,13 +450,13 @@
                     }]},
                     { 
                       "id": 15,
-                      "title": "Fire Resistance",
+                      "title": "Flammability",
                       "columns": [{
-                      "name": "fire_resistance_ul94",
+                      "name": "flammability_ul94",
                       
                       "type": "text",
                       "pattern": "floatPos",
-                      "title": "Fire Resistance, Class (UL 94)"
+                      "title": "Flammability, Class (UL 94)"
                     }]},
                 {
                   "id": -3,
@@ -464,17 +464,11 @@
                   "columns": [
                     {
                       "name": "processing_methods*",
-                      "error": {
-                        "message": "Field is required"
-                      },
                       "type": "textarea",
                       "title": "Processing methods"
                     },
                     {
                       "name": "fields_of_application",
-                      "error": {
-                        "message": "Field is required"
-                      },
                       "type": "textarea",
                       "title": "Fields of application"
                     },
