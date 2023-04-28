@@ -5,7 +5,7 @@
   "method": "POST",
   "hideBlock": {
   "data": {
-        "id_type_material": {
+        "id_material": {
             "1": [
               "1", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "-3", "-2", "-1"
             ],
@@ -45,7 +45,7 @@
           }
         },
         "defaultBlocks": [
-          "0"
+          "1"
         ]},
 
     "blocks":[
@@ -60,13 +60,39 @@
             "required": true,
             "type": "select",
             "title": "Name of material",
+            "value": "0",
             "data": [
-            
-                      {
-                        "title": "PET-A",
-                        "label": "PET-A",
-                        "value": "1"
-                      }
+              {
+                "title": "Select the type of polymer...",
+                "label": "Select the type of polymer...",
+                "value": "0",
+                "disabled": true
+              },
+              {
+                "title": "Thermoplastic polymer",
+                "label": "Thermoplastic polymer",
+                "value": "1"
+              },
+              {
+                "title": "Additives",
+                "label": "Additives",
+                "value": "2"
+              },
+              {
+                "title": "Thermoplastic elastomer",
+                "label": "Thermoplastic elastomer",
+                "value": "3"
+              },
+              {
+                "title": "Fillers",
+                "label": "Fillers",
+                "value": "4"
+              },
+              {
+                "title": "Thermoplastic composite materials",
+                "label": "Thermoplastic composite materials",
+                "value": "5"
+              }
                     ]
           },
           {
