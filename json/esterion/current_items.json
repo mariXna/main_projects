@@ -23,7 +23,7 @@
             ]
             
           },
-          "id_type_filler": {
+          "id_type_of_filler": {
             "1": [
               "1", "32", "33","34", "35", "36", "43", "-3", "-2", "-1"
             ],
@@ -969,7 +969,7 @@
                   "title": "Select the type of Filler",
                   "columns": [
                     {
-                      "name": "id_type_filler",
+                      "name": "id_type_of_filler",
                       "title": "Type of Filler",
                       "required": true,
                       "value": "0",
