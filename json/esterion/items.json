@@ -1004,10 +1004,7 @@
                 "name": "chemical_nature",
                 "title": "The chemical nature of disperse filler",
                 "required": true,
-                "error": {
-                  "message": "Field is required"
-                },
-                "pattern": "floatPos",
+                 "pattern": "floatPos",
                 "type": "text"
               }
             ]
@@ -1082,9 +1079,6 @@
                   "name": "linear_density_iso",
                   "title": "Linear Density tests standard",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
                   "type": "text"
                 },
                 {
