@@ -246,7 +246,7 @@
                       "name": "content_reinforcement",
                     "title": "Content reinforcement/filler, wt. %",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min": 1,
                     "max": 95,
                     "type": "number"
@@ -277,7 +277,7 @@
                   {
                     "name": "density",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min": 400,
                     "max": 3500,  
                     "type": "number", 
@@ -310,7 +310,7 @@
                   {
                     "name": "mfr",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "MFR, g/10 min "
@@ -341,7 +341,7 @@
                   {
                     "name": "tensile_modulus",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Tensile modulus, GPa "
@@ -373,7 +373,7 @@
                   {
                     "name": "tensile_strength_break",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Tensile Strength at Break, MPa "
@@ -404,7 +404,7 @@
                   {
                     "name": "elongation_break",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Elongation at break, % "
@@ -415,7 +415,7 @@
                     "columns": [{
                     "name": "charpy_impact_strength",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Charpy impact strength, kJ/m^2 (ISO 179-1)"
@@ -423,7 +423,7 @@
                   {
                     "name": "charpy_notched_impact_strength",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Charpy notched impact strength, kJ/m^2 (ISO 179-1)"
@@ -434,7 +434,7 @@
                     "columns": [{
                     "name": "vick_heat_resistance",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Vick heat resistance, °C (ISO 306) "
@@ -464,7 +464,7 @@
                   {
                     "name": "melting_temperature",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Melting temperature,°C "
@@ -487,7 +487,7 @@
                     {
                     "name": "surface_resistivity",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Surface resistivity, Ohm (IEC 60093)"
@@ -638,7 +638,7 @@
                   {
                     "name": "hardness",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min": 0,
                     "type": "number",
                     "title": "Hardness"                  
@@ -684,7 +684,7 @@
                   {
                     "name": "tensile_strength",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Tensile Strength, MPa "
@@ -715,7 +715,7 @@
                   {
                     "name": "relative_elongation_at_break",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "max": 100,
                     "type": "number", 
@@ -748,7 +748,7 @@
                   {
                     "name": "elasticity_modulus_100",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Modulus of elasticity at 100% deformation, MPa"
@@ -778,7 +778,7 @@
                   },
                   {
                     "name": "elasticity_modulus_300",
-                    "pattern": "only float number more than zero",
+                    
                     "required": true,
                     "min":  0,
                     "type": "number", 
@@ -810,7 +810,7 @@
                   {
                     "name": "tear_resistance",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Tear Resistance, N/mm"
@@ -840,7 +840,7 @@
                   },
                   {
                     "name": "compression_set_23",
-                    "pattern": "only float number more than zero",
+                    
                     "required": true,
                     "min":  0,
                     "max": 100,
@@ -873,7 +873,7 @@
                   {
                     "name": "compression_set_70",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "max": 100,
                     "type": "number", 
@@ -905,7 +905,7 @@
                   {
                     "name": "compression_set_100",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "max": 100,
                     "type": "number", 
@@ -937,7 +937,7 @@
                   {
                     "name": "abrasive_wear_and_tear",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Abrasive wear and tear, mm^3"
@@ -949,7 +949,7 @@
                   {
                     "name": "ozone_resistance",
                     "required": true,
-                    "pattern": "only float number more than zero",
+                    
                     "min":  0,
                     "type": "number", 
                     "title": "Ozone Resistance (ASTM D-518)"
@@ -1038,7 +1038,7 @@
                 "name": "purity_of_disperse_filler",
                 "required": true,
                 "title": "% purity of disperse filler",
-                "pattern": "only float number more than zero",
+                
                 "min":  0,
                 "max": 100,
                 "type": "number"
@@ -1060,7 +1060,7 @@
                 "name": "dispersity",
                 "required": true,
                 "title": "Dispersity, μm",
-                "pattern": "only float number more than zero",
+                
                 "type": "number",
                 "min":  0
               }
@@ -1081,7 +1081,7 @@
                   "name": "density",
                   "required": true,
                   "title": "Density, kg/m^3",
-                  "pattern": "only float number more than zero",
+                  
                   "min":  0,
                   "type": "number"
                 }
@@ -1106,7 +1106,7 @@
                   "title": "Linear Density",
                   "required": true,
                   "type": "number",
-                  "pattern": "only float number more than zero",
+                  
                   "min":  0
                 }
               ]
@@ -1126,7 +1126,7 @@
                   "name": "length_of_fibres",
                   "title": "Length of fibres, mm",
                   "required": true,
-                  "pattern": "only float number more than zero",
+                  
                   "type": "number",
                   "min":  0
                 }
@@ -1147,7 +1147,7 @@
                   "name": "filament_diameter",
                   "required": true,
                   "title": "Filament diameter, mkm",
-                  "pattern": "only float number more than zero",
+                  
                   "min": 1e-10,
                   "max": 3000,
                   "type": "number"
@@ -1170,7 +1170,7 @@
                   "name": "tensile_strength",
                   "required": true,
                   "title": "Tensile Strength, MPa",
-                  "pattern": "only float number more than zero",
+                  
                   "type": "number",
                   "min":  0
                 }
@@ -1191,7 +1191,7 @@
                   "name": "tensile_modulus",
                   "required": true,
                   "title": "Tensile modulus, GPa",
-                  "pattern": "only float number more than zero",
+                  
                   "type": "number",
                   "min":  0
                 }
@@ -1212,7 +1212,7 @@
                   "name": "elongation_break",
                   "required": true,
                   "title": "Elongation at break, % ",
-                  "pattern": "only float number more than zero",
+                  
                   "type": "number",
                   "min":  0,
                   "max": 1000
@@ -1235,7 +1235,7 @@
                   
                   "title": "Moisture content, %",
                   "required": true,
-                  "pattern": "only float number more than zero",
+                  
                   "min": 0,
                   "max": 30,
                   "type": "number"
