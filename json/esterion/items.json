@@ -103,9 +103,7 @@
               {
                 "name": "id_polymers",
                 "required": true,
-                "error": {
-                  "message": "Field is required"
-                },
+                
                 "suggestions":  "/search/list",
                 "type": "select",
                 "title": "Name of the polymer"
@@ -113,9 +111,7 @@
               {
                 "name": "manufacturer",
                 "required": true,
-                "error": {
-                  "message": "Field is required"
-                },
+                
                 "type": "text",
                 "value": "Esterion",
                 "title": "Product manufacturer"
@@ -166,9 +162,7 @@
                   "name": "chemical_nature",
                   "title": "Chemical nature of disperse filler",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
+                  
                   "pattern": "floatPos",
                   "type": "text"
                 }
@@ -221,9 +215,7 @@
                   "name": "nature_of_filler",
                   "title": "Nature of filler",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
+                  
                   "pattern": "floatPos",
                   "type": "text"
                 }
@@ -1083,9 +1075,7 @@
                 "name": "chemical_nature_iso",
                 "title": "Chemical nature of disperse filler tests standard",
                 "required": true,
-                "error": {
-                  "message": "Field is required"
-                },
+                
                 "pattern": "floatPos",
                 "type": "text"
                 
@@ -1094,9 +1084,7 @@
                 "name": "chemical_nature",
                 "title": "The chemical nature of disperse filler",
                 "required": true,
-                "error": {
-                  "message": "Field is required"
-                },
+                
                 "pattern": "floatPos",
                 "type": "text"
               }
@@ -1184,9 +1172,7 @@
                   "name": "linear_density_iso",
                   "title": "Linear Density tests standard",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
+                  
                   "type": "text"
                 },
                 {
@@ -1210,9 +1196,7 @@
                   "name": "length_of_fibres_iso",
                   "title": "Lenghth of fibres tests standard",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
+                  
                   "pattern": "floatPos",
                   "type": "text"
                 },
