@@ -543,9 +543,7 @@
                   {
                     "name": "polymer_name",
                     "required": true,
-                    "error": {
-                      "message": "Field is required"
-                    },
+
                     "suggestions":  "/search/list",
                     "type": "select",
                     "title": "Name of the polymer to use additive with"
@@ -553,9 +551,7 @@
                   {
                     "name": "manufacturer_company_dealer",
                     "required": true,
-                    "error": {
-                      "message": "Field is required"
-                    },
+
                     "type": "text",
                     "pattern": "floatPos",
                     "value": "Esterion",
@@ -570,9 +566,7 @@
                   {
                     "name": "manufacturer",
                     "required": true,
-                    "error": {
-                      "message": "Field is required"
-                    },
+
                     "type": "text",
                     "pattern": "floatPos",
                     "title": "Manufacturer name"
@@ -1373,9 +1367,6 @@
                   "name": "filler_configuration",
                   "title": "Filler configuration",
                   "required": true,
-                  "error": {
-                    "message": "Field is required"
-                  },
                   "pattern": "floatPos",
                   "type": "text"
                 }
@@ -1388,18 +1379,13 @@
                   {
                     "name": "processing_methods*",
                     "required": true,
-                    "error": {
-                      "message": "Field is required"
-                    },
                     "type": "textarea",
                     "title": "Processing methods"
                   },
                   {
                     "name": "fields_of_application",
                     "required": true,
-                    "error": {
-                      "message": "Field is required"
-                    },
+
                     "type": "textarea",
                     "title": "Fields of application"
                   },
