@@ -85,12 +85,12 @@ function showObject(data, thisForm) {
                     <div class="icnlink1">
                     </div>
                     <span class="open_add_list0">
-                      <span><a href="/api/v1/search/additives/?id=1">Open additives list</a></span>
+                      <span><a href="https://pm-db.net/api/v1/search/additives/?lang=en&id=641&counter=0">Open additives list</a></span>
                     </span>
                   </div>
                 </div>
               </div>
-              <span class="manufacturer0"><span>${data[x].company_name}</span></span>
+              <span class="manufacturer0"><span>${data[x].company_names}</span></span>
               <span class="polymer_group0">
                 <span>${data[x].title}</span>
               </span>
