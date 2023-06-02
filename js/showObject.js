@@ -60,8 +60,11 @@ function showObject(data, thisForm) {
         }
     }*/
 
+    let article_link = "https://pm-db.net/article/${data[x].id_article}"
+    let additives_list_link = "https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0"
+
     for (x in data) {
-        divContent.append( `<div>
+        divContent.append(`<div>
         <div class="resultsection">
           <div class="resultsfields0">
             <div class="res_field0">
@@ -73,11 +76,11 @@ function showObject(data, thisForm) {
                 </div>
               </div>
               <div class="links">
-                <div class="linkonartcl">
+              <div class="linkonartcl">
                   <div class="btn_read_artcl_00">
                     <div class="icnlink0">
                     </div>
-                    <span class="read_art0"><span><a href="https://pm-db.net/article/${data[x].id_article}">Read an article</a></span></span>
+                    <span class="read_art0"><span><a href= ${article_link}>Read an article</a></span></span>
                   </div>
                 </div>
                 <div class="additiveslist0">
@@ -85,12 +88,11 @@ function showObject(data, thisForm) {
                     <div class="icnlink1">
                     </div>
                     <span class="open_add_list0">
-                      <span><a href="https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0">Open additives list</a></span>
+                      <span><a href=${additives_list_link}>Open additives list</a></span>
                     </span>
                   </div>
                 </div>
-              </div>
-              <span class="manufacturer0"><span>${data[x].company_names}</span></span>
+                </div><span class="manufacturer0"><span>${data[x].company_names}</span></span>
               <span class="polymer_group0">
                 <span>${data[x].title}</span>
               </span>
