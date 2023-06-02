@@ -77,7 +77,7 @@ function showObject(data, thisForm) {
                   <div class="btn_read_artcl_00">
                     <div class="icnlink0">
                     </div>
-                    <span class="read_art0"><span>Read an article</span></span>
+                    <span class="read_art0"><span><a href="https://pm-db.net/article/${data[x].id_article}">Read an article</a></span></span>
                   </div>
                 </div>
                 <div class="additiveslist0">
@@ -85,7 +85,7 @@ function showObject(data, thisForm) {
                     <div class="icnlink1">
                     </div>
                     <span class="open_add_list0">
-                      <span><a href="https://pm-db.net/api/v1/search/additives/?lang=en&id=641&counter=0">Open additives list</a></span>
+                      <span><a href="https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0">Open additives list</a></span>
                     </span>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ function showObject(data, thisForm) {
             </div>
           </div>
           <span class="res_amount">
-            <span>2 polymers were found</span>
+            <span>${data.length} polymers were found</span>
           </span>
         </div>
         <div class="searchthroughnavigation">
