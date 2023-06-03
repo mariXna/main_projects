@@ -64,8 +64,7 @@ function showObject(data, thisForm) {
     let additives_list_link = "https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0"
 
     for (x in data) {
-        divContent.append(`<div>
-        <div class="resultsection">
+        divContent.append(`<div><div class="resultsection">
           <div class="resultsfields0">
             <div class="res_field0">
               <div class="btn0">
@@ -74,8 +73,8 @@ function showObject(data, thisForm) {
                 </span>
                 <div class="expandmore0">
                 </div>
-              </div>
-              <div class="links">
+              </div>`)
+              div.append(`<div class="links">
               <div class="linkonartcl">
                   <div class="btn_read_artcl_00">
                     <div class="icnlink0">
