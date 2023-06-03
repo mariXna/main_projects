@@ -1,54 +1,4 @@
 
-.searchsection {
-  top: 126px;
-  left: 199px;
-  width: 1042px;
-  height: 195px;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
-}
-.advancedsearch {
-  top: 135px;
-  left: 24px;
-  width: 994px;
-  height: 36px;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 1;
-}
-
-.expandmore {
-  top: 7px;
-  left: 162px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 1;
-}
-
-.text12 {
-  top: 13px;
-  left: 19px;
-  color: rgba(10, 28, 59, 1);
-  width: 245px;
-  height: auto;
-  position: absolute;
-  font-size: 18px;
-  font-style: Regular;
-  text-align: left;
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-
 .resultsection {
   top: 361px;
   left: 221px;
@@ -61,7 +11,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.resultsfields0 {
+.resultsfields {
   top: 95px;
   left: 28px;
   width: 943px;
@@ -75,7 +25,7 @@
   border-left-width: 8px;
   box-sizing: border-box;
 }
-.resultfield0 {
+.res_field {
   top: 0px;
   left: 0px;
   width: 943px;
@@ -87,7 +37,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.btn0 {
+.btn {
   top: 144px;
   left: 650px;
   width: 269px;
@@ -104,7 +54,7 @@
   background: white;
   border-radius: 8px;
 }
-.all_prod0 {
+.all_prod {
   top: 11px;
   left: 12px;
   color: rgba(9, 59, 154, 1);
@@ -120,7 +70,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.expandmore0 {
+.expandmore {
   top: 0px;
   left: 237px;
   width: 32px;
@@ -151,7 +101,7 @@
   align-items: flex-start;
   flex-shrink: 1;
 }
-.btn_read_artcl_00 {
+.btn_read_artcl0 {
   top: 0px;
   left: 0px;
   width: 118px;
@@ -172,7 +122,7 @@
   flex-shrink: 1;
 }
 
-.read_art0 {
+.read_art {
   color: rgba(1, 120, 254, 1);
   height: auto;
   position: absolute;
@@ -185,7 +135,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.additiveslist0 {
+.additiveslist {
   top: 25px;
   left: 0px;
   width: 142px;
@@ -195,7 +145,7 @@
   align-items: flex-start;
   flex-shrink: 1;
 }
-.btn_read_artcl_01 {
+.btn_read_artcl1 {
   top: 0px;
   left: 0px;
   width: 142px;
@@ -216,7 +166,7 @@
   flex-shrink: 1;
 }
 
-.open_add_list0 {
+.open_add_list {
   color: rgba(1, 120, 254, 1);
   height: auto;
   position: absolute;
@@ -229,7 +179,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.manufacturer0 {
+.manufacturer {
   top: 50px;
   left: 24px;
   color: rgba(12, 167, 111, 1);
@@ -245,7 +195,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.polymer_group0 {
+.polymer_group {
   top: 20px;
   left: 24px;
   color: rgba(0, 0, 0, 1);
@@ -261,6 +211,22 @@
   text-decoration: none;
 }
 
+.res_amount {
+  top: 24px;
+  left: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 490px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
 
 .searchthroughnavigation {
   top: 337px;
