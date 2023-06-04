@@ -19,10 +19,6 @@ function showObject(data, thisForm) {
   <div class="resultsection">`;
 for (x in data) {
 
-<<<<<<< HEAD
-=======
-  total += data[x].list.length; 
->>>>>>> 69da53934da0ef63e98b36598c55f5ce66e95571
   var add_flag = data[x].has_additives;
   console.log(add_flag);
   var fill_flag = data[x].has_fillers;
@@ -72,32 +68,17 @@ for (x in data) {
     html += '</div>' 
   } 
 
-<<<<<<< HEAD
   html += `<span class="manufacturer0"><span>${data[x].company_names}</span></span>
   <span class="polymer_group0">
     <span>${data[x].title}</span></span>
-=======
-  let company_names = data[x].company_names;
-  company_names = text.replace(/\*\*(.*?)\*\*/g, (match, capturedText) => <span class="italic_bold_search_res">${capturedText}</span>);
-
-  html += `<span class="manufacturer0"><span>${company_names}</span></span>
-  <span class="polymer_group0">
-    <span>${data[x].title}<span class="res_abbr">${data[x].abbr}</span></span>
->>>>>>> 69da53934da0ef63e98b36598c55f5ce66e95571
   </span>
   </div>`;
   /*<span class="res_abbr">${data[x].abbr}*/
 }
 
-<<<<<<< HEAD
-html += `
-<span>${data.length} polymer(s) were found</span>
-
-=======
 html += `<span class="res_amount">
-<span>${total} polymer(s) were found</span>
+<span>${data[x].length} polymer(s) were found</span>
 </span>
->>>>>>> 69da53934da0ef63e98b36598c55f5ce66e95571
 </div>
 <div class="searchthroughnavigation">
 <div class="icnhome">
