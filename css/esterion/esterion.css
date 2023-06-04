@@ -1535,4 +1535,128 @@ figure button {
     text-decoration: none;
   }
    
+
+  #block1 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
    
+#block2 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+
+#block3 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block4 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+
+#block5 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block6 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block7 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+
+#block9 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block11 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block12 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block15 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block18 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block19 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block20 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block21 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block22 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block32 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block33 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block37 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block38 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
