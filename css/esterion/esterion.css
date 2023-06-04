@@ -762,6 +762,12 @@ figure button {
       font-style: italic;
   }
 
+  .res_abbr {
+    margin-left: 8px;
+    color: #4f5b75;
+    font-weight: 400;
+  }
+
 
   :root {
     --dl-color-default-: rgba(10, 28, 59, 1);
