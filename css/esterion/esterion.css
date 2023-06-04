@@ -1536,7 +1536,13 @@ figure button {
   }
    
 
-  #block1 label.input-label::before {
+#block0 label.input-label::before {
+    content: "*";
+    color: red;
+    left: -5px;
+    position: relative;
+}
+#block1 label.input-label::before {
     content: "*";
     color: red;
     left: -5px;
