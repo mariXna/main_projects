@@ -460,6 +460,7 @@ figure button {
     border: 1px solid #eff0f3;
     border-left-width: 8px;
     box-sizing: border-box;
+    margin-bottom: 20px;
   }
   .res_field0 {
     top: 0px;
@@ -686,8 +687,8 @@ figure button {
   }
  
   .fillerslist0 {
-    top: 86px;
-    left: 24px;
+    top: 50px;
+    left: 0px;
     width: 118px;
     height: 17px;
     display: flex;

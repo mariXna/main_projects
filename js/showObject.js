@@ -1,4 +1,4 @@
-//04.06.23 - 3pm BST
+//04.06.23 - 3.33pm BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -25,7 +25,7 @@ for (x in data) {
     found = true;
   }
   html += `<div class="resultsfields0">
-  <div class="res_field0"><div class="btn0"><span class="all_prod0">
+  <div class="btn0"><span class="all_prod0">
   <span>Show all products</span>
   </span><div class="expandmore0">
   </div>
@@ -34,7 +34,7 @@ for (x in data) {
   
   if (found) {
     html += '<div class="links">';
-    
+
     fetch(article_link)
     .then(function(response) {
       if (response.ok) {
@@ -69,7 +69,6 @@ for (x in data) {
   <span class="polymer_group0">
     <span>${data[x].title}</span>
   </span>
-  </div>
   </div>`;
 }
 
