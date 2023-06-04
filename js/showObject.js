@@ -1,4 +1,4 @@
-//04.06.23 - 7.30pm BST
+//04.06.23 - 8.30pm BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -68,9 +68,7 @@ for (x in data) {
     html += '</div>' 
   } 
 
-  let company_names = data[x].company_names;
-  company_names = text.replace(/\*\*(.*?)\*\*/g, (match, capturedText) => `<span class="italic_bold_search_res">${capturedText}</span>`);
-
+  
   html += `<span class="manufacturer0"><span>${company_names}</span></span>
   <span class="polymer_group0">
     <span>${data[x].title}</span>
