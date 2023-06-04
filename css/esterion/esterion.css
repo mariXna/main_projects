@@ -757,6 +757,11 @@ figure button {
     text-decoration: none;
   }
 
+  .italic_bold_search_res {
+      font-weight: 700;
+      font-style: italic;
+  }
+
 
   :root {
     --dl-color-default-: rgba(10, 28, 59, 1);

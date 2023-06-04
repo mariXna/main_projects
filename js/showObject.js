@@ -14,7 +14,7 @@ function showObject(data, thisForm) {
     html += `<div>
   <div class="resultsection">`;
 for (x in data) {
-  
+
   let fillers_list_link = `https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0`;
   let article_link = "https://pm-db.net/article/1";
   let additives_list_link = `https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0`;
@@ -67,7 +67,11 @@ for (x in data) {
     }
     html += '</div>' 
   } 
-  html += `<span class="manufacturer0"><span>${data[x].company_names}</span></span>
+
+  let company_names = data[x].company_names;
+  company_names = text.replace(/\*\*(.*?)\*\*/g, (match, capturedText) => `<span class="italic_bold_search_res">${capturedText}</span>`);
+
+  html += `<span class="manufacturer0"><span>${company_names}</span></span>
   <span class="polymer_group0">
     <span>${data[x].title}</span>
   </span>
