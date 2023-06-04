@@ -440,7 +440,7 @@ figure button {
     left: 221px;
     width: 999px;
     height: 3459px;
-    display: flex;
+    /*display: flex;*/
     /*position: absolute;*/
     align-items: flex-start;
     flex-shrink: 1;
