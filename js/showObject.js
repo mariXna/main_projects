@@ -1,4 +1,4 @@
-//04.06.23 - 11:00am
+//04.06.23 - 11:00am BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -58,9 +58,6 @@ for (x in data) {
   </span>
   </div>
   </div>`;
-  
-  
-
 }
 
 html += `<span class="res_amount">
@@ -71,6 +68,7 @@ html += `<span class="res_amount">
 <div class="icnhome">
 </div>
 <div class="icnarrow1"></div></div></div>`;
+
 var content = document.getElementById('content');
 content.innerHTML = html;
 }   
