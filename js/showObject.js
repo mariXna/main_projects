@@ -1,4 +1,4 @@
-//04.06.23 - 8.33pm BST
+//04.06.23 - 9.45pm BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -28,7 +28,7 @@ for (x in data) {
   }
   html += `<div class="resultsfields0">
   <div class="btn0"><span class="all_prod0">
-  <span>Show ${data[x].list.length} products</span>
+  <span>Show ${data[x].length} products</span>
   </span><div class="expandmore0">
   </div>
   </div>`;
