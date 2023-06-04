@@ -462,17 +462,6 @@ figure button {
     box-sizing: border-box;
     margin-bottom: 20px;
   }
-  .res_field0 {
-    top: 0px;
-    left: 0px;
-    width: 943px;
-    height: 204px;
-    display: flex;
-    /*position: absolute;*/
-    align-items: flex-start;
-    flex-shrink: 1;
-    background-color: rgba(255, 255, 255, 1);
-  }
   
   .btn0 {
     top: 144px;

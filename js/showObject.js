@@ -1,4 +1,4 @@
-//04.06.23 - 3.33pm BST
+//04.06.23 - 7.30pm BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -8,15 +8,17 @@ function showObject(data, thisForm) {
     let divContent = $('#content');
     divContent.html('');
 
-    let fillers_list_link = "https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0";
-    let article_link = "https://pm-db.net/article/1";
-    let additives_list_link = "https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0";
-
+   
     var found = false;
     var html = '';
     html += `<div>
   <div class="resultsection">`;
 for (x in data) {
+  
+  let fillers_list_link = `https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0`;
+  let article_link = "https://pm-db.net/article/1";
+  let additives_list_link = `https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0`;
+
   var add_flag = data[x].has_additives;
   console.log(add_flag);
   var fill_flag = data[x].has_fillers;
