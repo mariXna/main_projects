@@ -441,7 +441,7 @@ figure button {
     width: 999px;
     height: 3459px;
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -453,7 +453,7 @@ figure button {
     width: 943px;
     height: 204px;
     display: flex;
-    position: absolute;
+    position: relative;
     align-items: flex-start;
     flex-shrink: 1;
     border-radius: 5px;
@@ -467,7 +467,7 @@ figure button {
     width: 943px;
     height: 204px;
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -619,7 +619,6 @@ figure button {
     top: 50px;
     left: 24px;
     color: rgba(12, 167, 111, 1);
-    width: 74px;
     height: auto;
     position: absolute;
     font-size: 18px;
@@ -713,8 +712,8 @@ figure button {
   }
   
   .res_amount {
-    top: 24px;
-    left: 2px;
+    top: 150px;
+    left: 260px;
     color: rgba(0, 0, 0, 1);
     width: 490px;
     height: auto;
