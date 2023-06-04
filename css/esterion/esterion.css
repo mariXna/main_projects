@@ -527,7 +527,7 @@ figure button {
     align-items: flex-start;
     flex-shrink: 1;
   }
-  .linkonartcl_00 {
+  .linkonartcl0 {
     top: 0px;
     left: 0px;
     width: 118px;
@@ -537,16 +537,7 @@ figure button {
     align-items: flex-start;
     flex-shrink: 1;
   }
-  .btn_read_artcl_00 {
-    top: 0px;
-    left: 0px;
-    width: 118px;
-    height: 17px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
+  
   .icnlink0 {
     top: 0px;
     left: 102px;
@@ -581,7 +572,30 @@ figure button {
     align-items: flex-start;
     flex-shrink: 1;
   }
+
+  .btn_read_artcl_00 {
+    top: 0px;
+    left: 0px;
+    width: 118px;
+    height: 17px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
   .btn_read_artcl_01 {
+    top: 0px;
+    left: 0px;
+    width: 142px;
+    height: 17px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .btn_read_artcl_02 {
     top: 0px;
     left: 0px;
     width: 142px;
@@ -601,8 +615,33 @@ figure button {
     align-items: flex-start;
     flex-shrink: 1;
   }
+
+  .icnlink2 {
+    top: 0px;
+    left: 126px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
   
   .open_add_list0 {
+    color: rgba(1, 120, 254, 1);
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 17px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .open_fill_list0 {
     color: rgba(1, 120, 254, 1);
     height: auto;
     position: absolute;
@@ -646,7 +685,7 @@ figure button {
     text-decoration: none;
   }
  
-  .linkonartcl1 {
+  .fillerslist0 {
     top: 86px;
     left: 24px;
     width: 118px;

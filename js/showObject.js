@@ -9,7 +9,7 @@ function showObject(data, thisForm) {
     divContent.html('');
 
     let fillers_list_link = "https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0";
-    //let article_link = "https://pm-db.net/article/${data[x].id_article}";
+    let article_link = "https://pm-db.net/article/${data[x].id_article}";
     let additives_list_link = "https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0";
 
     var found = false;
@@ -33,6 +33,13 @@ for (x in data) {
   </div>`;
   if (found) {
     html += '<div class="links">';
+
+    html += `<div class="linkonartcl0">
+      <div class="btn_read_artcl_00">
+      <div class="icnlink0">
+      </div><span class="read_art0"><span><a href=${article_link}>Read an article</a></span></span>
+      </div>
+      </div>`;
     if (add_flag) {
       html += `<div class="additiveslist0">
       <div class="btn_read_artcl_01">
@@ -42,11 +49,11 @@ for (x in data) {
       </div>`;
     }
     if (fill_flag){
-      html += `<div class="linkonartcl">
-      <div class="btn_read_artcl_00">
-        <div class="icnlink0">
+      html += `<div class="fillerslist0">
+      <div class="btn_read_artcl_02">
+        <div class="icnlink2">
         </div>
-        <span class="read_art0"><span><a href= ${fillers_list_link}>Open fillers list</a></span></span>
+        <span class="open_fill_list0"><span><a href= ${fillers_list_link}>Open fillers list</a></span></span>
       </div>
     </div>`;
     }
