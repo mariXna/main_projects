@@ -1,4 +1,4 @@
-//04.06.23 - 8.30pm BST
+//04.06.23 - 8.33pm BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -8,17 +8,15 @@ function showObject(data, thisForm) {
     let divContent = $('#content');
     divContent.html('');
 
-   
+    let fillers_list_link = "https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0";
+    let article_link = "https://pm-db.net/article/1";
+    let additives_list_link = "https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0";
+
     var found = false;
     var html = '';
     html += `<div>
   <div class="resultsection">`;
 for (x in data) {
-
-  let fillers_list_link = `https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0`;
-  let article_link = "https://pm-db.net/article/1";
-  let additives_list_link = `https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0`;
-
   var add_flag = data[x].has_additives;
   console.log(add_flag);
   var fill_flag = data[x].has_fillers;
@@ -67,9 +65,7 @@ for (x in data) {
     }
     html += '</div>' 
   } 
-
-  
-  html += `<span class="manufacturer0"><span>${company_names}</span></span>
+  html += `<span class="manufacturer0"><span>${data[x].company_names}</span></span>
   <span class="polymer_group0">
     <span>${data[x].title}</span>
   </span>
