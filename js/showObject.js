@@ -1,4 +1,4 @@
-//04.06.23 - 9.45pm BST
+//05.06.23 - 11.30am BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -19,7 +19,7 @@ function showObject(data, thisForm) {
   <div class="resultsection">`;
 for (x in data) {
 
-  total += data[x].list.length;
+  /*total += data[x].list.length;*/
 
   var add_flag = data[x].has_additives;
   
@@ -30,7 +30,7 @@ for (x in data) {
   }
   html += `<div class="resultsfields0">
   <div class="btn0"><span class="all_prod0">
-  <span>Show ${data[x].list.length} products</span>
+  <span>Show ${data[x].list.length} product(s</span>
   </span><div class="expandmore0">
   </div>
   </div>`;
@@ -70,7 +70,7 @@ for (x in data) {
     html += '</div>' 
   } 
 
-  html += `<span class="manufacturer0"><span>${data[x].company_names}</span></span>
+  html += `<span class="manufacturer0"><span>${data[x].company_names}</span></span><span class="res_abbr"><span>"(${data[x].abbr})"</span></span>
   <span class="polymer_group0">
     <span>${data[x].title}</span></span>
   </span>
@@ -79,7 +79,7 @@ for (x in data) {
 }
 
 html += `<span class="res_amount">
-<span>${total} polymer(s) were found</span>
+<span>${data.length} polymer(s) were found</span>
 </span>
 </div>
 <div class="searchthroughnavigation">
