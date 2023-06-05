@@ -121,7 +121,7 @@
                 "title": "Product manufacturer"
               },
               {
-                "name": "commercial_name",
+                "name": "marka",
                 
                 "type": "text",
                 "title": "Commercial product name"
