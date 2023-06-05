@@ -19,16 +19,18 @@ function showObject(data, thisForm) {
   <div class="resultsection">`;
 for (x in data) {
 
+  total += data[x].list.length;
+
   var add_flag = data[x].has_additives;
-  console.log(add_flag);
+  
   var fill_flag = data[x].has_fillers;
-  console.log(add_flag);
+  
   if (add_flag == true || fill_flag == true) {
     found = true;
   }
   html += `<div class="resultsfields0">
   <div class="btn0"><span class="all_prod0">
-  <span>Show ${data[x].length} products</span>
+  <span>Show ${data[x].list.length} products</span>
   </span><div class="expandmore0">
   </div>
   </div>`;
@@ -77,7 +79,7 @@ for (x in data) {
 }
 
 html += `<span class="res_amount">
-<span>${data[x].length} polymer(s) were found</span>
+<span>${total} polymer(s) were found</span>
 </span>
 </div>
 <div class="searchthroughnavigation">
