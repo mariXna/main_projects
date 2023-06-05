@@ -70,12 +70,11 @@ for (x in data) {
     html += '</div>' 
   } 
 
-  html += `<span class="manufacturer0"><span>${data[x].company_names}<span class="res_abbr"><span>(${data[x].abbr})</span></span></span></span>
+  html += `<span class="manufacturer0"><span>${data[x].company_names}</span></span>
   <span class="polymer_group0">
-    <span>${data[x].title}</span></span>
+    <span>${data[x].title}<span class="res_abbr"><span>(${data[x].abbr})</span></span></span></span>
   </span>
   </div>`;
-  /*<span class="res_abbr">${data[x].abbr}*/
 }
 
 html += `<span class="res_amount">
