@@ -1,9 +1,14 @@
-//05.06.23 - 12.40am BST
+//05.06.23 - 12.50am BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
         return false;
     }
+
+function italic_bold(text){
+  text = text.toString().replace(/\*\*(.*?)\*\*/g, '<span class="italic_bold_search_res">$1</span>');
+  return text;
+}
 
     let divContent = $('#content');
     divContent.html('');
@@ -78,13 +83,14 @@ for (x in data) {
     html += '</div>' 
   } 
 
-  let company_names = data[x].company_names;
-  company_names = company_names.toString().replace(/\*\*(.*?)\*\*/g, '<span class="italic_bold_search_res">$1</span>');
 
-  html += `<span class="manufacturer0"><span>${company_names}</span></span>
+  html += `<span class="manufacturer0"><span>${italic_bold(data[x].company_names)}</span></span>
   <span class="polymer_group0">
-    <span>${data[x].title}<span class="res_abbr"><span>(${data[x].abbr})</span></span></span></span>
-  </span>
+    <span>${italic_bold(data[x].title)}`;
+    if (data[x].abbr){
+    html += `<span class="res_abbr"><span>(${italic_bold(data[x].abbr)})</span></span>`;
+    }
+    html += `</span></span></span>
   </div>`;
 }
 
