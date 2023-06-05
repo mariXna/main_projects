@@ -1,4 +1,4 @@
-//05.06.23 - 11.40am BST
+//05.06.23 - 12.40am BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -15,6 +15,7 @@ function showObject(data, thisForm) {
     var total = 0;
     var found = false;
     var html = '';
+    
     html += `<div>
   <div class="resultsection">`;
 for (x in data) {
@@ -24,13 +25,22 @@ for (x in data) {
   var add_flag = data[x].has_additives;
   
   var fill_flag = data[x].has_fillers;
+
+  var article_found = false;
+
+  fetch(article_link)
+    .then(function(response) {
+      if (response.ok) {
+        article_found = true;
+      }})
   
-  if (add_flag == true || fill_flag == true) {
+  if (add_flag == true || fill_flag == true || article_found == true) {
     found = true;
   }
+
   html += `<div class="resultsfields0">
   <div class="btn0"><span class="all_prod0">
-  <span>Show ${data[x].list.length} product(s</span>
+  <span>Show ${data[x].list.length} product(s)</span>
   </span><div class="expandmore0">
   </div>
   </div>`;
@@ -39,17 +49,15 @@ for (x in data) {
   if (found) {
     html += '<div class="links">';
 
-    fetch(article_link)
-    .then(function(response) {
-      if (response.ok) {
-        html += `<div class="linkonartcl0">
+    if (article_found){
+      html += `<div class="linkonartcl0">
         <div class="btn_read_artcl_00">
         <div class="icnlink0">
         </div><span class="read_art0"><span><a href=${article_link}>Read an article</a></span></span>
         </div>
         </div>`;
-      }})
-    
+    }
+
     if (add_flag) {
       html += `<div class="additiveslist0">
       <div class="btn_read_artcl_01">
@@ -70,7 +78,10 @@ for (x in data) {
     html += '</div>' 
   } 
 
-  html += `<span class="manufacturer0"><span>${data[x].company_names}</span></span>
+  let company_names = data[x].company_names;
+  company_names = company_names.toString().replace(/\*\*(.*?)\*\*/g, '<span class="italic_bold_search_res">$1</span>');
+
+  html += `<span class="manufacturer0"><span>${company_names}</span></span>
   <span class="polymer_group0">
     <span>${data[x].title}<span class="res_abbr"><span>(${data[x].abbr})</span></span></span></span>
   </span>
