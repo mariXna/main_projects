@@ -108,7 +108,13 @@
                 },
                 "suggestions":  "/search/list",
                 "type": "select",
-                "title": "Name of the polymer"
+                "title": "Name of material"
+              },
+              {
+                "name": "marka",
+                
+                "type": "text",
+                "title": "Material brand"
               },
               {
                 "name": "manufacturer",
@@ -118,14 +124,9 @@
                 },
                 "type": "text",
                 "value": "Esterion",
-                "title": "Product manufacturer"
-              },
-              {
-                "name": "marka",
-                
-                "type": "text",
-                "title": "Commercial product name"
-              }]
+                "title": "Producer"
+              }
+              ]
             },{
               "id": 2,
               
