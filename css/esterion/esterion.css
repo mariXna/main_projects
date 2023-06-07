@@ -493,6 +493,18 @@ figure button {
     background: white;
     border-radius: 8px;
   }
+
+  .btn0:hover {
+    /* Styles for when the cursor is on the button */
+    background-color: #ECF5FD; /* Change to desired hover background color */
+  }
+  
+  .btn0:active {
+    /* Styles for when the button is clicked */
+    box-shadow: 0 0 8px 2px #76BDF6; /* Change to desired shadow color and properties */
+  }
+
+
   .all_prod0 {
     top: 11px;
     left: 12px;
@@ -797,6 +809,8 @@ figure button {
     color: #4f5b75;
     font-weight: 400;
   }
+
+  
 
 
   :root {
