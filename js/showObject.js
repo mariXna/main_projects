@@ -32,8 +32,9 @@ function openHiddenSection() {
     var html = '';
     var html_prod = '';
     
+    /*<div class="container">*/
     html += `<div id="contentSection">
-    <div class="container">
+    
     <div class="resultsection">`;
 for (x in data) {
 
@@ -57,7 +58,7 @@ for (x in data) {
 
   html += `<div class="resultsfields0">
   <div class="btn0"><span class="all_prod0">
-  <button onclick="openHiddenSection()">Show ${data[x].list.length} product(s)</button>
+  <button class = "button_all_prod" type="button" onclick="openHiddenSection()">Show ${data[x].list.length} product(s)</button>
   </span><div class="expandmore0">
   </div>
   </div>`;
@@ -274,8 +275,8 @@ html += `<span class="res_amount">
 <div class="searchthroughnavigation">
 <div class="icnhome">
 </div>
-<div class="icnarrow1"></div></div></div></div>`;
-
+<div class="icnarrow1"></div></div></div>`;
+/*</div>*/
 var content = document.getElementById('content');
 content.innerHTML = html;
 }
