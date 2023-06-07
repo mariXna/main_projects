@@ -1,4 +1,4 @@
-//05.06.23 - 12.50am BST
+//07.06.23 - 10.55pm BST
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -33,8 +33,7 @@ function openHiddenSection() {
     var html_prod = '';
     
     /*<div class="container">*/
-    html += `<div id="contentSection">
-    
+    html += `<div>
     <div class="resultsection">`;
 for (x in data) {
 
@@ -56,16 +55,15 @@ for (x in data) {
     found = true;
   }
 
-  html += `<div class="resultsfields0">
-  <button class="btn0" onclick="openHiddenSection()>
-  <span class="all_prod0">
+ 
+html += `<div class="resultsfields0">
+  <button class="btn0" onclick="openHiddenSection()><span class="all_prod0">
   <span>Show ${data[x].list.length} product(s)</span>
-  </span>
-  <div class="expandmore0"></div>
-</button>
-  </div>`;
+  </span><div class="expandmore0">
+  </div>
+  </button>`
 
-  for (y in data[x].list){
+  /*for (y in data[x].list){
   html_prod += `<div class="container">
   <div class="resultsection_prod">
     <div class="resultfield_prod">
@@ -224,7 +222,7 @@ for (x in data) {
   </div>
 </div>
 </div>`;
-}
+}*/
 
   
   if (found) {
