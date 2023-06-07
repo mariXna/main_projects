@@ -511,21 +511,20 @@ figure button {
   }
 
   .button_all_prod {
-    top: 144px;
-    left: 650px;
-    width: 269px;
-    height: 40px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-    box-sizing: border-box;
+    width: 221px;
+    height: auto;
+    background: white;
     border: 1px solid #093B9A;
     border-radius: 8px;
-    height: 40px;
-    width: 269px;
-    background: white;
-    border-radius: 8px;
+    color: rgba(9, 59, 154, 1);
+    font-size: 16px;
+    font-style: regular;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-align: center;
+    text-decoration: none;
   }
   .expandmore0 {
     top: 0px;
