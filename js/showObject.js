@@ -57,12 +57,12 @@ for (x in data) {
   }
 
   html += `<div class="resultsfields0">
-  <button class="button_all_prod" onclick="openHiddenSection()"><div class="btn0">
+  <button class="btn0" onclick="openHiddenSection()>
   <span class="all_prod0">
   <span>Show ${data[x].list.length} product(s)</span>
   </span>
   <div class="expandmore0"></div>
-</div></button>
+</button>
   </div>`;
 
   for (y in data[x].list){
