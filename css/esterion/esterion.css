@@ -509,6 +509,24 @@ figure button {
     font-stretch: normal;
     text-decoration: none;
   }
+
+  .button_all_prod {
+    top: 144px;
+    left: 650px;
+    width: 269px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    border: 1px solid #093B9A;
+    border-radius: 8px;
+    height: 40px;
+    width: 269px;
+    background: white;
+    border-radius: 8px;
+  }
   .expandmore0 {
     top: 0px;
     left: 237px;
