@@ -1,4 +1,10 @@
-/*maryna 04/06/23*/
+
+/*oleg 08/06/23*/
+/*maryna 08/06/23  4am*/
+span.label-text {
+  position: absolute;
+  top: 18px;
+}
 
 body {
     min-width: 100vw;
@@ -810,7 +816,8 @@ figure button {
     font-weight: 400;
   }
 
-  /*All products in search results*/
+  /*Styles for all products*/
+
   .container {
     width: 100%;
     display: flex;
@@ -1261,8 +1268,10 @@ figure button {
     font-stretch: normal;
     text-decoration: none;
   }
+
   
-/*--------------*/  
+/*---------------*/  
+
 
   :root {
     --dl-color-default-: rgba(10, 28, 59, 1);
