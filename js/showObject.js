@@ -1,4 +1,4 @@
-//07.06.23 - 11.20pm BST
+//08.06.23 - 5am BST
 function openHiddenSection(num) {
   // Hide the content section
 
