@@ -828,9 +828,10 @@ figure button {
   }
   .resultsection_prod {
     width: 999px;
-    height: 3459px; 
+    height: 3459px;
+    left: 230px; 
     /*display: flex;*/
-    position: relative;
+    position: absolute;
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -1254,7 +1255,7 @@ figure button {
   }
   .res_amount_prod {
     top: 24px;
-    left: 0px;
+    left: 30px;
     color: rgba(0, 0, 0, 1);
     width: auto;
     height: auto;
