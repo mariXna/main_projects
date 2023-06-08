@@ -1035,7 +1035,7 @@
                   "title": "Select the type of Filler",
                   "columns": [
                     {
-                      "name": "id_type_filler",
+                      "name": "id_type_of_filler",
                       "title": "Type of Filler",
                       "required": true,
                       "value": "0",
