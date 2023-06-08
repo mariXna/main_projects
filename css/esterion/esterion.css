@@ -829,7 +829,7 @@ figure button {
   .resultsection_prod {
     width: 999px;
     height: 3459px; 
-    display: flex;
+    /*display: flex;*/
     position: relative;
     align-items: flex-start;
     flex-shrink: 1;
@@ -1254,9 +1254,9 @@ figure button {
   }
   .res_amount_prod {
     top: 24px;
-    left: 260px;
+    left: 0px;
     color: rgba(0, 0, 0, 1);
-    width: 717px;
+    width: auto;
     height: auto;
     position: absolute;
     font-size: 24px;
@@ -1269,7 +1269,7 @@ figure button {
     text-decoration: none;
   }
 
-  
+
 /*---------------*/  
 
 
