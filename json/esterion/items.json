@@ -23,7 +23,7 @@
             ]
             
           },
-          "id_type_filler": {
+          "id_type_of_filler": {
             "1": [
               "0", "1", "32", "33","34", "35", "36", "43", "-3", "-2", "-1"
             ],
@@ -601,7 +601,6 @@
                       "message": "Field is required"
                     },
                     "type": "text",
-                    "pattern": "floatPos",
                     "value": "Esterion",
                     "title": "Manufacturer company name or dealer name"
                   },
