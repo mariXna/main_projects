@@ -170,7 +170,7 @@
                   "error": {
                     "message": "Field is required"
                   },
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 }
               ]
@@ -219,7 +219,7 @@
                   "error": {
                     "message": "Field is required"
                   },
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 }
               ]
@@ -558,8 +558,6 @@
                     "name": "flammability",
                     
                     "type": "text",
-                    "pattern": "floatPos",
-                    "value": "V-0",
                     "title": "Flammability, Class (UL 94)"
                   }]},
                   { 
@@ -617,7 +615,7 @@
                       "message": "Field is required"
                     },
                     "type": "text",
-                    "pattern": "floatPos",
+                    
                     "title": "Manufacturer name"
                   }]
                 },
@@ -1027,7 +1025,7 @@
                     "name": "flammability_ul94",
                     
                     "type": "text",
-                    "pattern": "floatPos",
+                    
                     "title": "Flammability, Class (UL 94)"
                   }]},
 
@@ -1076,7 +1074,7 @@
                 "error": {
                   "message": "Field is required"
                 },
-                "pattern": "floatPos",
+                
                 "type": "text"
                 
               },
@@ -1087,7 +1085,7 @@
                 "error": {
                   "message": "Field is required"
                 },
-                "pattern": "floatPos",
+                
                 "type": "text"
               }
             ]
@@ -1100,7 +1098,7 @@
                 "name": "purity_of_disperse_filler_iso",
                 "title": "Purity of disperse filler tests standard",
                 
-                "pattern": "floatPos",
+                
                 "type": "text"
               },
               {
@@ -1149,7 +1147,7 @@
                   "name": "density_iso",
                   "title": "Density test standard",
                   
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 },
                 {
@@ -1203,7 +1201,7 @@
                   "error": {
                     "message": "Field is required"
                   },
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 },
                 {
@@ -1227,7 +1225,7 @@
                   "name": "filament_diameter_iso",
                   "title": "Filament diameter tests standard",
                   
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 },
                 {
@@ -1251,7 +1249,7 @@
                   "name": "tensile_strength_iso",
                   "title": "Standard for tensile strength tests",
                   
-                  "pattern": "floatPos",
+                  
                   "type": "text",
                   "value": "DIN 53504"
                 },
@@ -1325,7 +1323,7 @@
                   "name": "moisture_content_iso",
                   "title": "Moisture content tests standard",
                   
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 },
                 {
@@ -1350,7 +1348,7 @@
                   "name": "filler_configuration_iso",
                   "title": "Filler configuration tests standard",
                   
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 },
                 {
@@ -1360,7 +1358,7 @@
                   "error": {
                     "message": "Field is required"
                   },
-                  "pattern": "floatPos",
+                  
                   "type": "text"
                 }
               ]
