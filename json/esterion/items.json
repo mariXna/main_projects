@@ -603,7 +603,7 @@
                     "title": "Manufacturer company name or dealer name"
                   },
                   {
-                    "name": "commercial_name",
+                    "name": "marka",
                     
                     "type": "text",
                     "title": "Commercial product name"
