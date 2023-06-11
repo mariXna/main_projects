@@ -180,7 +180,7 @@
               
               "title": "Reinforcing fiber configuration",
               "columns": [{
-                "name": "reinforcing_fiber_configuration",
+                "name": "id_reinforcing",
                 "required": true,
                 "value": "0",
                 "type": "select",
