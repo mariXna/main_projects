@@ -1142,7 +1142,7 @@ figure button {
     position: absolute;
   }
   .text_prod {
-    top: 2px;
+    top: -48px;
     color: rgba(118, 129, 148, 1);
     width: 669px;
     height: auto;
