@@ -168,6 +168,7 @@ function showObject(data, thisForm) {
               </span>
             </span>
             <button id="showMoreBtn${x}" class="show-more-less" onclick="showMore(${x})">Show more</button>
+            </div>
           <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
         </div>`;
     }
