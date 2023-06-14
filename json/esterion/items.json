@@ -180,7 +180,7 @@
               
               "title": "Reinforcing fiber configuration",
               "columns": [{
-                "name": "reinforcing_fiber_configuration",
+                "name": "id_reinforcing",
                 "required": true,
                 "value": "0",
                 "type": "select",
@@ -583,7 +583,7 @@
                 "description": "Which polymer to use additive with",
                 "columns": [
                   {
-                    "name": "polymer_name",
+                    "name": "id_polymers",
                     "required": true,
                     "error": {
                       "message": "Field is required"
@@ -603,7 +603,7 @@
                     "title": "Manufacturer company name or dealer name"
                   },
                   {
-                    "name": "commercial_name",
+                    "name": "marka",
                     
                     "type": "text",
                     "title": "Commercial product name"
