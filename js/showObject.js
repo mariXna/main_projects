@@ -12,9 +12,9 @@ function openHiddenSection(num) {
 
 }
 
-function showMore() {
+function showMore(num) {
   var textElement = document.querySelector('.text_prod');
-  var showMoreBtn = document.getElementById('showMoreBtn');
+  var showMoreBtn = document.getElementById(`showMoreBtn${num}`);
 
   if (textElement.style.maxHeight) {
     // Content is currently expanded, so collapse it
@@ -167,7 +167,7 @@ function showObject(data, thisForm) {
                 ${data[x].list[y].description}
               </span>
             </span>
-            <button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button>
+            <button id="showMoreBtn${x}" class="show-more-less" onclick="showMore(${x})">Show more</button>
           <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
         </div>`;
     }
