@@ -154,22 +154,6 @@ function showObject(data, thisForm) {
             </span>
           </div>
           <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
-          <div class="gapsolution_prod">
-            <span class="text_analogs_prod">
-              <span>Analogs are available</span>
-            </span>
-            <span class="text_open_list_prod">
-              <span>open the list</span>
-            </span>
-            <div class="icnavalbl_prod">
-              <div class="vectr_prod">
-                <div class="vector14_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMjAnIGhlaWdodD0nMjAnIHZpZXdCb3g9JzAgMCAyMCAyMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTE3LjA3MTEgMi45Mjg5MUMxNS4xODIzIDEuMDQwMiAxMi42NzExIDAgMTAgMEM3LjMyODg3IDAgNC44MTc2MiAxLjA0MDIgMi45Mjg5MSAyLjkyODkxQzEuMDQwMTYgNC44MTc2NiAwIDcuMzI4OTEgMCAxMEMwIDEyLjY3MTEgMS4wNDAxNiAxNS4xODIzIDIuOTI4OTEgMTcuMDcxMUM0LjgxNzY2IDE4Ljk1OTggNy4zMjg4NyAyMCAxMCAyMEMxMi42NzExIDIwIDE1LjE4MjMgMTguOTU5OCAxNy4wNzExIDE3LjA3MTFDMTguOTU5OCAxNS4xODIzIDIwIDEyLjY3MTEgMjAgMTBDMjAgNy4zMjg5MSAxOC45NTk4IDQuODE3NyAxNy4wNzExIDIuOTI4OTFaTTEwIDE4LjgyODFDNS4xMzIxNSAxOC44MjgxIDEuMTcxODggMTQuODY3OSAxLjE3MTg4IDEwQzEuMTcxODggNS4xMzIxNSA1LjEzMjE1IDEuMTcxODggMTAgMS4xNzE4OEMxNC44Njc5IDEuMTcxODggMTguODI4MSA1LjEzMjE1IDE4LjgyODEgMTBDMTguODI4MSAxNC44Njc5IDE0Ljg2NzkgMTguODI4MSAxMCAxOC44MjgxWicgZmlsbD0nIzBDQTc2RicvPgo8L3N2Zz4K')">
-                </div>
-                <div class="vector15_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTAnIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEwIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J005Ljc3NzUzIDAuNzkxMzY5QzkuNTQ4NzQgMC41NjI2MTkgOS4xNzc3MyAwLjU2MjYyIDguOTQ4OTQgMC43OTE0MDlMMy43NzQ3NSA1Ljk2NTU5TDEuMDUxMDQgMy4yNDE4OEMwLjgyMjI0NyAzLjAxMzA5IDAuNDUxMjMxIDMuMDEzMDkgMC4yMjI0MDMgMy4yNDE4OEMtMC4wMDY0MjU4NiAzLjQ3MDY3IC0wLjAwNjQyNTg2IDMuODQxNjggMC4yMjI0MDMgNC4wNzA1MUwzLjM2MDQxIDcuMjA4NTJDMy40NzQ4MyA3LjMyMjkzIDMuNjI0NzkgNy4zODAxMiAzLjc3NDcxIDcuMzgwMTJDMy45MjQ2MyA3LjM4MDEyIDQuMDc0NjMgNy4zMjI4OSA0LjE4OTAxIDcuMjA4NTJMOS43Nzc1MyAxLjYyQzEwLjAwNjQgMS4zOTEyMSAxMC4wMDY0IDEuMDIwMiA5Ljc3NzUzIDAuNzkxMzY5WicgZmlsbD0nIzBDQTc2RicvPgo8L3N2Zz4K')">
-                </div>
-              </div>
-            </div>
-          </div>
         </div>`;
     }
 
