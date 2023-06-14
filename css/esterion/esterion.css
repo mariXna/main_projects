@@ -848,7 +848,7 @@ figure button {
     top: 91px;
     left: 26px;
     width: 943px;
-    height: 330px;
+    height: 290px;
     display: flex;
       position: relative;
       align-items: flex-start;
@@ -1284,8 +1284,8 @@ figure button {
   }
 
   .show-more-less{
-  top: 290px;
-  left: 800px;
+  top: 250px;
+  left: 830px;
   color: rgba(0, 55, 132, 1);
   width: 90px;
   height: auto;
