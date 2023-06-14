@@ -861,7 +861,7 @@ figure button {
   }
   
   .content_prod {
-    top: 107px;
+    top: 70px;
     left: 24px;
     width: 894px;
     height: 160px;
@@ -1118,7 +1118,7 @@ figure button {
     flex-shrink: 1;
   }
   .text_mechchar_prod {
-    top: 1px;
+    top: 30px;
     color: rgba(0, 55, 132, 1);
     width: 206px;
     height: auto;
@@ -1134,7 +1134,7 @@ figure button {
   }
   .expandmore_prod {
     top: 0px;
-    left: 206px;
+    left: 190px;
     width: 20px;
     height: 20px;
     display: flex;
@@ -1151,7 +1151,7 @@ figure button {
     position: absolute;
   }
   .text_prod {
-    top: -48px;
+    top: 0px;
     color: rgba(118, 129, 148, 1);
     width: 669px;
     height: auto;
