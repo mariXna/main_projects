@@ -1275,7 +1275,7 @@
                   "title": "Tensile Modulus tests standard",
                   
                   "type": "text",
-                  "value": "DIN 53504"
+                  "value": "ISO 527-2"
                 },
                 {
                   "name": "tensile_modulus",
