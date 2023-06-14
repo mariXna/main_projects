@@ -1275,7 +1275,23 @@ figure button {
   }
 
   .show-more-less{
-    color: rgba(0, 55, 132, 1);
+  top: 260px;
+  left: 845px;
+  color: rgba(0, 55, 132, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background: white;
+  border: white;
+
   }
 
 
