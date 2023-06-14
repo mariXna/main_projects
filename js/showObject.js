@@ -135,7 +135,7 @@ function showObject(data, thisForm) {
             </div>
             <div class="downloadbtn_prod">
               <span class="text_downloadpdf_prod">
-                <span><a href=${pdf_link}>Download .pdf</a></span>
+                <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
               </span>
             </div>
             <div class="mechchardropdown_prod">
