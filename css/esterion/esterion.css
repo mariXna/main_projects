@@ -1089,6 +1089,7 @@ figure button {
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(0, 55, 132, 1);
+    border-radius: 7px;
   }
   .text_downloadpdf_prod {
     top: 10px;
