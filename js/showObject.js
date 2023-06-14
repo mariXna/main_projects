@@ -12,6 +12,21 @@ function openHiddenSection(num) {
 
 }
 
+function showMore() {
+  var textElement = document.querySelector('.text_prod');
+  var showMoreBtn = document.getElementById('showMoreBtn');
+
+  if (textElement.style.maxHeight) {
+    // Content is currently expanded, so collapse it
+    textElement.style.maxHeight = null;
+    showMoreBtn.textContent = 'Show more';
+  } else {
+    // Content is currently collapsed, so expand it
+    textElement.style.maxHeight = textElement.scrollHeight + 'px';
+    showMoreBtn.textContent = 'Show less';
+  }
+}
+
 function showObject(data, thisForm) {
     if (!data) {
         alert('no results!')
@@ -152,6 +167,9 @@ function showObject(data, thisForm) {
                 ${data[x].list[y].description}
               </span>
             </span>
+          </div>
+          <div class="show-more-less">
+            <button id="showMoreBtn" onclick="showMore()">Show more</button>
           </div>
           <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
         </div>`;
