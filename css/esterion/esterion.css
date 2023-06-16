@@ -1303,6 +1303,16 @@ figure button {
   border: white;
   }
 
+  .navigation_search{
+    border: 2px solid;
+    color: rgba(9, 59, 154, 1); 
+    position: absolute;
+width: 742px;
+height: 24px;
+left: 120px;
+top: 102px;
+  }
+
 
 /*---------------*/  
 
