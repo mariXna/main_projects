@@ -59,6 +59,14 @@ function showObject(data, thisForm) {
     
     /*<div class="container">*/
   html += `<div id="mainContent">
+  <nav>
+  <ul id="navigation_search">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">>Product manufacturers</a></li>
+    <li><a href="#">>Products</a></li>
+    <li><a href="#">>All products</a></li>
+  </ul>
+</nav>
   <div class="resultsection">`;
 
   for (x in data) {
