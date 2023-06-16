@@ -49,6 +49,9 @@ function showObject(data, thisForm) {
   let msds_link = '';
   let presentation_link = '';
   let pdf_link = '';
+  let msds_found = false;
+  let presentation_found = false;
+
 
   var found = false;
   var html = '';
@@ -96,6 +99,18 @@ function showObject(data, thisForm) {
     presentation_link = data[x].list[y].files[2].url;
     pdf_link = data[x].list[y].document_url
 
+    fetch(msds_link)
+      .then(function(response) {
+        if (response.ok) {
+          msds_found = true;
+        }})
+
+        fetch(predentations_link)
+        .then(function(response) {
+          if (response.ok) {
+            presentation_found = true;
+          }})
+/*<thead class="Result_thead__33CGa"><tr><th class="Result_th__2aCrs">Product characterization</th><th class="Result_th__2aCrs">Value</th></tr></thead><tbody><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Modulus of elasticity at 100%</td><td class="Result_td__3tk93">1.7  MPa</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Compression Set at 23 С</td><td class="Result_td__3tk93">19  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Compression Set at 70 С</td><td class="Result_td__3tk93">45  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Hardness</td><td class="Result_td__3tk93">60  Shore-A</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Tensile Strength at Break</td><td class="Result_td__3tk93">8  MPa</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Tear Resistance</td><td class="Result_td__3tk93">40  N/mm</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Density</td><td class="Result_td__3tk93">890  kg/m<sup>3</sup></td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Elongation at break</td><td class="Result_td__3tk93">1000  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Modulus of elasticity at 300%</td><td class="Result_td__3tk93">2.7  MPa</td></tr></tbody>*/
       html_prod += `
         <div class="resultfield_prod">
           <div class="content_prod">
@@ -118,8 +133,10 @@ function showObject(data, thisForm) {
                   <div class="vector3_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
                   </div>
                 </div>
-              </div>
-              <div class="link_msds_prod">
+              </div>`
+
+            if (msds_found){
+              html_prod += `<div class="link_msds_prod">
                 <span class="text_msds_prod">
                   <span><a href=${msds_link}>Read MSDS here</a></span>
                 </span>
@@ -135,8 +152,9 @@ function showObject(data, thisForm) {
                   <div class="vector03_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
                   </div>
                 </div>
-              </div>
-              <div class="link_presentation_prod">
+              </div>`}
+            if (presentation_found){
+             html_prod += `<div class="link_presentation_prod">
                 <span class="text_presentation_prod">
                   <span><a href=${presentation_link}>Presentation</a></span>
                 </span>
@@ -147,8 +165,8 @@ function showObject(data, thisForm) {
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="downloadbtn_prod">
+            </div>`}
+            html_prod += `<div class="downloadbtn_prod">
               <span class="text_downloadpdf_prod">
                 <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
               </span>
@@ -161,6 +179,7 @@ function showObject(data, thisForm) {
                 <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEyIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNTQnIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMTAuNiAtMC4wMDAxMjIwN0w2IDQuNTk5ODhMMS40IC0wLjAwMDEyMjA3TDAgMS4zOTk4OEw2IDcuMzk5ODhMMTIgMS4zOTk4OEwxMC42IC0wLjAwMDEyMjA3WicgZmlsbD0nIzA5M0I5QScvPgo8L3N2Zz4K')">
                 </div>
               </div>
+              
             </div>
             <span class="text_prod">
               <span>
