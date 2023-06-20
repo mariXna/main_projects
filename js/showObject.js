@@ -1,4 +1,4 @@
-//14.06.23 - 1am BST
+//20.06.23 - 1am BST
 function openHiddenSection(num) {
   // Hide the content section
 
@@ -62,9 +62,9 @@ function showObject(data, thisForm) {
   <nav>
   <ul id="navigation_search">
     <li><a href="#">Home</a></li>
-    <li><a href="#">>Product manufacturers</a></li>
-    <li><a href="#">>Products</a></li>
-    <li><a href="#">>All products</a></li>
+    <li><a href="#">> Product manufacturers</a></li>
+    <li><a href="#">> Products</a></li>
+    <li><a href="#">> All products</a></li>
   </ul>
 </nav>
   <div class="resultsection">`;
@@ -73,15 +73,11 @@ function showObject(data, thisForm) {
 
   var add_flag = data[x].has_additives;  
   var fill_flag = data[x].has_fillers;
+
+  //link found
   var article_found = false;
 
     
-
-    fetch(article_link)
-      .then(function(response) {
-        if (response.ok) {
-          article_found = true;
-        }})
     
     if (add_flag == true || fill_flag == true || article_found == true) {
       found = true;
@@ -98,8 +94,6 @@ function showObject(data, thisForm) {
     html_prod += `<div id="hiddenContent${x}" style="display:none" ><div class="container">
     <div class="resultsection_prod">`;
 
-    
-
     for (var y in data[x].list){
 
     tds_link = data[x].list[y].files[0].url;
@@ -107,17 +101,6 @@ function showObject(data, thisForm) {
     presentation_link = data[x].list[y].files[2].url;
     pdf_link = data[x].list[y].document_url
 
-    fetch(msds_link)
-      .then(function(response) {
-        if (response.ok) {
-          msds_found = true;
-        }})
-
-        fetch(predentations_link)
-        .then(function(response) {
-          if (response.ok) {
-            presentation_found = true;
-          }})
 /*<thead class="Result_thead__33CGa"><tr><th class="Result_th__2aCrs">Product characterization</th><th class="Result_th__2aCrs">Value</th></tr></thead><tbody><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Modulus of elasticity at 100%</td><td class="Result_td__3tk93">1.7  MPa</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Compression Set at 23 С</td><td class="Result_td__3tk93">19  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Compression Set at 70 С</td><td class="Result_td__3tk93">45  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Hardness</td><td class="Result_td__3tk93">60  Shore-A</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Tensile Strength at Break</td><td class="Result_td__3tk93">8  MPa</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Tear Resistance</td><td class="Result_td__3tk93">40  N/mm</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Density</td><td class="Result_td__3tk93">890  kg/m<sup>3</sup></td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Elongation at break</td><td class="Result_td__3tk93">1000  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Modulus of elasticity at 300%</td><td class="Result_td__3tk93">2.7  MPa</td></tr></tbody>*/
       html_prod += `
         <div class="resultfield_prod">
@@ -143,7 +126,7 @@ function showObject(data, thisForm) {
                 </div>
               </div>`
 
-            if (msds_found){
+            if (msds_link != ''){
               html_prod += `<div class="link_msds_prod">
                 <span class="text_msds_prod">
                   <span><a href=${msds_link}>Read MSDS here</a></span>
@@ -161,7 +144,7 @@ function showObject(data, thisForm) {
                   </div>
                 </div>
               </div>`}
-            if (presentation_found){
+            if (presentation_link =! ''){
              html_prod += `<div class="link_presentation_prod">
                 <span class="text_presentation_prod">
                   <span><a href=${presentation_link}>Presentation</a></span>
