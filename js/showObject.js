@@ -12,6 +12,23 @@ function openHiddenSection(num) {
 
 }
 
+function reopenMainContent(num) {
+  // Hide the content section
+
+  var contentSection = document.getElementById('mainContent');
+  contentSection.style.display = 'block';
+
+
+  // Show the hidden section
+  var hiddenSection = document.getElementById(`hiddenContent${num}`);
+  hiddenSection.style.display = 'none';
+
+}
+
+function refreshPage() {
+  location.reload();
+}
+
 function showMore() {
   var textElement = document.querySelector('.text_prod');
   var showMoreBtn = document.getElementById(`showMoreBtn`);
@@ -33,6 +50,49 @@ function showObject(data, thisForm) {
         return false;
     }
 
+
+    var navigation = document.getElementById('navigation_search');
+    var navigationItems = navigation.getElementsByTagName('a');
+    
+    // Add click event listener to each navigation item
+    for (var i = 0; i < navigationItems.length; i++) {
+      navigationItems[i].addEventListener('click', navigateToStage);
+    }
+    
+    function navigateToStage(event, num) {
+      // Prevent the default link behavior
+      event.preventDefault();
+    
+      // Get the clicked stage
+      var clickedStage = this.innerText;
+    
+      // Get the index of the clicked stage
+      var clickedIndex = Array.prototype.indexOf.call(navigationItems, this);
+    
+      // Remove subsequent stages
+      for (var i = clickedIndex + 1; i < navigationItems.length; i++) {
+        navigation.removeChild(navigationItems[i].parentNode);
+      }
+    
+      // Update the current stage
+      this.removeAttribute('href');
+      this.classList.remove('active');
+    
+      // Add a caret symbol to indicate the active stage
+      this.innerHTML = clickedStage + ' <span>&gt;</span>';
+    
+      // Add the 'active' class to the clicked stage
+      this.classList.add('active');
+    
+      // Update the navigation items array after removing subsequent stages
+      navigationItems = navigation.getElementsByTagName('a');
+    }
+
+
+ 
+    
+
+    
   function italic_bold(text){
     text = text.toString().replace(/\*\*(.*?)\*\*/g, '<span class="italic_bold_search_res">$1</span>');
     return text;
@@ -49,8 +109,6 @@ function showObject(data, thisForm) {
   let msds_link = '';
   let presentation_link = '';
   let pdf_link = '';
-  let msds_found = false;
-  let presentation_found = false;
 
 
   var found = false;
@@ -63,8 +121,7 @@ function showObject(data, thisForm) {
   <ul id="navigation_search">
     <li><a href="#">Home</a></li>
     <li><a href="#">> Product manufacturers</a></li>
-    <li><a href="#">> Products</a></li>
-    <li><a href="#">> All products</a></li>
+    <li><a href="#">> Products </a></li>
   </ul>
 </nav>
   <div class="resultsection">`;
@@ -74,7 +131,7 @@ function showObject(data, thisForm) {
   var add_flag = data[x].has_additives;  
   var fill_flag = data[x].has_fillers;
 
-  //link found
+  //link found?
   var article_found = false;
 
     
@@ -83,23 +140,53 @@ function showObject(data, thisForm) {
       found = true;
     }
 
+    $(document).ready(function() {
+      // Get references to the desired <a> elements
+      var homeLink = $('#navigation_search li:nth-child(1) a');
+      var productManLink = $('#navigation_search li:nth-child(2) a');
+      var productsLink = $('#navigation_search li:nth-child(3) a');
   
-  html += `<div class="resultsfields0">
+      // Attach click event handlers to the links
+      homeLink.click(function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        // Add your desired action for the first child link
+        // For example: redirect to a specific URL
+        //window.location.href = 'https://example.com/product-manufacturers';
+        refreshPage();
+      });
+  
+      productManLink.click(function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        // Add your desired action for the second child link
+
+        $('#content').html('');
+      });
+  
+      productsLink.click(function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        // Add your desired action for the third child link
+      
+        reopenMainContent(x);
+      });
+    });
+  
+  html += `
+<div class="resultsfields0">
     <button class="btn0" onclick="openHiddenSection(${x})"><span class="all_prod0">
     <span>Show ${data[x].list.length} product(s)</span>
     </span><div class="expandmore0">
     </div>
     </button>`
     
-    html_prod += `<div id="hiddenContent${x}" style="display:none" ><div class="container">
-    <nav>
-    <ul id="navigation_search">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">> Product manufacturers</a></li>
-      <li><a href="#">> Products</a></li>
-      <li><a href="#">> All products</a></li>
-    </ul>
-  </nav>
+    html_prod += `<div id="hiddenContent${x}" style="display:none"><div class="container">
+  <nav>
+  <ul id="navigation_search">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">> Product manufacturers</a></li>
+    <li><a href="#">> Products </a></li>
+    <li><a href="#">> All products </a></li>
+  </ul>
+</nav>
     <div class="resultsection_prod">`;
 
     for (var y in data[x].list){
