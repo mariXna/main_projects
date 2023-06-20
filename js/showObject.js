@@ -92,6 +92,14 @@ function showObject(data, thisForm) {
     </button>`
     
     html_prod += `<div id="hiddenContent${x}" style="display:none" ><div class="container">
+    <nav>
+    <ul id="navigation_search">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">> Product manufacturers</a></li>
+      <li><a href="#">> Products</a></li>
+      <li><a href="#">> All products</a></li>
+    </ul>
+  </nav>
     <div class="resultsection_prod">`;
 
     for (var y in data[x].list){
