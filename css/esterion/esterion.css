@@ -453,15 +453,6 @@ figure button {
     display: none;
   }
 
-   .container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: center;
-    flex-direction: column;
-  }
-
   .resultsection {
     top: 361px;
     left: 221px;
@@ -837,7 +828,8 @@ figure button {
   .resultsection_prod {
     width: 999px;
     height: 3459px;
-    left: 230px; 
+    left: 230px;
+    top: 130px;
     /*display: flex;*/
     position: absolute;
     align-items: flex-start;
@@ -1304,13 +1296,10 @@ figure button {
   }
 
   .navigation_search{
-    border: 2px solid;
-    color: rgba(9, 59, 154, 1); 
-    position: absolute;
-width: 742px;
-height: 24px;
-left: 120px;
-top: 102px;
+  position: absolute;
+  width: 742px;
+  height: 24px;
+  left: 230px;
   }
 
 
