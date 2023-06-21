@@ -118,11 +118,11 @@ function showObject(data, thisForm) {
     /*<div class="container">*/
   html += `<div id="mainContent">
   <nav>
-  <ul id="navigation_search">
+  <div class="navigation_search" id="navigation_search">
     <li><a href="#">Home</a></li>
     <li><a href="#">> Product manufacturers</a></li>
     <li><a href="#">> Products </a></li>
-  </ul>
+  </div>
 </nav>
   <div class="resultsection">`;
 
@@ -163,12 +163,12 @@ function showObject(data, thisForm) {
     
     html_prod += `<div id="hiddenContent${x}" style="display:none"><div class="container">
   <nav>
-  <ul id="navigation_search">
+  <div class="navigation_search" id="navigation_search">
     <li><a href="#">Home</a></li>
     <li><a href="#">> Product manufacturers</a></li>
     <li><a href="#">> Products </a></li>
     <li><a href="#">> All products </a></li>
-  </ul>
+  </div>
 </nav>
     <div class="resultsection_prod">`;
 
@@ -317,11 +317,11 @@ function showObject(data, thisForm) {
   <span>${data.length} polymer(s) were found</span>
   </span>
   </div>
-  <div class="searchthroughnavigation">
+  </div>`;
+  /*<div class="searchthroughnavigation">
   <div class="icnhome">
   </div>
-  <div class="icnarrow1"></div></div></div>`;
-  /*</div>*/
+  <div class="icnarrow1"></div></div></div>*/
   var content = document.getElementById('content');
   content.innerHTML = html;
   content.innerHTML += html_prod;
