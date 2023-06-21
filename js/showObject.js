@@ -52,8 +52,8 @@ function showObject(data, thisForm) {
 
 
     var navigation = document.getElementById('navigation_search');
-    var navigationItems = navigation.getElementsByTagName('a');
-    
+    //var navigationItems = navigation.getElementsByTagName('a');
+    /*
     // Add click event listener to each navigation item
     for (var i = 0; i < navigationItems.length; i++) {
       navigationItems[i].addEventListener('click', navigateToStage);
@@ -88,7 +88,7 @@ function showObject(data, thisForm) {
       navigationItems = navigation.getElementsByTagName('a');
     }
 
-
+*/
  
     
 
@@ -142,25 +142,8 @@ function showObject(data, thisForm) {
 
     $(document).ready(function() {
       // Get references to the desired <a> elements
-      var homeLink = $('#navigation_search li:nth-child(1) a');
-      var productManLink = $('#navigation_search li:nth-child(2) a');
+      
       var productsLink = $('#navigation_search li:nth-child(3) a');
-  
-      // Attach click event handlers to the links
-      homeLink.click(function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-        // Add your desired action for the first child link
-        // For example: redirect to a specific URL
-        //window.location.href = 'https://example.com/product-manufacturers';
-        refreshPage();
-      });
-  
-      productManLink.click(function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-        // Add your desired action for the second child link
-
-        $('#content').html('');
-      });
   
       productsLink.click(function(event) {
         event.preventDefault(); // Prevent the default anchor behavior
