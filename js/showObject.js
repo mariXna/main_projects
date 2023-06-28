@@ -119,14 +119,12 @@ function showObject(data, thisForm) {
   html += `<div id="mainContent">
   <nav>
   <div class="navigation_search" id="navigation_search">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">> Product manufacturers</a></li>
-    <li><a href="#">> Products </a></li>
+    <li><a href="#"> Products </a></li>
   </div>
 </nav>
   <div class="resultsection">`;
 
-  for (x in data) {
+  for (var x in data) {
 
   var add_flag = data[x].has_additives;  
   var fill_flag = data[x].has_fillers;
@@ -143,13 +141,14 @@ function showObject(data, thisForm) {
     $(document).ready(function() {
       // Get references to the desired <a> elements
       
-      var productsLink = $('#navigation_search li:nth-child(3) a');
+      
+      var productsLink = $('#navigation_search li:nth-child(1) a');
   
       productsLink.click(function(event) {
         event.preventDefault(); // Prevent the default anchor behavior
         // Add your desired action for the third child link
-      
-        reopenMainContent(x);
+        var index = $(this).data('index'); // Get the index from the data attribute of the clicked element
+        reopenMainContent(index);
       });
     });
   
@@ -164,9 +163,7 @@ function showObject(data, thisForm) {
     html_prod += `<div id="hiddenContent${x}" style="display:none"><div class="container">
   <nav>
   <div class="navigation_search" id="navigation_search">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">> Product manufacturers</a></li>
-    <li><a href="#">> Products </a></li>
+    <li><a href="#"> Products </a></li>
     <li><a href="#">> All products </a></li>
   </div>
 </nav>
@@ -179,7 +176,7 @@ function showObject(data, thisForm) {
     presentation_link = data[x].list[y].files[2].url;
     pdf_link = data[x].list[y].document_url
 
-/*<thead class="Result_thead__33CGa"><tr><th class="Result_th__2aCrs">Product characterization</th><th class="Result_th__2aCrs">Value</th></tr></thead><tbody><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Modulus of elasticity at 100%</td><td class="Result_td__3tk93">1.7  MPa</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Compression Set at 23 С</td><td class="Result_td__3tk93">19  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Compression Set at 70 С</td><td class="Result_td__3tk93">45  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Hardness</td><td class="Result_td__3tk93">60  Shore-A</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Tensile Strength at Break</td><td class="Result_td__3tk93">8  MPa</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Tear Resistance</td><td class="Result_td__3tk93">40  N/mm</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Density</td><td class="Result_td__3tk93">890  kg/m<sup>3</sup></td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Elongation at break</td><td class="Result_td__3tk93">1000  %</td></tr><tr class="Result_tr__3mUnz"><td class="Result_td__3tk93">Modulus of elasticity at 300%</td><td class="Result_td__3tk93">2.7  MPa</td></tr></tbody>*/
+
       html_prod += `
         <div class="resultfield_prod">
           <div class="content_prod">
@@ -243,6 +240,87 @@ function showObject(data, thisForm) {
             <div class="mechchardropdown_prod">
               <span class="text_mechchar_prod">
                 <span>Mechanical characteristics</span>
+                <div class="resultsection-modification2">
+                <span class="resultsection-text58">
+                  <span>Modification characteristics</span>
+                </span>
+                <div class="resultsection-expandmore2">
+                  <img
+                    src=""
+                    alt="bounds1559"
+                    class="resultsection-bounds2"
+                  />
+                  <img
+                    src="public/external/shape1559-2y9.svg"
+                    alt="Shape1559"
+                    class="resultsection-shape2"
+                  />
+                </div>
+              </div>
+              <div class="resultsection-tableau">
+                <div class="resultsection-contentrows">
+                  <div class="resultsection-row1">
+                    <div class="resultsection-charecteristicpart">
+                      <span class="resultsection-text60">
+                        <span>Loading zone</span>
+                      </span>
+                    </div>
+                    <div class="resultsection-valuepart">
+                      <span class="resultsection-text62">
+                        <span>125-165 Cº</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="resultsection-row2">
+                    <div class="resultsection-charecteristicpart1">
+                      <span class="resultsection-text64">
+                        <span>Plastification zone</span>
+                      </span>
+                    </div>
+                    <div class="resultsection-valuepart1">
+                      <span class="resultsection-text66">
+                        <span>145-165 Cº</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="resultsection-row3">
+                    <div class="resultsection-charecteristicpart2">
+                      <span class="resultsection-text68">
+                        <span>Dozing zone</span>
+                      </span>
+                    </div>
+                    <div class="resultsection-valuepart2">
+                      <span class="resultsection-text70">
+                        <span>160-180 Cº</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="resultsection-row4">
+                    <div class="resultsection-charecteristicpart3">
+                      <span class="resultsection-text72">
+                        <span>Mold temparature</span>
+                      </span>
+                    </div>
+                    <div class="resultsection-valuepart3">
+                      <span class="resultsection-text74">
+                        <span>25-50 Cº</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="resultsection-titlerow">
+                  <div class="resultsection-titilerow1">
+                    <span class="resultsection-text76">
+                      <span>Modification characteristic</span>
+                    </span>
+                  </div>
+                  <div class="resultsection-titlerow2">
+                    <span class="resultsection-text78">
+                      <span>Value</span>
+                    </span>
+                  </div>
+                </div>
+              </div>/+
               </span>
               <div class="expandmore_prod">
                 <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEyIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNTQnIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMTAuNiAtMC4wMDAxMjIwN0w2IDQuNTk5ODhMMS40IC0wLjAwMDEyMjA3TDAgMS4zOTk4OEw2IDcuMzk5ODhMMTIgMS4zOTk4OEwxMC42IC0wLjAwMDEyMjA3WicgZmlsbD0nIzA5M0I5QScvPgo8L3N2Zz4K')">
