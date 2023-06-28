@@ -122,6 +122,9 @@ function showObject(data, thisForm) {
     <li><a href="#"> Products </a></li>
   </div>
 </nav>
+<span class="res_amount">
+  <span>${data.length} polymer(s) were found</span>
+  </span>
   <div class="resultsection">`;
 
   for (var x in data) {
@@ -167,6 +170,11 @@ function showObject(data, thisForm) {
     <li><a href="#">> All products </a></li>
   </div>
 </nav>
+<span class="res_amount_prod">
+    <span>
+      ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
+    </span>
+  </span>
     <div class="resultsection_prod">`;
 
     for (var y in data[x].list){
@@ -341,11 +349,7 @@ function showObject(data, thisForm) {
 
     html_prod += `<div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=')">
   </div>
-  <span class="res_amount_prod">
-    <span>
-      ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
-    </span>
-  </span></div></div></div></div>`;
+  </div></div></div></div>`;
     
     
     if (found) {
@@ -391,9 +395,7 @@ function showObject(data, thisForm) {
     </div>`;
   }
 
-  html += `<span class="res_amount">
-  <span>${data.length} polymer(s) were found</span>
-  </span>
+  html += `
   </div>
   </div>`;
   /*<div class="searchthroughnavigation">
