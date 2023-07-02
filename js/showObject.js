@@ -163,8 +163,8 @@ function showObject(data, thisForm) {
     html_prod += `<div id="hiddenContent${x}" style="display:none"><div class="container">
   <nav>
   <div class="navigation_search" id="navigation_search">
-    <li><a href="#"> Products </a></li>
-    <li><a href="#">> All products </a></li>
+    <li><a class = "nav_text" href="#"> Products </a></li>
+    <li><a class = "nav_text" href="#">> All products </a></li>
   </div>
 </nav>
 <span class="res_amount_prod">
