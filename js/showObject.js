@@ -116,7 +116,7 @@ function showObject(data, thisForm) {
   var html_prod = '';
     
     /*<div class="container">*/
-  html += `<div id="mainContent">
+  html += `<div class = "main_content" id="mainContent">
   <nav>
   <div class="navigation_search" id="navigation_search">
     <li><a class = "nav_text" href="#"> Products </a></li>
@@ -170,6 +170,13 @@ function showObject(data, thisForm) {
     </span>
   </span>
     <div class="resultsection_prod">`;
+    html_prod += `<div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=')">
+    </div>
+    <span class="res_amount_prod">
+      <span>
+        ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
+      </span>
+    </span></div>`;
 
     for (var y in data[x].list){
 
@@ -184,6 +191,18 @@ function showObject(data, thisForm) {
           <div class="content_prod">
             <div class="divider_top_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMicgaGVpZ2h0PScxNjAnIHZpZXdCb3g9JzAgMCAyIDE2MCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTEgMFYxNjAnIHN0cm9rZT0nI0UwRTBFMCcvPgo8L3N2Zz4K')">
             </div>
+            <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
+            <span class="text_prod">
+              <span>
+                ${data[x].list[y].description}
+              </span>
+            </span>`;
+            html_prod += `<div class="downloadbtn_prod">
+            <span class="text_downloadpdf_prod">
+              <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
+            </span>
+          </div>`;
+            html_prod += `
             <div class="linksondocs_prod">
               <div class="link_tds_prod">
                 <span class="text_tds_prod">
@@ -201,7 +220,8 @@ function showObject(data, thisForm) {
                   <div class="vector3_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
                   </div>
                 </div>
-              </div>`
+              </div>`;
+              
 
             if (msds_link != ''){
               html_prod += `<div class="link_msds_prod">
@@ -234,120 +254,48 @@ function showObject(data, thisForm) {
                 </div>
               </div>
             </div>`}
-            html_prod += `<div class="downloadbtn_prod">
-              <span class="text_downloadpdf_prod">
-                <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
-              </span>
-            </div>
-            <div class="mechchardropdown_prod">
+           html_prod += `<button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button>`;
+            html_prod += `<div class="mechchardropdown_prod">
               <span class="text_mechchar_prod">
                 <span>Mechanical characteristics</span>
-                <div class="resultsection-modification2">
-                <span class="resultsection-text58">
-                  <span>Modification characteristics</span>
-                </span>
-                <div class="resultsection-expandmore2">
-                  <img
-                    src=""
-                    alt="bounds1559"
-                    class="resultsection-bounds2"
-                  />
-                  <img
-                    src="public/external/shape1559-2y9.svg"
-                    alt="Shape1559"
-                    class="resultsection-shape2"
-                  />
-                </div>
-              </div>
-              <div class="resultsection-tableau">
-                <div class="resultsection-contentrows">
-                  <div class="resultsection-row1">
-                    <div class="resultsection-charecteristicpart">
-                      <span class="resultsection-text60">
-                        <span>Loading zone</span>
-                      </span>
-                    </div>
-                    <div class="resultsection-valuepart">
-                      <span class="resultsection-text62">
-                        <span>125-165 Cº</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="resultsection-row2">
-                    <div class="resultsection-charecteristicpart1">
-                      <span class="resultsection-text64">
-                        <span>Plastification zone</span>
-                      </span>
-                    </div>
-                    <div class="resultsection-valuepart1">
-                      <span class="resultsection-text66">
-                        <span>145-165 Cº</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="resultsection-row3">
-                    <div class="resultsection-charecteristicpart2">
-                      <span class="resultsection-text68">
-                        <span>Dozing zone</span>
-                      </span>
-                    </div>
-                    <div class="resultsection-valuepart2">
-                      <span class="resultsection-text70">
-                        <span>160-180 Cº</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="resultsection-row4">
-                    <div class="resultsection-charecteristicpart3">
-                      <span class="resultsection-text72">
-                        <span>Mold temparature</span>
-                      </span>
-                    </div>
-                    <div class="resultsection-valuepart3">
-                      <span class="resultsection-text74">
-                        <span>25-50 Cº</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="resultsection-titlerow">
-                  <div class="resultsection-titilerow1">
-                    <span class="resultsection-text76">
-                      <span>Modification characteristic</span>
-                    </span>
-                  </div>
-                  <div class="resultsection-titlerow2">
-                    <span class="resultsection-text78">
-                      <span>Value</span>
-                    </span>
-                  </div>
-                </div>
-              </div>/+
-              </span>
+
+              <table class="tg">
+              <thead>
+                <tr>
+                  <th class="t_name">Modification characteristic</th>
+                  <th class="t_name">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t_row" colspan="2">Loading zone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;125</td>
+                </tr>
+                <tr>
+                  <td class="t_row" colspan="2">Plastification zone                   135</td>
+                </tr>
+                <tr>
+                  <td class="t_row" colspan="2">Dozing zone                            145</td>
+                </tr>
+                <tr>
+                  <td class="t_row" colspan="2">Mold temperature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155</td>
+                </tr>
+              </tbody>
+              </table>
               <div class="expandmore_prod">
                 <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEyIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNTQnIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMTAuNiAtMC4wMDAxMjIwN0w2IDQuNTk5ODhMMS40IC0wLjAwMDEyMjA3TDAgMS4zOTk4OEw2IDcuMzk5ODhMMTIgMS4zOTk4OEwxMC42IC0wLjAwMDEyMjA3WicgZmlsbD0nIzA5M0I5QScvPgo8L3N2Zz4K')">
                 </div>
               </div>
               
             </div>
-            <span class="text_prod">
-              <span>
-                ${data[x].list[y].description}
-              </span>
-            </span>
+            
             </div>
-            <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
-            <button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button>
+            
+            
         </div>`;
     }
 
-    html_prod += `<div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=')">
-  </div>
-  <span class="res_amount_prod">
-    <span>
-      ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
-    </span>
-  </span></div></div></div></div>`;
+    
+  html_prod += `</div></div></div>`;
     
     
 
