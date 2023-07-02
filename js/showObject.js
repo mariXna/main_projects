@@ -119,7 +119,7 @@ function showObject(data, thisForm) {
   html += `<div id="mainContent">
   <nav>
   <div class="navigation_search" id="navigation_search">
-    <li><a href="#"> Products </a></li>
+    <li><a class = "nav_text" href="#"> Products </a></li>
   </div>
 </nav>
 <span class="res_amount">
