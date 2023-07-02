@@ -459,7 +459,7 @@ figure button {
     width: 999px;
     height: 3459px;
     /*display: flex;*/
-    /*position: absolute;*/
+    /**/
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -487,7 +487,7 @@ figure button {
     width: 269px;
     height: 40px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
     box-sizing: border-box;
@@ -516,7 +516,7 @@ figure button {
     color: rgba(9, 59, 154, 1);
     width: 221px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: center;
@@ -549,7 +549,7 @@ figure button {
     width: 32px;
     height: 40px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -560,7 +560,7 @@ figure button {
     width: 142px;
     height: 42px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -570,7 +570,7 @@ figure button {
     width: 118px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -581,7 +581,7 @@ figure button {
     width: 16px;
     height: 16px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -589,7 +589,7 @@ figure button {
   .read_art0 {
     color: rgba(1, 120, 254, 1);
     height: auto;
-    position: absolute;
+    
     font-size: 14px;
     font-style: Regular;
     text-align: left;
@@ -605,7 +605,7 @@ figure button {
     width: 142px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -616,7 +616,7 @@ figure button {
     width: 118px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -627,7 +627,7 @@ figure button {
     width: 142px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -638,7 +638,7 @@ figure button {
     width: 142px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -648,7 +648,7 @@ figure button {
     width: 16px;
     height: 16px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -659,7 +659,7 @@ figure button {
     width: 16px;
     height: 16px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -667,7 +667,7 @@ figure button {
   .open_add_list0 {
     color: rgba(1, 120, 254, 1);
     height: auto;
-    position: absolute;
+    
     font-size: 14px;
     font-style: Regular;
     text-align: left;
@@ -681,7 +681,7 @@ figure button {
   .open_fill_list0 {
     color: rgba(1, 120, 254, 1);
     height: auto;
-    position: absolute;
+    
     font-size: 14px;
     font-style: Regular;
     text-align: left;
@@ -696,7 +696,7 @@ figure button {
     left: 24px;
     color: rgba(12, 167, 111, 1);
     height: auto;
-    position: absolute;
+    
     font-size: 18px;
     font-style: Regular;
     text-align: left;
@@ -711,7 +711,7 @@ figure button {
     left: 24px;
     color: rgba(0, 0, 0, 1);
     height: auto;
-    position: absolute;
+    
     font-size: 18px;
     font-style: Semi Bold;
     text-align: left;
@@ -728,7 +728,7 @@ figure button {
     width: 118px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -738,7 +738,7 @@ figure button {
     width: 118px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -750,7 +750,7 @@ figure button {
     width: 142px;
     height: 17px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -761,7 +761,7 @@ figure button {
     width: 742px;
     height: 24px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -771,7 +771,7 @@ figure button {
     width: 24px;
     height: 24px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -782,7 +782,7 @@ figure button {
     width: 24px;
     height: 24px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -793,7 +793,7 @@ figure button {
     color: rgba(0, 0, 0, 1);
     width: 490px;
     height: auto;
-    position: absolute;
+    
     font-size: 24px;
     font-style: Semi Bold;
     text-align: left;
@@ -831,7 +831,7 @@ figure button {
     left: 230px;
     top: 130px;
     /*display: flex;*/
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -858,7 +858,7 @@ figure button {
     width: 894px;
     height: 160px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -867,7 +867,7 @@ figure button {
     left: 694px;
     width: 3px;
     height: 160px;
-    position: absolute;
+    
   }
   .linksondocs_prod {
     top: 60px;
@@ -875,7 +875,7 @@ figure button {
     width: 156px;
     height: 96px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -885,7 +885,7 @@ figure button {
     width: 142px;
     height: 24.000024795532227px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -895,7 +895,7 @@ figure button {
     color: rgba(1, 120, 254, 1);
     width: 150px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: left;
@@ -911,7 +911,7 @@ figure button {
     width: 24px;
     height: 24.000024795532227px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -920,35 +920,35 @@ figure button {
     left: 0px;
     width: 24px;
     height: 24px;
-    position: absolute;
+    
   }
   .vector0_prod {
     top: -4.547473508864641e-13px;
     left: 2.859375px;
     width: 18px;
     height: 24px;
-    position: absolute;
+    
   }
   .vector1_prod {
     top: 12px;
     left: 7px;
     width: 10px;
     height: 1px;
-    position: absolute;
+    
   }
   .vector2_prod {
     top: 15px;
     left: 7px;
     width: 10px;
     height: 1px;
-    position: absolute;
+    
   }
   .vector3_prod {
     top: 18px;
     left: 7px;
     width: 10px;
     height: 1px;
-    position: absolute;
+    
   }
   .link_msds_prod {
     top: 36px;
@@ -956,7 +956,7 @@ figure button {
     width: 156px;
     height: 24.000024795532227px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -966,7 +966,7 @@ figure button {
     color: rgba(1, 120, 254, 1);
     width: 150px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: left;
@@ -982,7 +982,7 @@ figure button {
     width: 24px;
     height: 24.000024795532227px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -991,35 +991,35 @@ figure button {
     left: 0px;
     width: 24px;
     height: 24px;
-    position: absolute;
+    
   }
   .vector00_prod {
     top: -4.547473508864641e-13px;
     left: 2.859375px;
     width: 18px;
     height: 24px;
-    position: absolute;
+    
   }
   .vector01_prod {
     top: 12px;
     left: 7px;
     width: 10px;
     height: 1px;
-    position: absolute;
+    
   }
   .vector02_prod {
     top: 15px;
     left: 7px;
     width: 10px;
     height: 1px;
-    position: absolute;
+    
   }
   .vector03_prod {
     top: 18px;
     left: 7px;
     width: 10px;
     height: 1px;
-    position: absolute;
+    
   }
   .link_presentation_prod {
     top: 72px;
@@ -1027,7 +1027,7 @@ figure button {
     width: 123px;
     height: 24px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -1037,7 +1037,7 @@ figure button {
     color: rgba(1, 120, 254, 1);
     width: 91px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: left;
@@ -1053,7 +1053,7 @@ figure button {
     width: 24px;
     height: 24px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -1062,14 +1062,14 @@ figure button {
     left: 2.859375px;
     width: 18px;
     height: 24px;
-    position: absolute;
+    
   }
   .vector13_prod {
     top: 10.640625px;
     left: 7.078125px;
     width: 10px;
     height: 8px;
-    position: absolute;
+    
   }
   .downloadbtn_prod {
     top: 0px;
@@ -1077,7 +1077,7 @@ figure button {
     width: 176px;
     height: 40px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(0, 55, 132, 1);
@@ -1089,7 +1089,7 @@ figure button {
     color: rgba(255, 255, 255, 1);
     width: 106px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: left;
@@ -1105,7 +1105,7 @@ figure button {
     width: 226px;
     height: 20px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -1114,7 +1114,7 @@ figure button {
     color: rgba(0, 55, 132, 1);
     width: 206px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: left;
@@ -1130,7 +1130,7 @@ figure button {
     width: 20px;
     height: 20px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -1140,14 +1140,14 @@ figure button {
     width: 12px;
     height: 7px;
     opacity: 0.54;
-    position: absolute;
+    
   }
   .text_prod {
     top: 0px;
     color: rgba(118, 129, 148, 1);
     width: 669px;
     height: auto;
-    position: absolute;
+    
     font-size: 18px;
     font-style: Regular;
     text-align: left;
@@ -1162,7 +1162,7 @@ figure button {
     left: 24px;
     color: rgba(0, 0, 0, 1);
     height: auto;
-    position: absolute;
+    
     font-size: 18px;
     font-style: Semi Bold;
     text-align: left;
@@ -1178,7 +1178,7 @@ figure button {
     width: 296px;
     height: 20px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -1187,7 +1187,7 @@ figure button {
     color: rgba(0, 0, 0, 1);
     width: 160px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: left;
@@ -1202,7 +1202,7 @@ figure button {
     color: rgba(1, 120, 254, 1);
     width: 96px;
     height: auto;
-    position: absolute;
+    
     font-size: 16px;
     font-style: Regular;
     text-align: left;
@@ -1218,7 +1218,7 @@ figure button {
     width: 20px;
     height: 20px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -1228,7 +1228,7 @@ figure button {
     width: 20px;
     height: 20px;
     display: flex;
-    position: absolute;
+    
     align-items: flex-start;
     flex-shrink: 1;
   }
@@ -1237,14 +1237,14 @@ figure button {
     left: 0px;
     width: 20px;
     height: 20px;
-    position: absolute;
+    
   }
   .vector15_prod {
     top: 6.619808197021484px;
     left: 5.050811767578125px;
     width: 10px;
     height: 7px;
-    position: absolute;
+    
   }
   
   .divider_side_prod {
@@ -1252,7 +1252,7 @@ figure button {
     left: 30px;
     width: 993px;
     height: 1px;
-    position: absolute;
+    
   }
   .res_amount_prod {
     top: 24px;
@@ -1260,7 +1260,7 @@ figure button {
     color: rgba(0, 0, 0, 1);
     width: auto;
     height: auto;
-    position: absolute;
+    
     font-size: 24px;
     font-style: Semi Bold;
     text-align: left;
@@ -1282,7 +1282,7 @@ figure button {
   color: rgba(0, 55, 132, 1);
   width: 90px;
   height: auto;
-  position: absolute;
+  
   font-size: 16px;
   font-style: Regular;
   text-align: left;
@@ -1296,7 +1296,7 @@ figure button {
   }
 
   .navigation_search{
-  position: absolute;
+  
   width: 742px;
   height: 24px;
   left: 230px;

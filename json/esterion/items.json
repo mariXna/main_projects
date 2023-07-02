@@ -1346,9 +1346,7 @@
               "columns": [
                 {
                   "name": "filler_configuration_iso",
-                  "title": "Filler configuration tests standard",
-                  
-                  
+                  "title": "Filler configuration tests standard",      
                   "type": "text"
                 },
                 {
