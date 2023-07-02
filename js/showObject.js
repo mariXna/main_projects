@@ -125,9 +125,6 @@ function showObject(data, thisForm) {
 <span class="res_amount">
   <span>${data.length} polymer(s) were found</span>
   </span>
-<span class="res_amount">
-  <span>${data.length} polymer(s) were found</span>
-  </span>
   <div class="resultsection">`;
 
   for (var x in data) {
