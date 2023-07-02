@@ -122,6 +122,9 @@ function showObject(data, thisForm) {
     <li><a href="#"> Products </a></li>
   </div>
 </nav>
+<span class="res_amount">
+  <span>${data.length} polymer(s) were found</span>
+  </span>
   <div class="resultsection">`;
 
   for (var x in data) {
@@ -152,13 +155,7 @@ function showObject(data, thisForm) {
       });
     });
   
-  html += `
-<div class="resultsfields0">
-    <button class="btn0" onclick="openHiddenSection(${x})"><span class="all_prod0">
-    <span>Show ${data[x].list.length} product(s)</span>
-    </span><div class="expandmore0">
-    </div>
-    </button>`
+  html += `<div class="resultsfields0">`;
     
     html_prod += `<div id="hiddenContent${x}" style="display:none"><div class="container">
   <nav>
@@ -167,6 +164,11 @@ function showObject(data, thisForm) {
     <li><a href="#">> All products </a></li>
   </div>
 </nav>
+<span class="res_amount_prod">
+    <span>
+      ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
+    </span>
+  </span>
     <div class="resultsection_prod">`;
 
     for (var y in data[x].list){
@@ -341,59 +343,61 @@ function showObject(data, thisForm) {
 
     html_prod += `<div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=')">
   </div>
-  <span class="res_amount_prod">
-    <span>
-      ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
-    </span>
-  </span></div></div></div></div>`;
+  </div></div></div></div>`;
     
     
-    if (found) {
-      html += '<div class="links">';
-
-      if (article_found){
-        html += `<div class="linkonartcl0">
-          <div class="btn_read_artcl_00">
-          <div class="icnlink0">
-          </div><span class="read_art0"><span><a href=${article_link}>Read an article</a></span></span>
-          </div>
-          </div>`;
-      }
-
-      if (add_flag) {
-        html += `<div class="additiveslist0">
-        <div class="btn_read_artcl_01">
-        <div class="icnlink1">
-        </div><span class="open_add_list0"><span><a href=${additives_list_link}>Open additives list</a></span></span>
-        </div>
-        </div>`;
-      }
-      if (fill_flag){
-        html += `<div class="fillerslist0">
-        <div class="btn_read_artcl_02">
-          <div class="icnlink2">
-          </div>
-          <span class="open_fill_list0"><span><a href= ${fillers_list_link}>Open fillers list</a></span></span>
-        </div>
-      </div>`;
-      }
-      html += '</div>' 
-    } 
+    
 
 
-    html += `<span class="manufacturer0"><span>${italic_bold(data[x].company_names)}</span></span>
+    html += `
     <span class="polymer_group0">
       <span>${italic_bold(data[x].title)}`;
       if (data[x].abbr){
-      html += `<span class="res_abbr"><span>(${italic_bold(data[x].abbr)})</span></span>`;
+      html += `<span class="res_abbr"><span>(${italic_bold(data[x].abbr)})</span></span></span></span>`;
       }
-      html += `</span></span></span>
-    </div>`;
+
+      html += `<span class="manufacturer0"><span>${italic_bold(data[x].company_names)}</span></span>`;
+
+      if (found) {
+        html += '<div class="links">';
+  
+        if (article_found){
+          html += `<div class="linkonartcl0">
+            <div class="btn_read_artcl_00">
+            <div class="icnlink0">
+            </div><span class="read_art0"><span><a href=${article_link}>Read an article</a></span></span>
+            </div>
+            </div>`;
+        }
+  
+        if (add_flag) {
+          html += `<div class="additiveslist0">
+          <div class="btn_read_artcl_01">
+          <div class="icnlink1">
+          </div><span class="open_add_list0"><span><a href=${additives_list_link}>Open additives list</a></span></span>
+          </div>
+          </div>`;
+        }
+        if (fill_flag){
+          html += `<div class="fillerslist0">
+          <div class="btn_read_artcl_02">
+            <div class="icnlink2">
+            </div>
+            <span class="open_fill_list0"><span><a href= ${fillers_list_link}>Open fillers list</a></span></span>
+          </div>
+        </div>`;
+        }
+        html += '</div>' 
+      }  
+      
+    html+= `<button class="btn0" onclick="openHiddenSection(${x})"><span class="all_prod0">
+    <span>Show ${data[x].list.length} product(s)</span>
+    </span><div class="expandmore0">
+    </div>
+    </button></div>`;
   }
 
-  html += `<span class="res_amount">
-  <span>${data.length} polymer(s) were found</span>
-  </span>
+  html += `
   </div>
   </div>`;
   /*<div class="searchthroughnavigation">
