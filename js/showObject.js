@@ -197,7 +197,7 @@ function showObject(data, thisForm) {
             html_prod += `<div class="mechchardropdown_prod">
               <span class="text_mechchar_prod">
                 <span>Mechanical characteristics</span>
-
+              </span>
               <table class="tg">
               <thead>
                 <tr>
