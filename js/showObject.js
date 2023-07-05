@@ -157,7 +157,7 @@ function showObject(data, thisForm) {
   
   html += `<div class="resultsfields0">`;
     
-    html_prod += `<div id="hiddenContent${x}" style="display:none"><div class="container">
+    html_prod += `<div id="hiddenContent${x}" style="display:none; background: white;">
   <nav>
   <div class="navigation_search" id="navigation_search">
     <li><a class = "nav_text" href="#"> Products </a></li>
@@ -171,12 +171,7 @@ function showObject(data, thisForm) {
   </span>
     <div class="resultsection_prod">`;
     html_prod += `<div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=')">
-    </div>
-    <span class="res_amount_prod">
-      <span>
-        ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
-      </span>
-    </span></div>`;
+    </div>`;
 
     for (var y in data[x].list){
 
@@ -188,73 +183,17 @@ function showObject(data, thisForm) {
 
       html_prod += `
         <div class="resultfield_prod">
-          <div class="content_prod">
+          <div class="content_prod" style = "display: flex">
             <div class="divider_top_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMicgaGVpZ2h0PScxNjAnIHZpZXdCb3g9JzAgMCAyIDE2MCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTEgMFYxNjAnIHN0cm9rZT0nI0UwRTBFMCcvPgo8L3N2Zz4K')">
             </div>
+            <div class = "first_column_res" style = "display: grid">
             <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
             <span class="text_prod">
               <span>
                 ${data[x].list[y].description}
               </span>
             </span>`;
-            html_prod += `<div class="downloadbtn_prod">
-            <span class="text_downloadpdf_prod">
-              <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
-            </span>
-          </div>`;
-            html_prod += `
-            <div class="linksondocs_prod">
-              <div class="link_tds_prod">
-                <span class="text_tds_prod">
-                  <span><a href=${tds_link}>Read TDS here</a></span>
-                </span>
-                <div class="icndoc_prod">
-                  <div class="bound_prod" style="background-image: url('data:image/svg+xml;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAUAmJaQAA3AA/vwEoAA=')">
-                  </div>
-                  <div class="vector0_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMjAnIGhlaWdodD0nMjQnIHZpZXdCb3g9JzAgMCAyMCAyNCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTE4LjkzNDYgNS44MzA4N0wxMy4zMDk3IDAuMjA2MDE2QzEzLjE3NzggMC4wNzQwMTU2IDEyLjk5NzkgMCAxMi44MTI1IDBMMi45Njg3NSAwQzEuODA1NjQgMCAwLjg1OTM3NSAwLjk0NjI2NiAwLjg1OTM3NSAyLjEwOTM4TDAuODU5Mzc1IDIxLjg5MDZDMC44NTkzNzUgMjMuMDUzNyAxLjgwNTY0IDI0IDIuOTY4NzUgMjRIMTcuMDMxMkMxOC4xOTQ0IDI0IDE5LjE0MDYgMjMuMDUzNyAxOS4xNDA2IDIxLjg5MDZMMTkuMTQwNiA2LjMyODEzQzE5LjE0MDYgNi4xMzQ2MiAxOS4wNTk3IDUuOTU1OTQgMTguOTM0NiA1LjgzMDg3Wk0xMy41MTU2IDIuNDAwNjFMMTYuNzQgNS42MjVIMTQuMjE4OEMxMy44MzEgNS42MjUgMTMuNTE1NiA1LjMwOTU4IDEzLjUxNTYgNC45MjE4OFYyLjQwMDYxWk0xNy4wMzEyIDIyLjU5MzhIMi45Njg3NUMyLjU4MTA1IDIyLjU5MzggMi4yNjU2MiAyMi4yNzgzIDIuMjY1NjIgMjEuODkwNkwyLjI2NTYyIDIuMTA5MzhDMi4yNjU2MiAxLjcyMTY3IDIuNTgxMDUgMS40MDYyNSAyLjk2ODc1IDEuNDA2MjVMMTIuMTA5NCAxLjQwNjI1VjQuOTIxODhDMTIuMTA5NCA2LjA4NDk4IDEzLjA1NTYgNy4wMzEyNSAxNC4yMTg4IDcuMDMxMjVIMTcuNzM0NEwxNy43MzQ0IDIxLjg5MDZDMTcuNzM0NCAyMi4yNzgzIDE3LjQxOSAyMi41OTM4IDE3LjAzMTIgMjIuNTkzOFonIGZpbGw9JyMwMTc4RkUnLz4KPC9zdmc+Cg==')">
-                  </div>
-                  <div class="vector1_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
-                  </div>
-                  <div class="vector2_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
-                  </div>
-                  <div class="vector3_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
-                  </div>
-                </div>
-              </div>`;
-              
 
-            if (msds_link != ''){
-              html_prod += `<div class="link_msds_prod">
-                <span class="text_msds_prod">
-                  <span><a href=${msds_link}>Read MSDS here</a></span>
-                </span>
-                <div class="icndoc01_prod">
-                  <div class="bound01_prod" style="background-image: url('data:image/svg+xml;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAUAmJaQAA3AA/vwEoAA=')">
-                  </div>
-                  <div class="vector00_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMjAnIGhlaWdodD0nMjQnIHZpZXdCb3g9JzAgMCAyMCAyNCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTE4LjkzNDYgNS44MzA4N0wxMy4zMDk3IDAuMjA2MDE2QzEzLjE3NzggMC4wNzQwMTU2IDEyLjk5NzkgMCAxMi44MTI1IDBMMi45Njg3NSAwQzEuODA1NjQgMCAwLjg1OTM3NSAwLjk0NjI2NiAwLjg1OTM3NSAyLjEwOTM4TDAuODU5Mzc1IDIxLjg5MDZDMC44NTkzNzUgMjMuMDUzNyAxLjgwNTY0IDI0IDIuOTY4NzUgMjRIMTcuMDMxMkMxOC4xOTQ0IDI0IDE5LjE0MDYgMjMuMDUzNyAxOS4xNDA2IDIxLjg5MDZMMTkuMTQwNiA2LjMyODEzQzE5LjE0MDYgNi4xMzQ2MiAxOS4wNTk3IDUuOTU1OTQgMTguOTM0NiA1LjgzMDg3Wk0xMy41MTU2IDIuNDAwNjFMMTYuNzQgNS42MjVIMTQuMjE4OEMxMy44MzEgNS42MjUgMTMuNTE1NiA1LjMwOTU4IDEzLjUxNTYgNC45MjE4OFYyLjQwMDYxWk0xNy4wMzEyIDIyLjU5MzhIMi45Njg3NUMyLjU4MTA1IDIyLjU5MzggMi4yNjU2MiAyMi4yNzgzIDIuMjY1NjIgMjEuODkwNkwyLjI2NTYyIDIuMTA5MzhDMi4yNjU2MiAxLjcyMTY3IDIuNTgxMDUgMS40MDYyNSAyLjk2ODc1IDEuNDA2MjVMMTIuMTA5NCAxLjQwNjI1VjQuOTIxODhDMTIuMTA5NCA2LjA4NDk4IDEzLjA1NTYgNy4wMzEyNSAxNC4yMTg4IDcuMDMxMjVIMTcuNzM0NEwxNy43MzQ0IDIxLjg5MDZDMTcuNzM0NCAyMi4yNzgzIDE3LjQxOSAyMi41OTM4IDE3LjAzMTIgMjIuNTkzOFonIGZpbGw9JyMwMTc4RkUnLz4KPC9zdmc+Cg==')">
-                  </div>
-                  <div class="vector01_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
-                  </div>
-                  <div class="vector02_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
-                  </div>
-                  <div class="vector03_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nMicgdmlld0JveD0nMCAwIDEyIDInIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIGQ9J00xMSAxSDEnIHN0cm9rZT0nIzAxNzhGRScgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPgo8L3N2Zz4K')">
-                  </div>
-                </div>
-              </div>`}
-            if (presentation_link =! ''){
-             html_prod += `<div class="link_presentation_prod">
-                <span class="text_presentation_prod">
-                  <span><a href=${presentation_link}>Presentation</a></span>
-                </span>
-                <div class="icnslides_prod">
-                  <div class="vector12_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMjAnIGhlaWdodD0nMjQnIHZpZXdCb3g9JzAgMCAyMCAyNCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTE4LjkzNDYgNS44MzA4N0wxMy4zMDk3IDAuMjA2MDE2QzEzLjE3NzggMC4wNzQwMTU2IDEyLjk5NzkgMCAxMi44MTI1IDBIMi45Njg3NUMxLjgwNTY0IDAgMC44NTkzNzUgMC45NDYyNjYgMC44NTkzNzUgMi4xMDkzOFYyMS44OTA2QzAuODU5Mzc1IDIzLjA1MzcgMS44MDU2NCAyNCAyLjk2ODc1IDI0SDE3LjAzMTJDMTguMTk0NCAyNCAxOS4xNDA2IDIzLjA1MzcgMTkuMTQwNiAyMS44OTA2VjYuMzI4MTJDMTkuMTQwNiA2LjEzNDYyIDE5LjA1OTcgNS45NTU5NCAxOC45MzQ2IDUuODMwODdaTTEzLjUxNTYgMi40MDA2MUwxNi43NCA1LjYyNUgxNC4yMTg4QzEzLjgzMSA1LjYyNSAxMy41MTU2IDUuMzA5NTggMTMuNTE1NiA0LjkyMTg4VjIuNDAwNjFaTTE3LjAzMTIgMjIuNTkzOEgyLjk2ODc1QzIuNTgxMDUgMjIuNTkzOCAyLjI2NTYyIDIyLjI3ODMgMi4yNjU2MiAyMS44OTA2VjIuMTA5MzhDMi4yNjU2MiAxLjcyMTY3IDIuNTgxMDUgMS40MDYyNSAyLjk2ODc1IDEuNDA2MjVIMTIuMTA5NFY0LjkyMTg4QzEyLjEwOTQgNi4wODQ5OCAxMy4wNTU2IDcuMDMxMjUgMTQuMjE4OCA3LjAzMTI1SDE3LjczNDRWMjEuODkwNkMxNy43MzQ0IDIyLjI3ODMgMTcuNDE5IDIyLjU5MzggMTcuMDMxMiAyMi41OTM4WicgZmlsbD0nIzAxNzhGRScvPgo8L3N2Zz4K')">
-                  </div>
-                  <div class="vector13_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTAnIGhlaWdodD0nMTAnIHZpZXdCb3g9JzAgMCAxMCAxMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTkuMjE4NzUgMC42NDA2MjVIMC43ODEyNUMwLjM5MjkzNyAwLjY0MDYyNSAwLjA3ODEyNSAwLjk1NTQzNyAwLjA3ODEyNSAxLjM0Mzc1VjguMzc1QzAuMDc4MTI1IDguNzYzMzEgMC4zOTI5MzcgOS4wNzgxMiAwLjc4MTI1IDkuMDc4MTJIOS4yMTg3NUM5LjYwNzA2IDkuMDc4MTIgOS45MjE4OCA4Ljc2MzMxIDkuOTIxODggOC4zNzVWMS4zNDM3NUM5LjkyMTg4IDAuOTU1NDM3IDkuNjA3MDYgMC42NDA2MjUgOS4yMTg3NSAwLjY0MDYyNVpNOC41MTU2MiA3LjY3MTg4SDEuNDg0MzhWMi4wNDY4OEg4LjUxNTYyVjcuNjcxODhaJyBmaWxsPScjMDE3OEZFJy8+Cjwvc3ZnPgo=')">
-                  </div>
-                </div>
-              </div>
-            </div>`}
-           html_prod += `<button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button>`;
             html_prod += `<div class="mechchardropdown_prod">
               <span class="text_mechchar_prod">
                 <span>Mechanical characteristics</span>
@@ -284,18 +223,57 @@ function showObject(data, thisForm) {
               <div class="expandmore_prod">
                 <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEyIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNTQnIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMTAuNiAtMC4wMDAxMjIwN0w2IDQuNTk5ODhMMS40IC0wLjAwMDEyMjA3TDAgMS4zOTk4OEw2IDcuMzk5ODhMMTIgMS4zOTk4OEwxMC42IC0wLjAwMDEyMjA3WicgZmlsbD0nIzA5M0I5QScvPgo8L3N2Zz4K')">
                 </div>
-              </div>
+              </div>    
+            </div>
+            </div>`;
+            html_prod += `<div class = "second_column_res" style = "display: grid"><div class="downloadbtn_prod">
+            <span class="text_downloadpdf_prod">
+              <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
+            </span>
+          </div>`;
+            html_prod += `
+            <div class="linksondocs_prod">
+              <div class="link_tds_prod">
               
-            </div>
+                <div class="vector0_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVR4Ae2WzU3DQBBGv1lbKEeXsFQAJUAFUAIdBC5oOWV9ASsXoAJEB6YCKMEdJB3gG0HYO4wTJThS4g12LonyJEur8Xrfzoz/CHXuymsCDcCIsAEMtkiCuGkOLUaWI5rwJzE/O1IZPBDxY7URn+RPYFgTeMSgcyT0AZ/AuPE0CUA3SUJ0QBZ+VTOdZVNilUShIy4JrGQeS+8sTDnYpmBETBcwxZUDj6XY2SpJawGr4kYWjQjqpTqkXqdVfCb50vN57Xtwf5RJh4+XYubnjBC810Ode+Bj9wXre3BbXELJXbIJjt8wDNP/CQJJj2tPetP6DefWCx7CVC5M0ZFDibwcSuRln14VPeT4Rk6O+2wKjTYQnUy/0pNevggtTah+W5j6MtJoA8kGS47dMHiah34BNCt6yCGU4E4AAAAASUVORK5CYII=')">
+                </div>
+              
+                <span class="text_tds_prod">
+                  <span><a href=${tds_link}>Read TDS here</a></span>
+                </span>
+                
+              </div>`;
+              
+
+            if (msds_link != ''){
+              html_prod += `<div class="link_msds_prod">
+              
+                  <div class="vector00_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVR4Ae2WzU3DQBBGv1lbKEeXsFQAJUAFUAIdBC5oOWV9ASsXoAJEB6YCKMEdJB3gG0HYO4wTJThS4g12LonyJEur8Xrfzoz/CHXuymsCDcCIsAEMtkiCuGkOLUaWI5rwJzE/O1IZPBDxY7URn+RPYFgTeMSgcyT0AZ/AuPE0CUA3SUJ0QBZ+VTOdZVNilUShIy4JrGQeS+8sTDnYpmBETBcwxZUDj6XY2SpJawGr4kYWjQjqpTqkXqdVfCb50vN57Xtwf5RJh4+XYubnjBC810Ode+Bj9wXre3BbXELJXbIJjt8wDNP/CQJJj2tPetP6DefWCx7CVC5M0ZFDibwcSuRln14VPeT4Rk6O+2wKjTYQnUy/0pNevggtTah+W5j6MtJoA8kGS47dMHiah34BNCt6yCGU4E4AAAAASUVORK5CYII=')">
+                  </div>
+                
+                <span class="text_msds_prod">
+                  <span><a href=${msds_link}>Read MSDS here</a></span>
+                </span>
+                
+              </div>`}
+            if (presentation_link =! ''){
+             html_prod += `<div class="link_presentation_prod">
+             
+                  <div class="vector12_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXElEQVR4Ad2WzU3DQBCF37MB5ZgOMBVACVAB6QA6CNyWU+wLsrgQKgAqISW4g7gDuCUI28NsIodEmHW0BiR40sqr/ft25nm9JtZ1VV4QHEHQxxYSSIw0TFxjuKrF0udcnilyVzHI0CJSbu1G2iAfACMRIVMBT5BygjaAqfJFEEDkguygg3Thx2CJi8WUaIIE6KgqDWONPFHvYphy9J2AKYWnMMV5Bck12VkTxBsgQXGpi/aJ4N4WzdeRbV9CZlE9zt+D671MHT7YaDNvx0T4tN7U2YM2/TjAnSINWbMaOcdYg9PdiRdA8/mgj324lX/yYluAlR6mRA9Q3NhpSj0DPHPN//sm//fX1Io8tN+bL/sEHQCEXkAYaKCDxn5ZlMwbIDO9fHot1+crXuALwJh2snOBNv2iyT3dqYbLSoZiigg+qk2f91ZRc2OA/W0RDrUWwUfUDZaSVDfhuG56B8HEduIxLbBgAAAAAElFTkSuQmCC')">
+                  </div>
+               
+                <span class="text_presentation_prod">
+                  <span><a href=${presentation_link}>Presentation</a></span>
+                </span>
+                
+              </div>
+            </div>`}
+           html_prod += `<button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button></div></div></div>`;
             
-            </div>
-            
-            
-        </div>`;
     }
 
     
-  html_prod += `</div></div></div>`;
+  html_prod += `</div></div>`;
     
     
 
