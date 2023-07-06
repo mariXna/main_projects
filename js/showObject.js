@@ -183,10 +183,10 @@ function showObject(data, thisForm) {
 
       html_prod += `
         <div class="resultfield_prod">
-          <div class="content_prod" style = "display: flex">
-            <div class="divider_top_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMicgaGVpZ2h0PScxNjAnIHZpZXdCb3g9JzAgMCAyIDE2MCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTEgMFYxNjAnIHN0cm9rZT0nI0UwRTBFMCcvPgo8L3N2Zz4K')">
+          <div class="content_prod">
+            <div class="divider_top_prod" >
             </div>
-            <div class = "first_column_res" style = "display: grid">
+            <div class = "first_column_res">
             <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
             <span class="text_prod">
               <span>
@@ -196,7 +196,10 @@ function showObject(data, thisForm) {
 
             html_prod += `<div class="mechchardropdown_prod">
               <span class="text_mechchar_prod">
-                <span>Mechanical characteristics</span>
+                <span>Mechanical characteristics</span><div class="expandmore_prod">
+                <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEyIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNTQnIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMTAuNiAtMC4wMDAxMjIwN0w2IDQuNTk5ODhMMS40IC0wLjAwMDEyMjA3TDAgMS4zOTk4OEw2IDcuMzk5ODhMMTIgMS4zOTk4OEwxMC42IC0wLjAwMDEyMjA3WicgZmlsbD0nIzA5M0I5QScvPgo8L3N2Zz4K')">
+                </div>
+              </div>   
               </span>
               <table class="tg">
               <thead>
@@ -219,14 +222,10 @@ function showObject(data, thisForm) {
                   <td class="t_row" colspan="2">Mold temperature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155</td>
                 </tr>
               </tbody>
-              </table>
-              <div class="expandmore_prod">
-                <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEyIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNTQnIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMTAuNiAtMC4wMDAxMjIwN0w2IDQuNTk5ODhMMS40IC0wLjAwMDEyMjA3TDAgMS4zOTk4OEw2IDcuMzk5ODhMMTIgMS4zOTk4OEwxMC42IC0wLjAwMDEyMjA3WicgZmlsbD0nIzA5M0I5QScvPgo8L3N2Zz4K')">
-                </div>
-              </div>    
+              </table> 
             </div>
             </div>`;
-            html_prod += `<div class = "second_column_res" style = "display: grid"><div class="downloadbtn_prod">
+            html_prod += `<div class = "second_column_res"><div class="downloadbtn_prod">
             <span class="text_downloadpdf_prod">
               <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
             </span>
@@ -248,7 +247,7 @@ function showObject(data, thisForm) {
             if (msds_link != ''){
               html_prod += `<div class="link_msds_prod">
               
-                  <div class="vector00_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVR4Ae2WzU3DQBBGv1lbKEeXsFQAJUAFUAIdBC5oOWV9ASsXoAJEB6YCKMEdJB3gG0HYO4wTJThS4g12LonyJEur8Xrfzoz/CHXuymsCDcCIsAEMtkiCuGkOLUaWI5rwJzE/O1IZPBDxY7URn+RPYFgTeMSgcyT0AZ/AuPE0CUA3SUJ0QBZ+VTOdZVNilUShIy4JrGQeS+8sTDnYpmBETBcwxZUDj6XY2SpJawGr4kYWjQjqpTqkXqdVfCb50vN57Xtwf5RJh4+XYubnjBC810Ode+Bj9wXre3BbXELJXbIJjt8wDNP/CQJJj2tPetP6DefWCx7CVC5M0ZFDibwcSuRln14VPeT4Rk6O+2wKjTYQnUy/0pNevggtTah+W5j6MtJoA8kGS47dMHiah34BNCt6yCGU4E4AAAAASUVORK5CYII=')">
+                  <div class="vector00_prod">
                   </div>
                 
                 <span class="text_msds_prod">
@@ -259,7 +258,7 @@ function showObject(data, thisForm) {
             if (presentation_link =! ''){
              html_prod += `<div class="link_presentation_prod">
              
-                  <div class="vector12_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXElEQVR4Ad2WzU3DQBCF37MB5ZgOMBVACVAB6QA6CNyWU+wLsrgQKgAqISW4g7gDuCUI28NsIodEmHW0BiR40sqr/ft25nm9JtZ1VV4QHEHQxxYSSIw0TFxjuKrF0udcnilyVzHI0CJSbu1G2iAfACMRIVMBT5BygjaAqfJFEEDkguygg3Thx2CJi8WUaIIE6KgqDWONPFHvYphy9J2AKYWnMMV5Bck12VkTxBsgQXGpi/aJ4N4WzdeRbV9CZlE9zt+D671MHT7YaDNvx0T4tN7U2YM2/TjAnSINWbMaOcdYg9PdiRdA8/mgj324lX/yYluAlR6mRA9Q3NhpSj0DPHPN//sm//fX1Io8tN+bL/sEHQCEXkAYaKCDxn5ZlMwbIDO9fHot1+crXuALwJh2snOBNv2iyT3dqYbLSoZiigg+qk2f91ZRc2OA/W0RDrUWwUfUDZaSVDfhuG56B8HEduIxLbBgAAAAAElFTkSuQmCC')">
+                  <div class="vector12_prod">
                   </div>
                
                 <span class="text_presentation_prod">
