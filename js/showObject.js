@@ -224,7 +224,8 @@ function showObject(data, thisForm) {
               </tbody>
               </table> 
             </div>
-            </div>`;
+            `;
+            html_prod += `<button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button></div>`;
             html_prod += `<div class = "second_column_res"><div class="downloadbtn_prod">
             <span class="text_downloadpdf_prod">
               <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
@@ -234,7 +235,7 @@ function showObject(data, thisForm) {
             <div class="linksondocs_prod">
               <div class="link_tds_prod">
               
-                <div class="vector0_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVR4Ae2WzU3DQBBGv1lbKEeXsFQAJUAFUAIdBC5oOWV9ASsXoAJEB6YCKMEdJB3gG0HYO4wTJThS4g12LonyJEur8Xrfzoz/CHXuymsCDcCIsAEMtkiCuGkOLUaWI5rwJzE/O1IZPBDxY7URn+RPYFgTeMSgcyT0AZ/AuPE0CUA3SUJ0QBZ+VTOdZVNilUShIy4JrGQeS+8sTDnYpmBETBcwxZUDj6XY2SpJawGr4kYWjQjqpTqkXqdVfCb50vN57Xtwf5RJh4+XYubnjBC810Ode+Bj9wXre3BbXELJXbIJjt8wDNP/CQJJj2tPetP6DefWCx7CVC5M0ZFDibwcSuRln14VPeT4Rk6O+2wKjTYQnUy/0pNevggtTah+W5j6MtJoA8kGS47dMHiah34BNCt6yCGU4E4AAAAASUVORK5CYII=')">
+                <div class="vector0_prod">
                 </div>
               
                 <span class="text_tds_prod">
@@ -267,7 +268,8 @@ function showObject(data, thisForm) {
                 
               </div>
             </div>`}
-           html_prod += `<button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button></div></div></div>`;
+            html_prod +=`</div></div></div>`;
+           
             
     }
 
