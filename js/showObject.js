@@ -184,8 +184,7 @@ function showObject(data, thisForm) {
       html_prod += `
         <div class="resultfield_prod">
           <div class="content_prod">
-            <div class="divider_top_prod" >
-            </div>
+            <div class = "top_content">
             <div class = "first_column_res">
             <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
             <span class="text_prod">
@@ -223,9 +222,9 @@ function showObject(data, thisForm) {
                 </tr>
               </tbody>
               </table> 
-            </div>
-            `;
-            html_prod += `<button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button></div>`;
+            </div></div>`;
+            html_prod += `<div class="divider_top_prod">
+            </div>`;
             html_prod += `<div class = "second_column_res"><div class="downloadbtn_prod">
             <span class="text_downloadpdf_prod">
               <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
@@ -265,11 +264,10 @@ function showObject(data, thisForm) {
                 <span class="text_presentation_prod">
                   <span><a href=${presentation_link}>Presentation</a></span>
                 </span>
-                
-              </div>
-            </div>`}
-            html_prod +=`</div></div></div>`;
-           
+               </div> 
+              </div>`;
+        }
+            html_prod += `</div></div><button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button></div></div>`;
             
     }
 
