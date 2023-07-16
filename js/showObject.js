@@ -13,16 +13,34 @@ function openHiddenSection(num) {
 }
 
 function reopenMainContent(num) {
-  // Hide the content section
+  // Show the content section
 
   var contentSection = document.getElementById('mainContent');
   contentSection.style.display = 'block';
 
-
-  // Show the hidden section
+  // Hide the hidden section
   var hiddenSection = document.getElementById(`hiddenContent${num}`);
   hiddenSection.style.display = 'none';
 
+}
+
+function show_hide_table() {
+  var tableElement = document.querySelector('.tg');
+  var showTableBtn = document.getElementById('showTableBtn');
+
+  if (tableElement.style.display === 'none') {
+    tableElement.style.display = 'block';
+    showTableBtn.innerHTML = 'Mechanical characteristics <div class="expandmore_prod">' +
+      '<div class="shape_prod" style="background-image: url(\'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB7Y/BDYJAEEX/LBiJhhhowAK0BCqwAD1YAMaCDBbgQe92wNGrVw8WICFGQyIwLlETs2hcz+y77c7Mm/mAwfAgWHkIFp5Oq9CROXwNHbZCHSnpyAilXz0ZOGVULBHPE/x94ZtMgBMBSuR2/9ello7MpjIS5O4Yt6Gs+jbEIO+P9jhuM3WUdGTpM2JP1nK+zEqw9y1+LXKHz5NPsoo0nsq/bvSK32ZrrM7XhC1y1wQ+qDJVWvU4VGxgaCB3ltNive/9FnYAAAAASUVORK5CYII=\')">' +
+      '</div>' +
+      '</div>';
+  } else {
+    tableElement.style.display = 'none';
+    showTableBtn.innerHTML = 'Mechanical characteristics <div class="expandmore_prod">' +
+      '<div class="shape_prod" style="background-image: url(\'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgB7dFNCsIwEAXgN6nSIEhJr+A1eo56hIoHEj2ACz2H5zGIPyjYjAm4KEloXNu+XSaTj0wCjPn/UFCp9irnW/2i9ojTWkdP9fQIv3fG16UtLiRnDaqNimGSH43ryTmr/e0AnNL8IEDaXr0M0C9GMKUAa+lumBzZprAH33xfGbBi4Pykdmer6GITMttL5EmiYAx1w6SwXtBH3TqFJcEuChiksJ/j0CL242MGmg9IBmO/vHlOPgAAAABJRU5ErkJggg==\')">' +
+      '</div>' +
+      '</div>';
+  }
 }
 
 function refreshPage() {
@@ -98,6 +116,8 @@ function showObject(data, thisForm) {
     return text;
   }
 
+
+
   let divContent = $('#content');
   divContent.html('');
 
@@ -123,7 +143,7 @@ function showObject(data, thisForm) {
   </div>
 </nav>
 <span class="res_amount">
-  <span>${data.length} polymer(s) were found</span>
+  <span>${data.length} polymer(s) of "" were found</span>
   </span>
   <div class="resultsection">`;
 
@@ -157,7 +177,7 @@ function showObject(data, thisForm) {
   
   html += `<div class="resultsfields0">`;
     
-    html_prod += `<div id="hiddenContent${x}" style="display:none; background: white;">
+    html_prod += `<div id="hiddenContent${x}" style="display:none; background: white">
   <nav>
   <div class="navigation_search" id="navigation_search">
     <li><a class = "nav_text" href="#"> Products </a></li>
@@ -194,44 +214,69 @@ function showObject(data, thisForm) {
             </span>`;
 
             html_prod += `<div class="mechchardropdown_prod">
-              <span class="text_mechchar_prod">
-                <span>Mechanical characteristics</span><div class="expandmore_prod">
-                <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEyIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNTQnIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMTAuNiAtMC4wMDAxMjIwN0w2IDQuNTk5ODhMMS40IC0wLjAwMDEyMjA3TDAgMS4zOTk4OEw2IDcuMzk5ODhMMTIgMS4zOTk4OEwxMC42IC0wLjAwMDEyMjA3WicgZmlsbD0nIzA5M0I5QScvPgo8L3N2Zz4K')">
+              
+                <button id="showTableBtn" class="text_mechchar_prod" onclick="show_hide_table()">Mechanical characteristics <div class="expandmore_prod">
+                <div class="shape_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgB7dFNCsIwEAXgN6nSIEhJr+A1eo56hIoHEj2ACz2H5zGIPyjYjAm4KEloXNu+XSaTj0wCjPn/UFCp9irnW/2i9ojTWkdP9fQIv3fG16UtLiRnDaqNimGSH43ryTmr/e0AnNL8IEDaXr0M0C9GMKUAa+lumBzZprAH33xfGbBi4Pykdmer6GITMttL5EmiYAx1w6SwXtBH3TqFJcEuChiksJ/j0CL242MGmg9IBmO/vHlOPgAAAABJRU5ErkJggg==')">
                 </div>
-              </div>   
-              </span>
-              <table class="tg">
+              </div></button>   
+                
+              <table class="tg" style="display:none">
               <thead>
-                <tr>
-                  <th class="t_name">Modification characteristic</th>
+                <tr class = "t_add_border">
+                  <th class="t_name" colspan = "2">Mechanical characteristic</th>
                   <th class="t_name">Value</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="t_row" colspan="2">Loading zone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;125</td>
+                <th class="t_row" colspan = "2">Tensile Strength at Break</th>
+                <th class="t_row">Value</th>
                 </tr>
                 <tr>
-                  <td class="t_row" colspan="2">Plastification zone                   135</td>
+                <th class="t_row" colspan = "2">Density</th>
+                <th class="t_row">Value</th>
                 </tr>
                 <tr>
-                  <td class="t_row" colspan="2">Dozing zone                            145</td>
+                <th class="t_row" colspan = "2">Hardness</th>
+                <th class="t_row">Value</th>
                 </tr>
                 <tr>
-                  <td class="t_row" colspan="2">Mold temperature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155</td>
+                <th class="t_row" colspan = "2">Modulus of elesticity at 100%</th>
+                <th class="t_row">Value</th>
+                </tr>
+                <tr>
+                <th class="t_row" colspan = "2">Tear Resistance</th>
+                <th class="t_row">Value</th>
+                </tr>
+                <tr>
+                <th class="t_row" colspan = "2">Compression Set at 23 C</th>
+                <th class="t_row">Value</th>
+                </tr>
+                <tr>
+                <th class="t_row" colspan = "2">Compression Set at 70 C</th>
+                <th class="t_row">Value</th>
+                </tr>
+                <tr>
+                <th class="t_row" colspan = "2">Modulus of elesticity at 300%</th>
+                <th class="t_row">Value</th>
+                </tr>
+                <tr>
+                <th class="t_row" colspan = "2">Elongation at Break</th>
+                <th class="t_row">Value</th>
                 </tr>
               </tbody>
               </table> 
             </div></div>`;
             html_prod += `<div class="divider_top_prod">
             </div>`;
-            html_prod += `<div class = "second_column_res"><div class="downloadbtn_prod">
+            html_prod += `<div class = "second_column_res">`;
+            html_prod += `
+            <div class="linksondocs_prod">
+            <div class="downloadbtn_prod">
             <span class="text_downloadpdf_prod">
               <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
             </span>
-          </div>`;
-            html_prod += `
-            <div class="linksondocs_prod">
+          </div>
               <div class="link_tds_prod">
               
                 <div class="vector0_prod">
@@ -281,9 +326,9 @@ function showObject(data, thisForm) {
     <span class="polymer_group0">
       <span>${italic_bold(data[x].title)}`;
       if (data[x].abbr){
-      html += `<span class="res_abbr"><span>(${italic_bold(data[x].abbr)})</span></span></span></span>`;
+      html += `<span class="res_abbr"><span>(${italic_bold(data[x].abbr)})</span></span>`;
       }
-
+      html += `</span></span>`;
       html += `<span class="manufacturer0"><span>${italic_bold(data[x].company_names)}</span></span>`;
 
       if (found) {
