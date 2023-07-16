@@ -202,14 +202,14 @@ function showObject(data, thisForm) {
     presentation_link = data[x].list[y].files[2].url;
     pdf_link = data[x].list[y].document_url
 
-
+      block_num = `${data[x].list[y].id}`;
       html_prod += `
         <div class="resultfield_prod">
           <div class="content_prod">
             <div class = "top_content">
             <div class = "first_column_res">
             <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
-            <div id="text${y}" class="text_prod">
+            <div id="text${block_num}" class="text_prod">
               <span>
                 ${data[x].list[y].description}
               </span>
@@ -217,12 +217,12 @@ function showObject(data, thisForm) {
 
             html_prod += `<div class="mechchardropdown_prod">
               
-                <button id="showTableBtn${y}" class="text_mechchar_prod" onclick="show_hide_table(${y})">Mechanical characteristics <div class="expandmore_prod">
+                <button id="showTableBtn${block_num}" class="text_mechchar_prod" onclick="show_hide_table(${block_num})">Mechanical characteristics<div class="expandmore_prod">
                 <div class="shape_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgB7dFNCsIwEAXgN6nSIEhJr+A1eo56hIoHEj2ACz2H5zGIPyjYjAm4KEloXNu+XSaTj0wCjPn/UFCp9irnW/2i9ojTWkdP9fQIv3fG16UtLiRnDaqNimGSH43ryTmr/e0AnNL8IEDaXr0M0C9GMKUAa+lumBzZprAH33xfGbBi4Pykdmer6GITMttL5EmiYAx1w6SwXtBH3TqFJcEuChiksJ/j0CL242MGmg9IBmO/vHlOPgAAAABJRU5ErkJggg==')">
                 </div>
               </div></button>   
                 
-              <table id="t${y}" class="tg" style="display:none">
+              <table id="t${block_num}" class="tg" style="display:none">
               <thead>
                 <tr>
                   <th class="t_name" colspan = "2">Mechanical characteristic</th>
@@ -232,39 +232,39 @@ function showObject(data, thisForm) {
               <tbody>
                 <tr>
                 <th class="t_row" colspan = "2">Tensile Strength at Break</th>
-                <th class="t_row">${y}</th>
+                <th class="t_row">${data[x].list[y].characteristics['Tensile Strength at Break']}</th>
                 </tr>
                 <tr>
                 <th class="t_row" colspan = "2">Density</th>
-                <th class="t_row">Value</th>
+                <th class="t_row">${data[x].list[y].characteristics.Density}</th>
                 </tr>
                 <tr>
                 <th class="t_row" colspan = "2">Hardness</th>
-                <th class="t_row">Value</th>
+                <th class="t_row">${data[x].list[y].characteristics.Hardness}</th>
                 </tr>
                 <tr>
-                <th class="t_row" colspan = "2">Modulus of elesticity at 100%</th>
-                <th class="t_row">Value</th>
+                <th class="t_row" colspan = "2">Modulus of elasticity at 100%</th>
+                <th class="t_row">${data[x].list[y].characteristics['Modulus of elasticity at 100%']}</th>
                 </tr>
                 <tr>
                 <th class="t_row" colspan = "2">Tear Resistance</th>
-                <th class="t_row">Value</th>
+                <th class="t_row">${data[x].list[y].characteristics['Tear Resistance']}</th>
                 </tr>
                 <tr>
-                <th class="t_row" colspan = "2">Compression Set at 23 C</th>
-                <th class="t_row">Value</th>
+                <th class="t_row" colspan = "2">Compression Set at 23 С</th>
+                <th class="t_row">${data[x].list[y].characteristics['Compression Set at 23 С']}</th>
                 </tr>
                 <tr>
-                <th class="t_row" colspan = "2">Compression Set at 70 C</th>
-                <th class="t_row">Value</th>
+                <th class="t_row" colspan = "2">Compression Set at 70 С</th>
+                <th class="t_row">${data[x].list[y].characteristics['Compression Set at 70 С']}</th>
                 </tr>
                 <tr>
-                <th class="t_row" colspan = "2">Modulus of elesticity at 300%</th>
-                <th class="t_row">Value</th>
+                <th class="t_row" colspan = "2">Modulus of elasticity at 300%</th>
+                <th class="t_row">${data[x].list[y].characteristics['Modulus of elasticity at 300%']}</th>
                 </tr>
                 <tr>
                 <th class="t_row" colspan = "2">Elongation at Break</th>
-                <th class="t_row">Value</th>
+                <th class="t_row">${data[x].list[y].characteristics['Elongation at break']}</th>
                 </tr>
               </tbody>
               </table> 
@@ -314,7 +314,7 @@ function showObject(data, thisForm) {
                </div> 
               </div>`;
         }
-            html_prod += `</div></div><button id="showMoreBtn${y}" class="show-more-less" onclick="showMore(${y})">Show more</button></div></div>`;
+            html_prod += `</div></div><button id="showMoreBtn${block_num}" class="show-more-less" onclick="showMore(${block_num})">Show more</button></div></div>`;
             
     }
 
@@ -368,7 +368,8 @@ function showObject(data, thisForm) {
       }  
       
     html+= `<button class="btn0" onclick="openHiddenSection(${x})"><span class="all_prod0">
-    <span>Show ${data[x].list.length} product(s)</span>
+    Show ${data[x].list.length} product(s) <div class = "show_arrow" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgB7Za9EYJAEIUfd5BTwpVAYgF2YAnYgbkJiWNoCVKCHWDIjAklUII5P+cCqcne7WiyXwDHzMH7ZpcdABRFUZQ/k7B2F1UOkx0wD090VQ8BDGt3ak+w/o7MNiTjIABPIDEPOr5p4aQkeC1Y2F0KwDe0yuncY5j2Me3gCwhLhAkISoQLCEnECQhI8KbgG69zh9kft4vE0aiWYBAvUFwdjLlt+VSBdKoZd0e2YAnPZiq/d2u4ofK3v3oHBMLDBYTCwwQEw/kCwuELzK/hWEqGr4/k7U5rjCNgadRamf8BRVEURfkAlHF/Omyh41YAAAAASUVORK5CYII=')">
+    </div>
     </span><div class="expandmore0">
     </div>
     </button></div>`;
