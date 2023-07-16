@@ -25,8 +25,8 @@ function reopenMainContent(num) {
 }
 
 function show_hide_table(num) {
-  var tableElement = document.querySelector(`#${num}.tg`);
-  var showTableBtn = document.getElementById('showTableBtn');
+  var tableElement = document.querySelector(`#t${num}.tg`);
+  var showTableBtn = document.getElementById(`showTableBtn${num}`);
 
   if (tableElement.style.display === 'none') {
     tableElement.style.display = 'block';
@@ -47,18 +47,20 @@ function refreshPage() {
   location.reload();
 }
 
-function showMore() {
-  var textElement = document.querySelector('.text_prod');
-  var showMoreBtn = document.getElementById(`showMoreBtn`);
+function showMore(num) {
+  var textElement = document.querySelector(`#text${num}.text_prod`);
+  var showMoreBtn = document.getElementById(`showMoreBtn${num}`);
 
-  if (textElement.style.maxHeight) {
+  var maxHeight = '90px'; // Maximum height for initial display
+
+  if (textElement.style.maxHeight && textElement.style.maxHeight !== 'none') {
     // Content is currently expanded, so collapse it
-    textElement.style.maxHeight = null;
+    textElement.style.maxHeight = maxHeight;
     showMoreBtn.textContent = 'Show more';
   } else {
-    // Content is currently collapsed, so expand it
-    textElement.style.maxHeight = textElement.scrollHeight + 'px';
-    showMoreBtn.textContent = 'Show less';
+    // Content is currently collapsed, so expand it if needed
+    textElement.style.maxHeight = textElement.scrollHeight > 90 ? textElement.scrollHeight + 'px' : maxHeight;
+    showMoreBtn.textContent = textElement.scrollHeight > 90 ? 'Show less' : 'Show more';
   }
 }
 
@@ -207,20 +209,20 @@ function showObject(data, thisForm) {
             <div class = "top_content">
             <div class = "first_column_res">
             <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
-            <span class="text_prod">
+            <div id="text${y}" class="text_prod">
               <span>
                 ${data[x].list[y].description}
               </span>
-            </span>`;
+            </div>`;
 
             html_prod += `<div class="mechchardropdown_prod">
               
-                <button id="showTableBtn" class="text_mechchar_prod" onclick="show_hide_table(${y})">Mechanical characteristics <div class="expandmore_prod">
+                <button id="showTableBtn${y}" class="text_mechchar_prod" onclick="show_hide_table(${y})">Mechanical characteristics <div class="expandmore_prod">
                 <div class="shape_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgB7dFNCsIwEAXgN6nSIEhJr+A1eo56hIoHEj2ACz2H5zGIPyjYjAm4KEloXNu+XSaTj0wCjPn/UFCp9irnW/2i9ojTWkdP9fQIv3fG16UtLiRnDaqNimGSH43ryTmr/e0AnNL8IEDaXr0M0C9GMKUAa+lumBzZprAH33xfGbBi4Pykdmer6GITMttL5EmiYAx1w6SwXtBH3TqFJcEuChiksJ/j0CL242MGmg9IBmO/vHlOPgAAAABJRU5ErkJggg==')">
                 </div>
               </div></button>   
                 
-              <table id="${y}" class="tg" style="display:none">
+              <table id="t${y}" class="tg" style="display:none">
               <thead>
                 <tr>
                   <th class="t_name" colspan = "2">Mechanical characteristic</th>
@@ -230,7 +232,7 @@ function showObject(data, thisForm) {
               <tbody>
                 <tr>
                 <th class="t_row" colspan = "2">Tensile Strength at Break</th>
-                <th class="t_row">Value</th>
+                <th class="t_row">${y}</th>
                 </tr>
                 <tr>
                 <th class="t_row" colspan = "2">Density</th>
@@ -312,7 +314,7 @@ function showObject(data, thisForm) {
                </div> 
               </div>`;
         }
-            html_prod += `</div></div><button id="showMoreBtn" class="show-more-less" onclick="showMore()">Show more</button></div></div>`;
+            html_prod += `</div></div><button id="showMoreBtn${y}" class="show-more-less" onclick="showMore(${y})">Show more</button></div></div>`;
             
     }
 
@@ -337,10 +339,10 @@ function showObject(data, thisForm) {
         if (article_found){
           html += `<div class="linkonartcl0">
             <div class="btn_read_artcl_00">
-            <div class="icnlink0">
-            </div><span class="read_art0"><span><a href=${article_link}>Read an article<div class="icnlink2">
+            
+            </div><span class="read_art0"><span><a class="a_link" href=${article_link}>Read an article<div class="icnlink2">
             </div></a></span></span>
-            </div>
+            
             </div>`;
         }
   
@@ -348,16 +350,16 @@ function showObject(data, thisForm) {
           html += `<div class="additiveslist0">
           <div class="btn_read_artcl_01">
           
-          </div><span class="open_add_list0"><span><a href=${additives_list_link}>Open additives list<div class="icnlink2">
+          <span class="open_add_list0"><span><a class="a_link" href=${additives_list_link}>Open additives list<div class="icnlink2">
           </div></a></span></span>
-          
+          </div>
           </div>`;
         }
         if (fill_flag){
           html += `<div class="fillerslist0">
           <div class="btn_read_artcl_02">
             
-            <span class="open_fill_list0"><span><a href= ${fillers_list_link}>Open fillers list<div class="icnlink2">
+            <span class="open_fill_list0"><span><a class="a_link" href= ${fillers_list_link}>Open fillers list<div class="icnlink2">
             </div></a></span></span>
           </div>
         </div>`;
