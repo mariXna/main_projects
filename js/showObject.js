@@ -24,8 +24,8 @@ function reopenMainContent(num) {
 
 }
 
-function show_hide_table() {
-  var tableElement = document.querySelector('.tg');
+function show_hide_table(num) {
+  var tableElement = document.querySelector(`#${num}.tg`);
   var showTableBtn = document.getElementById('showTableBtn');
 
   if (tableElement.style.display === 'none') {
@@ -215,14 +215,14 @@ function showObject(data, thisForm) {
 
             html_prod += `<div class="mechchardropdown_prod">
               
-                <button id="showTableBtn" class="text_mechchar_prod" onclick="show_hide_table()">Mechanical characteristics <div class="expandmore_prod">
+                <button id="showTableBtn" class="text_mechchar_prod" onclick="show_hide_table(${y})">Mechanical characteristics <div class="expandmore_prod">
                 <div class="shape_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgB7dFNCsIwEAXgN6nSIEhJr+A1eo56hIoHEj2ACz2H5zGIPyjYjAm4KEloXNu+XSaTj0wCjPn/UFCp9irnW/2i9ojTWkdP9fQIv3fG16UtLiRnDaqNimGSH43ryTmr/e0AnNL8IEDaXr0M0C9GMKUAa+lumBzZprAH33xfGbBi4Pykdmer6GITMttL5EmiYAx1w6SwXtBH3TqFJcEuChiksJ/j0CL242MGmg9IBmO/vHlOPgAAAABJRU5ErkJggg==')">
                 </div>
               </div></button>   
                 
-              <table class="tg" style="display:none">
+              <table id="${y}" class="tg" style="display:none">
               <thead>
-                <tr class = "t_add_border">
+                <tr>
                   <th class="t_name" colspan = "2">Mechanical characteristic</th>
                   <th class="t_name">Value</th>
                 </tr>
@@ -338,7 +338,8 @@ function showObject(data, thisForm) {
           html += `<div class="linkonartcl0">
             <div class="btn_read_artcl_00">
             <div class="icnlink0">
-            </div><span class="read_art0"><span><a href=${article_link}>Read an article</a></span></span>
+            </div><span class="read_art0"><span><a href=${article_link}>Read an article<div class="icnlink2">
+            </div></a></span></span>
             </div>
             </div>`;
         }
@@ -346,17 +347,18 @@ function showObject(data, thisForm) {
         if (add_flag) {
           html += `<div class="additiveslist0">
           <div class="btn_read_artcl_01">
-          <div class="icnlink1">
-          </div><span class="open_add_list0"><span><a href=${additives_list_link}>Open additives list</a></span></span>
-          </div>
+          
+          </div><span class="open_add_list0"><span><a href=${additives_list_link}>Open additives list<div class="icnlink2">
+          </div></a></span></span>
+          
           </div>`;
         }
         if (fill_flag){
           html += `<div class="fillerslist0">
           <div class="btn_read_artcl_02">
-            <div class="icnlink2">
-            </div>
-            <span class="open_fill_list0"><span><a href= ${fillers_list_link}>Open fillers list</a></span></span>
+            
+            <span class="open_fill_list0"><span><a href= ${fillers_list_link}>Open fillers list<div class="icnlink2">
+            </div></a></span></span>
           </div>
         </div>`;
         }
