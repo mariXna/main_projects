@@ -8,7 +8,7 @@ function openHiddenSection(num) {
 
   // Show the hidden section
   var hiddenSection = document.getElementById(`hiddenContent${num}`);
-  hiddenSection.style.display = 'block';
+  hiddenSection.style.display = 'grid';
 
 }
 
@@ -16,7 +16,7 @@ function reopenMainContent(num) {
   // Show the content section
 
   var contentSection = document.getElementById('mainContent');
-  contentSection.style.display = 'block';
+  contentSection.style.display = 'grid';
 
   // Hide the hidden section
   var hiddenSection = document.getElementById(`hiddenContent${num}`);
@@ -29,7 +29,7 @@ function show_hide_table(num) {
   var showTableBtn = document.getElementById(`showTableBtn${num}`);
 
   if (tableElement.style.display === 'none') {
-    tableElement.style.display = 'block';
+    tableElement.style.display = 'grid';
     showTableBtn.innerHTML = 'Mechanical characteristics <div class="expandmore_prod">' +
       '<div class="shape_prod" style="background-image: url(\'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB7Y/BDYJAEEX/LBiJhhhowAK0BCqwAD1YAMaCDBbgQe92wNGrVw8WICFGQyIwLlETs2hcz+y77c7Mm/mAwfAgWHkIFp5Oq9CROXwNHbZCHSnpyAilXz0ZOGVULBHPE/x94ZtMgBMBSuR2/9ello7MpjIS5O4Yt6Gs+jbEIO+P9jhuM3WUdGTpM2JP1nK+zEqw9y1+LXKHz5NPsoo0nsq/bvSK32ZrrM7XhC1y1wQ+qDJVWvU4VGxgaCB3ltNive/9FnYAAAAASUVORK5CYII=\')">' +
       '</div>' +
@@ -147,6 +147,8 @@ function showObject(data, thisForm) {
 <span class="res_amount">
   <span>${data.length} polymer(s) of "" were found</span>
   </span>
+  <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
+    </div>
   <div class="resultsection">`;
 
   for (var x in data) {
@@ -191,10 +193,11 @@ function showObject(data, thisForm) {
       ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
     </span>
   </span>
+  <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
+    </div>
     <div class="resultsection_prod">`;
-    html_prod += `<div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=')">
-    </div>`;
-
+  
+//data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=
     for (var y in data[x].list){
 
     tds_link = data[x].list[y].files[0].url;
