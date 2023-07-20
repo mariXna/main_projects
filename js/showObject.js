@@ -66,9 +66,21 @@ function showMore(num) {
 
 function showObject(data, thisForm) {
     if (!data) {
-        alert('no results!')
+      html += `<div class = "main_content" id="mainContent">
+      <nav>
+      <div class="navigation_search" id="navigation_search">
+        <li><a class = "nav_text" href="#"> Products </a></li>
+      </div>
+    </nav>
+    <span class="res_amount">
+      <span>No result found</span>
+      </span>
+      <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
+        </div>
+      </div>`;
         return false;
     }
+  
 
 
     var navigation = document.getElementById('navigation_search');
@@ -123,10 +135,7 @@ function showObject(data, thisForm) {
   let divContent = $('#content');
   divContent.html('');
 
-  let fillers_list_link = "https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0";
-  let article_link = "https://pm-db.net/article/1";
-  let additives_list_link = "https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0";
-
+  
   let tds_link = '';
   let msds_link = '';
   let presentation_link = '';
@@ -152,6 +161,11 @@ function showObject(data, thisForm) {
   <div class="resultsection">`;
 
   for (var x in data) {
+
+  let fillers_list_link = "https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0";
+  let article_link = "https://pm-db.net/article/1";
+  let additives_list_link = `https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0`;
+
 
   var add_flag = data[x].has_additives;  
   var fill_flag = data[x].has_fillers;
@@ -226,52 +240,25 @@ function showObject(data, thisForm) {
               </div></button>   
                 
               <table id="t${block_num}" class="tg" style="display:none">
-              <thead>
-                <tr>
-                  <th class="t_name" colspan = "2">Mechanical characteristic</th>
-                  <th class="t_name">Value</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                <th class="t_row" colspan = "2">Tensile Strength at Break</th>
-                <th class="t_row">${data[x].list[y].characteristics['Tensile Strength at Break']}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Density</th>
-                <th class="t_row">${data[x].list[y].characteristics.Density}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Hardness</th>
-                <th class="t_row">${data[x].list[y].characteristics.Hardness}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Modulus of elasticity at 100%</th>
-                <th class="t_row">${data[x].list[y].characteristics['Modulus of elasticity at 100%']}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Tear Resistance</th>
-                <th class="t_row">${data[x].list[y].characteristics['Tear Resistance']}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Compression Set at 23 С</th>
-                <th class="t_row">${data[x].list[y].characteristics['Compression Set at 23 С']}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Compression Set at 70 С</th>
-                <th class="t_row">${data[x].list[y].characteristics['Compression Set at 70 С']}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Modulus of elasticity at 300%</th>
-                <th class="t_row">${data[x].list[y].characteristics['Modulus of elasticity at 300%']}</th>
-                </tr>
-                <tr>
-                <th class="t_row" colspan = "2">Elongation at Break</th>
-                <th class="t_row">${data[x].list[y].characteristics['Elongation at break']}</th>
-                </tr>
-              </tbody>
+		<thead>
+			<tr>
+				<th>Mechanical characteristic</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+		<tbody>`;
+
+              for (var t in data[x].list[y].characteristics){
+              html_prod += `<tr>
+              <td>${t}</td>
+              <td>${data[x].list[y].characteristics[t]}</td>
+              </tr>`;
+            }
+
+              html_prod += `</tbody>
               </table> 
             </div></div>`;
+
             html_prod += `<div class="divider_top_prod">
             </div>`;
             html_prod += `<div class = "second_column_res">`;
