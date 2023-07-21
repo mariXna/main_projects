@@ -64,9 +64,14 @@ function showMore(num) {
   }
 }
 
+function italic_bold(text){
+  text = text.toString().replace(/\*\*(.*?)\*\*/g, '<span class="italic_bold_search_res">$1</span>');
+  return text;
+}
+
 function showObject(data, thisForm) {
     if (!data) {
-      html += `<div class = "main_content" id="mainContent">
+      html = `<div class = "no_content">
       <nav>
       <div class="navigation_search" id="navigation_search">
         <li><a class = "nav_text" href="#"> Products </a></li>
@@ -78,12 +83,14 @@ function showObject(data, thisForm) {
       <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
         </div>
       </div>`;
-        return false;
+      var content = document.getElementById('content');
+      content.innerHTML = html;
+        return;
     }
   
 
 
-    var navigation = document.getElementById('navigation_search');
+    //var navigation = document.getElementById('navigation_search');
     //var navigationItems = navigation.getElementsByTagName('a');
     /*
     // Add click event listener to each navigation item
@@ -125,10 +132,7 @@ function showObject(data, thisForm) {
     
 
     
-  function italic_bold(text){
-    text = text.toString().replace(/\*\*(.*?)\*\*/g, '<span class="italic_bold_search_res">$1</span>');
-    return text;
-  }
+
 
 
 
@@ -162,8 +166,8 @@ function showObject(data, thisForm) {
 
   for (var x in data) {
 
-  let fillers_list_link = "https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0";
-  let article_link = "https://pm-db.net/article/1";
+  let fillers_list_link = `https://pm-db.net/api/v1/search/fillers/?lang=en&id=${data[x].id_polymers}&counter=0`;
+  let article_link = `https://pm-db.net/article/1`;
   let additives_list_link = `https://pm-db.net/api/v1/search/additives/?lang=en&id=${data[x].id_polymers}&counter=0`;
 
 
