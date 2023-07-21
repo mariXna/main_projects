@@ -192,14 +192,16 @@ function showObject(data, thisForm) {
       productsLink.click(function(event) {
         event.preventDefault(); // Prevent the default anchor behavior
         // Add your desired action for the third child link
-        var index = $(this).data('index'); // Get the index from the data attribute of the clicked element
-        reopenMainContent(index);
+        //var index = $(this).data('index'); // Get the index from the data attribute of the clicked element
+        for (var x in data) {
+        reopenMainContent(x);
+      }
       });
     });
   
   html += `<div class="resultsfields0">`;
     
-    html_prod += `<div id="hiddenContent${x}" style="display:none; background: white">
+    html_prod += `<div id="hiddenContent${x}" style="display: none; background: white">
   <nav>
   <div class="navigation_search" id="navigation_search">
     <li><a class = "nav_text" href="#"> Products </a></li>
