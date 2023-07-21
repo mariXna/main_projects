@@ -249,12 +249,12 @@ function showObject(data, thisForm) {
               <tbody>`;
 
               for (var t in data[x].list[y].characteristics){
-              html += `<tr>
+              html_prod += `<tr>
               <th class="t_row" colspan = "2">${t}</th>
               <th class="t_row">${data[x].list[y].characteristics[t]}</th>
               </tr>`;}
 
-              html+= `</tbody>
+              html_prod += `</tbody>
               </table> 
             </div></div>`;
             html_prod += `<div class="divider_top_prod">
