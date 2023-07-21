@@ -1,4 +1,4 @@
-//21.07.23 - 3am BST
+//21.07.23 - 5am BST
 function openHiddenSection(num) {
   // Hide the content section
 
@@ -169,7 +169,7 @@ function showObject(data, thisForm) {
   html += `<div class = "main_content" id="mainContent">
   <nav>
   <div class="navigation_search" id="navigation_search">
-    <li><a class = "nav_text" href="#"> Products </a></li>
+    <li class = "nav_box"><a class = "nav_text" href="#"> Products </a></li>
   </div>
 </nav>
 <span class="res_amount">
@@ -217,10 +217,10 @@ function showObject(data, thisForm) {
     html_prod += `<div id="hiddenContent${x}" style="display: none; background: white">
   <nav>
   <div class="navigation_search" id="navigation_search">
-    <li><a class = "nav_text" href="#">Products</a></li>
+    <li class = "nav_box" ><a class = "nav_text" href="#">Products</a></li>
     <div class="nav_arrow" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Imljbl9hcnJvd18xIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTE2LjEyMDQgMTJDMTYuMTIwNCAxMi4yODY3IDE2LjAxMSAxMi41NzM1IDE1Ljc5MjQgMTIuNzkyMUw4LjkxMjc0IDE5LjY3MTdDOC40NzUxIDIwLjEwOTMgNy43NjU1NSAyMC4xMDkzIDcuMzI4MDkgMTkuNjcxN0M2Ljg5MDY0IDE5LjIzNDMgNi44OTA2NCAxOC41MjQ4IDcuMzI4MDkgMTguMDg3MkwxMy40MTU2IDEyTDcuMzI4MzEgNS45MTI3NUM2Ljg5MDg1IDUuNDc1MTIgNi44OTA4NSA0Ljc2NTc4IDcuMzI4MzEgNC4zMjgzNkM3Ljc2NTc2IDMuODkwNTEgOC40NzUzMSAzLjg5MDUxIDguOTEyOTUgNC4zMjgzNkwxNS43OTI3IDExLjIwNzlDMTYuMDExMiAxMS40MjY2IDE2LjEyMDQgMTEuNzEzMyAxNi4xMjA0IDEyWiIgZmlsbD0iI0RFRTNFRCIvPgo8L2c+Cjwvc3ZnPgo=')">
     </div>
-    <li><a class = "nav_text" href="#">All products</a></li>
+    <li class = "nav_box"><a class = "nav_text" href="#">All products</a></li>
   </div>
 </nav>
 <span class="res_amount_prod">
