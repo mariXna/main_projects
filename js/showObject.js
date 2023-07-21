@@ -240,25 +240,23 @@ function showObject(data, thisForm) {
               </div></button>   
                 
               <table id="t${block_num}" class="tg" style="display:none">
-		<thead>
-			<tr>
-				<th>Mechanical characteristic</th>
-				<th>Value</th>
-			</tr>
-		</thead>
-		<tbody>`;
+              <thead>
+                <tr>
+                  <th class="t_name" colspan = "2">Mechanical characteristic</th>
+                  <th class="t_name">Value</th>
+                </tr>
+              </thead>
+              <tbody>`;
 
               for (var t in data[x].list[y].characteristics){
-              html_prod += `<tr>
-              <td>${t}</td>
-              <td>${data[x].list[y].characteristics[t]}</td>
-              </tr>`;
-            }
+              html += `<tr>
+              <th class="t_row" colspan = "2">${t}</th>
+              <th class="t_row">${data[x].list[y].characteristics[t]}</th>
+              </tr>`;}
 
-              html_prod += `</tbody>
+              html+= `</tbody>
               </table> 
             </div></div>`;
-
             html_prod += `<div class="divider_top_prod">
             </div>`;
             html_prod += `<div class = "second_column_res">`;
