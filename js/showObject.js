@@ -48,13 +48,13 @@ function show_hide_table(num) {
   if (tableElement.style.display === 'none') {
     tableElement.style.display = 'grid';
     showTableBtn.innerHTML = 'Mechanical characteristics <div class="expandmore_prod">' +
-      '<div class="shape_prod" style="background-image: url(\'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB7Y/BDYJAEEX/LBiJhhhowAK0BCqwAD1YAMaCDBbgQe92wNGrVw8WICFGQyIwLlETs2hcz+y77c7Mm/mAwfAgWHkIFp5Oq9CROXwNHbZCHSnpyAilXz0ZOGVULBHPE/x94ZtMgBMBSuR2/9ello7MpjIS5O4Yt6Gs+jbEIO+P9jhuM3WUdGTpM2JP1nK+zEqw9y1+LXKHz5NPsoo0nsq/bvSK32ZrrM7XhC1y1wQ+qDJVWvU4VGxgaCB3ltNive/9FnYAAAAASUVORK5CYII=\')">' +
+      '<div class="shape_prod" style="background-image: url(\'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9ImV4cGFuZCBtb3JlIj4KPHBhdGggaWQ9IlNoYXBlIiBvcGFjaXR5PSIwLjU0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTUuNCAxNEwxMCA5LjRMMTQuNiAxNEwxNiAxMi42TDEwIDYuNkw0IDEyLjZMNS40IDE0WiIgZmlsbD0iIzA5M0I5QSIvPgo8L2c+Cjwvc3ZnPgo=\')">' +
       '</div>' +
       '</div>';
   } else {
     tableElement.style.display = 'none';
     showTableBtn.innerHTML = 'Mechanical characteristics <div class="expandmore_prod">' +
-      '<div class="shape_prod" style="background-image: url(\'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgB7dFNCsIwEAXgN6nSIEhJr+A1eo56hIoHEj2ACz2H5zGIPyjYjAm4KEloXNu+XSaTj0wCjPn/UFCp9irnW/2i9ojTWkdP9fQIv3fG16UtLiRnDaqNimGSH43ryTmr/e0AnNL8IEDaXr0M0C9GMKUAa+lumBzZprAH33xfGbBi4Pykdmer6GITMttL5EmiYAx1w6SwXtBH3TqFJcEuChiksJ/j0CL242MGmg9IBmO/vHlOPgAAAABJRU5ErkJggg==\')">' +
+      '<div class="shape_prod" style="background-image: url(\'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9ImV4cGFuZCBtb3JlIj4KPHBhdGggaWQ9IlNoYXBlIiBvcGFjaXR5PSIwLjU0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjYgNS45OTk4OEwxMCAxMC41OTk5TDUuNCA1Ljk5OTg4TDQgNy4zOTk4OEwxMCAxMy4zOTk5TDE2IDcuMzk5ODhMMTQuNiA1Ljk5OTg4WiIgZmlsbD0iIzA5M0I5QSIvPgo8L2c+Cjwvc3ZnPgo=\')">' +
       '</div>' +
       '</div>';
   }
@@ -175,7 +175,7 @@ function showObject(data, thisForm) {
 <span class="res_amount">
   <span>${data.length} polymer(s) of "" were found</span>
   </span>
-  <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
+  <div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkzIiBoZWlnaHQ9IjEiIHZpZXdCb3g9IjAgMCA5OTMgMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeTE9IjAuNSIgeDI9Ijk5MyIgeTI9IjEuNSIgc3Ryb2tlPSIjREVFM0VEIi8+Cjwvc3ZnPgo=')">
     </div>
   <div class="resultsection">`;
 
@@ -217,10 +217,10 @@ function showObject(data, thisForm) {
     html_prod += `<div id="hiddenContent${x}" style="display: none; background: white">
   <nav>
   <div class="navigation_search" id="navigation_search">
-    <li><a class = "nav_text" href="#"> Products </a></li>
+    <li><a class = "nav_text" href="#">Products</a></li>
     <div class="nav_arrow" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Imljbl9hcnJvd18xIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTE2LjEyMDQgMTJDMTYuMTIwNCAxMi4yODY3IDE2LjAxMSAxMi41NzM1IDE1Ljc5MjQgMTIuNzkyMUw4LjkxMjc0IDE5LjY3MTdDOC40NzUxIDIwLjEwOTMgNy43NjU1NSAyMC4xMDkzIDcuMzI4MDkgMTkuNjcxN0M2Ljg5MDY0IDE5LjIzNDMgNi44OTA2NCAxOC41MjQ4IDcuMzI4MDkgMTguMDg3MkwxMy40MTU2IDEyTDcuMzI4MzEgNS45MTI3NUM2Ljg5MDg1IDUuNDc1MTIgNi44OTA4NSA0Ljc2NTc4IDcuMzI4MzEgNC4zMjgzNkM3Ljc2NTc2IDMuODkwNTEgOC40NzUzMSAzLjg5MDUxIDguOTEyOTUgNC4zMjgzNkwxNS43OTI3IDExLjIwNzlDMTYuMDExMiAxMS40MjY2IDE2LjEyMDQgMTEuNzEzMyAxNi4xMjA0IDEyWiIgZmlsbD0iI0RFRTNFRCIvPgo8L2c+Cjwvc3ZnPgo=')">
     </div>
-    <li><a class = "nav_text" href="#">> All products </a></li>
+    <li><a class = "nav_text" href="#">All products</a></li>
   </div>
 </nav>
 <span class="res_amount_prod">
@@ -228,7 +228,7 @@ function showObject(data, thisForm) {
       ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
     </span>
   </span>
-  <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
+  <div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkzIiBoZWlnaHQ9IjEiIHZpZXdCb3g9IjAgMCA5OTMgMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeTE9IjAuNSIgeDI9Ijk5MyIgeTI9IjEuNSIgc3Ryb2tlPSIjREVFM0VEIi8+Cjwvc3ZnPgo=')">
     </div>
     <div class="resultsection_prod">`;
   
@@ -256,7 +256,7 @@ function showObject(data, thisForm) {
             html_prod += `<div class="mechchardropdown_prod">
               
                 <button id="showTableBtn${block_num}" class="text_mechchar_prod" onclick="show_hide_table(${block_num})">Mechanical characteristics<div class="expandmore_prod">
-                <div class="shape_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgB7dFNCsIwEAXgN6nSIEhJr+A1eo56hIoHEj2ACz2H5zGIPyjYjAm4KEloXNu+XSaTj0wCjPn/UFCp9irnW/2i9ojTWkdP9fQIv3fG16UtLiRnDaqNimGSH43ryTmr/e0AnNL8IEDaXr0M0C9GMKUAa+lumBzZprAH33xfGbBi4Pykdmer6GITMttL5EmiYAx1w6SwXtBH3TqFJcEuChiksJ/j0CL242MGmg9IBmO/vHlOPgAAAABJRU5ErkJggg==')">
+                <div class="shape_prod" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9ImV4cGFuZCBtb3JlIj4KPHBhdGggaWQ9IlNoYXBlIiBvcGFjaXR5PSIwLjU0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjYgNS45OTk4OEwxMCAxMC41OTk5TDUuNCA1Ljk5OTg4TDQgNy4zOTk4OEwxMCAxMy4zOTk5TDE2IDcuMzk5ODhMMTQuNiA1Ljk5OTg4WiIgZmlsbD0iIzA5M0I5QSIvPgo8L2c+Cjwvc3ZnPgo=')">
                 </div>
               </div></button>   
                 
@@ -377,7 +377,7 @@ function showObject(data, thisForm) {
       }  
       
     html+= `<button class="btn0" onclick="openHiddenSection(${x})"><span class="all_prod0">
-    Show ${data[x].list.length} product(s) <div class = "show_arrow" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgB7Za9EYJAEIUfd5BTwpVAYgF2YAnYgbkJiWNoCVKCHWDIjAklUII5P+cCqcne7WiyXwDHzMH7ZpcdABRFUZQ/k7B2F1UOkx0wD090VQ8BDGt3ak+w/o7MNiTjIABPIDEPOr5p4aQkeC1Y2F0KwDe0yuncY5j2Me3gCwhLhAkISoQLCEnECQhI8KbgG69zh9kft4vE0aiWYBAvUFwdjLlt+VSBdKoZd0e2YAnPZiq/d2u4ofK3v3oHBMLDBYTCwwQEw/kCwuELzK/hWEqGr4/k7U5rjCNgadRamf8BRVEURfkAlHF/Omyh41YAAAAASUVORK5CYII=')">
+    Show ${data[x].list.length} product(s) <div class = "show_arrow">
     </div>
     </span><div class="expandmore0">
     </div>
