@@ -229,10 +229,10 @@ function showObject(data, thisForm) {
           <div class="content_prod">
             <div class = "top_content">
             <div class = "first_column_res">
-            <span class="text_name_prod"><span>${data[x].list[y].brand}</span></span>
+            <span class="text_name_prod"><span>${italic_bold(data[x].list[y].brand)}</span></span>
             <div id="text${block_num}" class="text_prod">
               <span>
-                ${data[x].list[y].description}
+                ${italic_bold(data[x].list[y].description)}
               </span>
             </div>`;
 
