@@ -12,6 +12,23 @@ function openHiddenSection(num) {
 
 }
 
+function addEllipsis() {
+  const containers = document.querySelectorAll('.text_prod');
+  containers.forEach((container) => {
+    const content = container.innerHTML;
+    container.innerHTML = content + '<span class="ellipsis-mask"></span>';
+    while (container.scrollHeight > container.offsetHeight) {
+      container.innerHTML = content;
+      container.innerHTML = container.innerHTML.slice(0, -1);
+    }
+  });
+}
+
+// Call the function after the DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  addEllipsis();
+});
+
 function reopenMainContent(section) {
   // Show the content section
 
@@ -51,18 +68,23 @@ function showMore(num) {
   var textElement = document.querySelector(`#text${num}.text_prod`);
   var showMoreBtn = document.getElementById(`showMoreBtn${num}`);
 
-  var maxHeight = '90px'; // Maximum height for initial display
+  var maxHeight = '5.25em'; // Adjust the height to show 4 lines with line-height: 1.25;
 
-  if (textElement.style.maxHeight && textElement.style.maxHeight !== 'none') {
+  if (window.getComputedStyle(textElement).getPropertyValue('-webkit-line-clamp') === '4') {
+    // Content is currently collapsed, so expand it
+    textElement.style.webkitLineClamp = 'unset';
+    textElement.style.maxHeight = 'none'; // Remove the max height to show all content
+    showMoreBtn.textContent = 'Show less';
+  } else {
     // Content is currently expanded, so collapse it
+    textElement.style.webkitLineClamp = '4'; // Set to the desired number of lines (4 in this case)
     textElement.style.maxHeight = maxHeight;
     showMoreBtn.textContent = 'Show more';
-  } else {
-    // Content is currently collapsed, so expand it if needed
-    textElement.style.maxHeight = textElement.scrollHeight > 90 ? textElement.scrollHeight + 'px' : maxHeight;
-    showMoreBtn.textContent = textElement.scrollHeight > 90 ? 'Show less' : 'Show more';
   }
 }
+
+
+
 
 function italic_bold(text){
   text = text.toString().replace(/\*\*(.*?)\*\*/g, '<span class="italic_bold_search_res">$1</span>');
@@ -128,13 +150,6 @@ function showObject(data, thisForm) {
     }
 
 */
- 
-    
-
-    
-
-
-
 
   let divContent = $('#content');
   divContent.html('');
@@ -231,9 +246,9 @@ function showObject(data, thisForm) {
             <div class = "first_column_res">
             <span class="text_name_prod"><span>${italic_bold(data[x].list[y].brand)}</span></span>
             <div id="text${block_num}" class="text_prod">
-              <span>
+              
                 ${italic_bold(data[x].list[y].description)}
-              </span>
+              
             </div>`;
 
             html_prod += `<div class="mechchardropdown_prod">
