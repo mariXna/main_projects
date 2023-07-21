@@ -1,4 +1,4 @@
-//20.06.23 - 1am BST
+//21.07.23 - 3am BST
 function openHiddenSection(num) {
   // Hide the content section
 
@@ -12,14 +12,14 @@ function openHiddenSection(num) {
 
 }
 
-function reopenMainContent(num) {
+function reopenMainContent(section) {
   // Show the content section
 
   var contentSection = document.getElementById('mainContent');
   contentSection.style.display = 'grid';
 
   // Hide the hidden section
-  var hiddenSection = document.getElementById(`hiddenContent${num}`);
+  var hiddenSection = document.getElementById(section);
   hiddenSection.style.display = 'none';
 
 }
@@ -192,10 +192,8 @@ function showObject(data, thisForm) {
       productsLink.click(function(event) {
         event.preventDefault(); // Prevent the default anchor behavior
         // Add your desired action for the third child link
-        //var index = $(this).data('index'); // Get the index from the data attribute of the clicked element
-        for (var x in data) {
-        reopenMainContent(x);
-      }
+        var index = $('div[style*="display: grid"][id^="hiddenContent"]').attr('id');
+        reopenMainContent(index);
       });
     });
   
