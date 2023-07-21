@@ -96,7 +96,7 @@ function showObject(data, thisForm) {
       html = `<div class = "no_content">
       <nav>
       <div class="navigation_search" id="navigation_search">
-        <li><a class = "nav_text" href="#"> Products </a></li>
+      <li class = "nav_box" ><a class = "nav_text" href="#"> Products </a></li>
       </div>
     </nav>
     <span class="res_amount">
