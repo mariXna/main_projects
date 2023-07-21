@@ -294,7 +294,7 @@ function showObject(data, thisForm) {
                 </div>
               
                 <span class="text_tds_prod">
-                  <span><a href=${tds_link}>Read TDS here</a></span>
+                  <span><a class = "a_link" href=${tds_link}>Read TDS here</a></span>
                 </span>
                 
               </div>`;
@@ -307,7 +307,7 @@ function showObject(data, thisForm) {
                   </div>
                 
                 <span class="text_msds_prod">
-                  <span><a href=${msds_link}>Read MSDS here</a></span>
+                  <span><a class = "a_link" href=${msds_link}>Read MSDS here</a></span>
                 </span>
                 
               </div>`}
@@ -318,7 +318,7 @@ function showObject(data, thisForm) {
                   </div>
                
                 <span class="text_presentation_prod">
-                  <span><a href=${presentation_link}>Presentation</a></span>
+                  <span><a class = "a_link" href=${presentation_link}>Presentation</a></span>
                 </span>
                </div> 
               </div>`;
