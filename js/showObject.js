@@ -283,11 +283,12 @@ function showObject(data, thisForm) {
             html_prod += `<div class = "second_column_res">`;
             html_prod += `
             <div class="linksondocs_prod">
-            <div class="downloadbtn_prod">
+            <a href=${pdf_link}>
+            <button class="downloadbtn_prod">
             <span class="text_downloadpdf_prod">
-              <span><a class="down_btn_prod" href=${pdf_link}>Download .pdf</a></span>
+              <span class="down_btn_prod">Download .pdf</span>
             </span>
-          </div>
+          </button></a>
               <div class="link_tds_prod">
               
                 <div class="vector0_prod">
