@@ -253,6 +253,7 @@ function showObject(data, thisForm) {
               
             </div>`;
 
+            if (data[x].list[y].characteristics){
             html_prod += `<div class="mechchardropdown_prod">
               
                 <button id="showTableBtn${block_num}" class="text_mechchar_prod" onclick="show_hide_table(${block_num})">Mechanical characteristics<div class="expandmore_prod">
@@ -277,8 +278,9 @@ function showObject(data, thisForm) {
 
               html_prod += `</tbody>
               </table> 
-            </div></div>`;
-            html_prod += `<div class="divider_top_prod">
+            </div>`;}
+
+            html_prod += `</div><div class="divider_top_prod">
             </div>`;
             html_prod += `<div class = "second_column_res">`;
             html_prod += `
@@ -324,8 +326,11 @@ function showObject(data, thisForm) {
                </div> 
               </div>`;
         }
-            html_prod += `</div></div><button id="showMoreBtn${block_num}" class="show-more-less" onclick="showMore(${block_num})">Show more</button></div></div>`;
-            
+        html_prod += `</div></div>`;
+        if(data[x].list[y].description.trim().length >= 274 ){
+            html_prod += `<button id="showMoreBtn${block_num}" class="show-more-less" onclick="showMore(${block_num})">Show more</button>`;
+        }
+        html_prod += `</div></div>`;
     }
 
     
