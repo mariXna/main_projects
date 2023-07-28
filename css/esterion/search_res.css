@@ -1,0 +1,261 @@
+
+.resultsection {
+  top: 361px;
+  left: 221px;
+  width: 999px;
+  height: 3459px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.resultsfields {
+  top: 95px;
+  left: 28px;
+  width: 943px;
+  height: 204px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-radius: 5px;
+  border: 1px solid #eff0f3;
+  border-left-width: 8px;
+  box-sizing: border-box;
+}
+.res_field {
+  top: 0px;
+  left: 0px;
+  width: 943px;
+  height: 204px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.btn {
+  top: 144px;
+  left: 650px;
+  width: 269px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  box-sizing: border-box;
+  border: 1px solid #093B9A;
+  border-radius: 8px;
+  height: 40px;
+  width: 269px;
+  background: white;
+  border-radius: 8px;
+}
+.all_prod {
+  top: 11px;
+  left: 12px;
+  color: rgba(9, 59, 154, 1);
+  width: 221px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.expandmore {
+  top: 0px;
+  left: 237px;
+  width: 32px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.links {
+  top: 86px;
+  left: 24px;
+  width: 142px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.linkonartcl {
+  top: 0px;
+  left: 0px;
+  width: 118px;
+  height: 17px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.btn_read_artcl0 {
+  top: 0px;
+  left: 0px;
+  width: 118px;
+  height: 17px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.icnlink0 {
+  top: 0px;
+  left: 102px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.read_art {
+  color: rgba(1, 120, 254, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 17px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.additiveslist {
+  top: 25px;
+  left: 0px;
+  width: 142px;
+  height: 17px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.btn_read_artcl1 {
+  top: 0px;
+  left: 0px;
+  width: 142px;
+  height: 17px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.icnlink1 {
+  top: 0px;
+  left: 126px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.open_add_list {
+  color: rgba(1, 120, 254, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 17px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.manufacturer {
+  top: 50px;
+  left: 24px;
+  color: rgba(12, 167, 111, 1);
+  width: 74px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.polymer_group {
+  top: 20px;
+  left: 24px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.res_amount {
+  top: 24px;
+  left: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 490px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.searchthroughnavigation {
+  top: 337px;
+  left: 221px;
+  width: 742px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.icnhome {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.icnarrow {
+  top: 0px;
+  left: 32px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
