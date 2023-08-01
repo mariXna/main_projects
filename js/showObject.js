@@ -93,7 +93,7 @@ function italic_bold(text){
 
 function showObject(data, thisForm) {
     if (!data) {
-      html = `<div class = "no_content" style="background-color:white">
+      html = `<div class = "no_content">
       <nav>
       <div class="navigation_search" id="navigation_search">
       <li class = "nav_box" ><a class = "nav_text" href="#"> Products </a></li>
