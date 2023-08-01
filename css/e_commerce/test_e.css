@@ -379,22 +379,27 @@ left: -399.109375px;
   flex-direction: column;
 }
 .card-apple-watch-card-apple-watch {
-  width: 371px;
-  height: 486px;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
+width: 371px;
+height: 486px;
+display: flex;
+position: relative;
+align-items: flex-start;
+flex-shrink: 1;
+background-color: rgba(255, 255, 255, 1);
+padding: 28px;
+border-radius: 8px;
+box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
 }
 .card-apple-watch-wishlist-button {
-  top: 441px;
-  left: 0px;
-  width: 186px;
-  height: 45px;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
+top: 441px;
+left: 0px;
+width: 186px;
+height: 45px;
+display: flex;
+align-items: flex-start;
+flex-shrink: 0;
+border-radius: 0px 0px 0px 8px;
+background: #EDEDED;
 }
 .card-apple-watch-wishlist-button1 {
   top: 0px;
@@ -440,14 +445,16 @@ left: -399.109375px;
   text-decoration: none;
 }
 .card-apple-watch-add-to-cart-button {
-  top: 441px;
-  left: 186px;
-  width: 185px;
-  height: 45px;
-  display: flex;
-  
-  align-items: flex-start;
-  flex-shrink: 0;
+top: 441px;
+left: 186px;
+width: 185px;
+height: 45px;
+display: flex;
+align-items: flex-start;
+flex-shrink: 0;
+background-color: rgb(100, 71, 175);
+border-radius: 0px 0px 8px 0px;
+background: #6447AF;
 }
 .card-apple-watch-add-to-cart-button1 {
   top: 0px;
@@ -562,15 +569,16 @@ left: -399.109375px;
   text-decoration: none;
 }
 .card-apple-watch-rating {
-  top: 337px;
-  left: 23px;
-  width: 60px;
-  height: 30px;
-  display: flex;
-  
-  align-items: flex-start;
-  flex-shrink: 1;
-  background-color: rgba(100, 71, 175, 1);
+top: 337px;
+left: 23px;
+width: 60px;
+height: 30px;
+display: flex;
+align-items: flex-start;
+flex-shrink: 1;
+background-color: rgba(100, 71, 175, 1);
+border-radius: 3px;
+background: #6447AF;
 }
 .card-apple-watch-text10 {
   top: 6px;
