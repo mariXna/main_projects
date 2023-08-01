@@ -472,7 +472,6 @@ border: none;
 .card-apple-watch-text02 {
   color: rgba(255, 255, 255, 1);
   height: auto;
-  
   font-size: 14px;
   font-style: SemiBold;
   text-align: left;
@@ -481,14 +480,19 @@ border: none;
   line-height: 18px;
   font-stretch: normal;
   text-decoration: none;
+  margin-top: 14px;
+  margin-bottom: 13px;
 }
 .card-apple-watch-shoppingbag {
-  width: 16px;
-  height: 18px;
-  display: flex;
-  
-  align-items: flex-start;
-  flex-shrink: 1;
+width: 18px;
+height: 18px;
+display: flex;
+align-items: flex-start;
+flex-shrink: 1;
+margin-left: 27px;
+margin-top: 13px;
+margin-bottom: 14px;
+margin-right: 11px;
 }
 .card-apple-watch-path1 {
   width: 18px;
@@ -542,6 +546,7 @@ border: none;
   width: 220px;
   height: 272px;
   margin: 50px 56px 34px 57px;
+  text-align: center;
 }
 
 .rating_price{
@@ -589,10 +594,9 @@ margin-right: 6.5px;
 margin-top: 6px;
 }
 .card-apple-watch-star {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   display: flex;
-  
   align-items: flex-start;
   flex-shrink: 1;
   margin-top: 6px;
