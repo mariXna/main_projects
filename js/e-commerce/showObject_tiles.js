@@ -23,6 +23,7 @@
             alt="${data[x].name}"
             class="card-apple-watch-applewatch"
           />
+          <div class="rating_price">
           <div class="card-apple-watch-rating">
           <span class="card-apple-watch-text10"><span>3.4</span></span>
           <div class="card-apple-watch-star">
@@ -30,14 +31,15 @@
             </div>
           </div>
         </div>
-
+        <span class="card-apple-watch-text08"><span>$${data[x].price}</span></span>
+        </div>
         <span class="card-apple-watch-text04">
             <span>${data[x].full_name}</span>
           </span>
           <span class="card-apple-watch-text06">
             <span>${data[x].description}</span>
           </span>
-
+          <div class="wishlist_cart">
           <button class="card-apple-watch-wishlist-button">
             <div class="card-apple-watch-wishlist-button1">
               <div class="card-apple-watch-heart">
@@ -58,10 +60,7 @@
               </div>
             </div>
           </button>
-          
-          
-          <span class="card-apple-watch-text08"><span>$${data[x].price}</span></span>
-         
+          </div>
         </div>`;
      } 
   
