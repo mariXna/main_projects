@@ -93,7 +93,7 @@ function italic_bold(text){
 
 function showObject(data, thisForm) {
     if (!data) {
-      html = `<div class = "no_content">
+      html = `<div class = "no_content" style="background-color:white">
       <nav>
       <div class="navigation_search" id="navigation_search">
       <li class = "nav_box" ><a class = "nav_text" href="#"> Products </a></li>
@@ -175,8 +175,8 @@ function showObject(data, thisForm) {
 <span class="res_amount">
   <span>${data.length} polymer(s) of "" were found</span>
   </span>
-  <div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkzIiBoZWlnaHQ9IjEiIHZpZXdCb3g9IjAgMCA5OTMgMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeTE9IjAuNSIgeDI9Ijk5MyIgeTI9IjEuNSIgc3Ryb2tlPSIjREVFM0VEIi8+Cjwvc3ZnPgo=')">
-    </div>
+  <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
+        </div>
   <div class="resultsection">`;
 
   for (var x in data) {
@@ -228,8 +228,8 @@ function showObject(data, thisForm) {
       ${data[x].list.length} products of ${italic_bold(data[x].title)} are available now
     </span>
   </span>
-  <div class="divider_side_prod" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkzIiBoZWlnaHQ9IjEiIHZpZXdCb3g9IjAgMCA5OTMgMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeTE9IjAuNSIgeDI9Ijk5MyIgeTI9IjEuNSIgc3Ryb2tlPSIjREVFM0VEIi8+Cjwvc3ZnPgo=')">
-    </div>
+  <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
+        </div>
     <div class="resultsection_prod">`;
   
 //data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOTkzJyBoZWlnaHQ9JzEnIHZpZXdCb3g9JzAgMCA5OTMgMScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPGxpbmUgeTE9JzAuNScgeDI9Jzk5MycgeTI9JzEuNScgc3Ryb2tlPScjREVFM0VEJy8+Cjwvc3ZnPgo=
