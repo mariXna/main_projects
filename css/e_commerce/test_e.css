@@ -381,7 +381,7 @@ left: -399.109375px;
 .card-apple-watch-card-apple-watch {
 width: 371px;
 height: 486px;
-display: flex;
+display: grid;
 position: relative;
 align-items: flex-start;
 flex-shrink: 1;
