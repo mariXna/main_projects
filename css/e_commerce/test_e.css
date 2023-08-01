@@ -389,21 +389,24 @@ background-color: rgba(255, 255, 255, 1);
 padding: 28px;
 border-radius: 8px;
 box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
+margin-right: 30px;
+margin-bottom: 28px;
+margin-right: 162px;
 }
 .card-apple-watch-wishlist-button {
-top: 441px;
-left: 0px;
 width: 186px;
 height: 45px;
 display: flex;
 align-items: flex-start;
 flex-shrink: 0;
 border-radius: 0px 0px 0px 8px;
-background: #EDEDED;
+margin: 0;
+padding: 0;
+border: none;
+background: none;
+	
 }
 .card-apple-watch-wishlist-button1 {
-  top: 0px;
-  left: 0px;
   width: 186px;
   height: 45px;
   display: flex;
@@ -413,25 +416,23 @@ background: #EDEDED;
   background-color: rgba(237, 237, 237, 1);
 }
 .card-apple-watch-heart {
-  top: 17px;
-  left: 45px;
   width: 14px;
   height: 13px;
   display: flex;
   
   align-items: flex-start;
   flex-shrink: 1;
+  margin-left: 45px;
+  margin-top: 17px;
+  margin-bottom: 15px;
+  margin-right: 8px;
 }
 .card-apple-watch-path {
-  top: 0px;
-  left: 0px;
   width: 16px;
   height: 15px;
   
 }
 .card-apple-watch-text {
-  top: 14px;
-  left: 67px;
   color: rgba(44, 44, 44, 1);
   height: auto;
   
@@ -443,10 +444,10 @@ background: #EDEDED;
   line-height: 18px;
   font-stretch: normal;
   text-decoration: none;
+  margin-top: 14px;
+  margin-bottom: 13px;
 }
 .card-apple-watch-add-to-cart-button {
-top: 441px;
-left: 186px;
 width: 185px;
 height: 45px;
 display: flex;
@@ -455,10 +456,11 @@ flex-shrink: 0;
 background-color: rgb(100, 71, 175);
 border-radius: 0px 0px 8px 0px;
 background: #6447AF;
+margin: 0;
+padding: 0;
+border: none;
 }
 .card-apple-watch-add-to-cart-button1 {
-  top: 0px;
-  left: 0px;
   width: 185px;
   height: 45px;
   display: flex;
@@ -468,11 +470,8 @@ background: #6447AF;
   background-color: rgba(100, 71, 175, 1);
 }
 .card-apple-watch-text02 {
-  top: 14px;
-  left: 54px;
   color: rgba(255, 255, 255, 1);
   height: auto;
-  
   font-size: 14px;
   font-style: SemiBold;
   text-align: left;
@@ -481,44 +480,39 @@ background: #6447AF;
   line-height: 18px;
   font-stretch: normal;
   text-decoration: none;
+  margin-top: 14px;
+  margin-bottom: 13px;
 }
 .card-apple-watch-shoppingbag {
-  top: 13px;
-  left: 27px;
-  width: 16px;
-  height: 18px;
-  display: flex;
-  
-  align-items: flex-start;
-  flex-shrink: 1;
+width: 18px;
+height: 18px;
+display: flex;
+align-items: flex-start;
+flex-shrink: 1;
+margin-left: 27px;
+margin-top: 13px;
+margin-bottom: 14px;
+margin-right: 11px;
 }
 .card-apple-watch-path1 {
-  top: 0px;
-  left: 0px;
   width: 18px;
   height: 20px;
   opacity: 0.74;
   
 }
 .card-apple-watch-path2 {
-  top: 4px;
-  left: 0px;
   width: 17px;
   height: 2px;
   opacity: 0.74;
   
 }
 .card-apple-watch-path3 {
-  top: 8px;
-  left: 5px;
   width: 9px;
   height: 5px;
   opacity: 0.74;
   
 }
 .card-apple-watch-text04 {
-  top: 383px;
-  left: 22px;
   color: rgba(44, 44, 44, 1);
   height: auto;
   
@@ -530,10 +524,10 @@ background: #6447AF;
   line-height: 19px;
   font-stretch: normal;
   text-decoration: none;
+  margin-bottom: 3px;
+  margin-left: 22px;
 }
 .card-apple-watch-text06 {
-  top: 405px;
-  left: 22px;
   color: rgba(44, 44, 44, 1);
   height: auto;
   
@@ -545,17 +539,21 @@ background: #6447AF;
   line-height: 14px;
   font-stretch: normal;
   text-decoration: none;
+  margin-bottom: 22px;
+  margin-left: 22px;
 }
 .card-apple-watch-applewatch {
-  top: 31px;
-  left: 76px;
   width: 220px;
   height: 272px;
-  
+  margin: 50px 56px 34px 57px;
+  text-align: center;
+}
+
+.rating_price{
+display: flex;
+margin: 0px 0px 16px 23px;
 }
 .card-apple-watch-text08 {
-  top: 337px;
-  left: 308px;
   color: rgba(44, 44, 44, 1);
   height: auto;
   
@@ -569,8 +567,6 @@ background: #6447AF;
   text-decoration: none;
 }
 .card-apple-watch-rating {
-top: 337px;
-left: 23px;
 width: 60px;
 height: 30px;
 display: flex;
@@ -579,10 +575,9 @@ flex-shrink: 1;
 background-color: rgba(100, 71, 175, 1);
 border-radius: 3px;
 background: #6447AF;
+margin-right: 225px;
 }
 .card-apple-watch-text10 {
-  top: 6px;
-  left: 10px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   
@@ -594,33 +589,31 @@ background: #6447AF;
   line-height: 17px;
   font-stretch: normal;
   text-decoration: none;
+margin-left: 10px;
+margin-right: 6.5px;
+margin-top: 6px;
 }
 .card-apple-watch-star {
-  top: 9px;
-  left: 37.5px;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   display: flex;
-  
   align-items: flex-start;
   flex-shrink: 1;
+  margin-top: 6px;
 }
 .card-apple-watch-path4 {
-  top: 0px;
-  left: 0px;
   width: 13px;
   height: 14px;
   
 }
 
-
+.wishlist_cart{
+ display: flex;
+}
 .search_tiles {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  grid-gap: 10px; /* Adjust this value to set the spacing between tiles */
-}
-
-.s_tile {
-  padding-top: 28px;
-  text-align: center;
+  margin-left: 52px;
+  margin-top: 28px;
+  margin-right: 162px;
 }
