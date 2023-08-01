@@ -100,7 +100,7 @@ function showObject(data, thisForm) {
       </div>
     </nav>
     <span class="res_amount">
-      <span>No result found</span>
+      <span>No results found</span>
       </span>
       <div class="divider_side_prod" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAABCAYAAACxFa/5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxAQAABAAw+nf0uGUghW/L6tkAAAAA3h0k2wOv/oldiAAAAABJRU5ErkJggg==')">
         </div>
