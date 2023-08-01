@@ -17,12 +17,31 @@
      for (x in data){
       
     
-        html += `<div class="s_tile"><div class="card-apple-watch-container">
-        <div class="card-apple-watch-card-apple-watch">
+        html += `<div class="card-apple-watch-card-apple-watch">
+        <img
+            src=""
+            alt="${data[x].name}"
+            class="card-apple-watch-applewatch"
+          />
+          <div class="card-apple-watch-rating">
+          <span class="card-apple-watch-text10"><span>3.4</span></span>
+          <div class="card-apple-watch-star">
+            <div class="card-apple-watch-path4" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMyAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9InN0YXIiPgo8cGF0aCBpZD0iUGF0aCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02LjUgMUw4LjM1NCA0Ljk0OTUzTDEyLjUgNS41ODY3NUw5LjUgOC42NTkzMUwxMC4yMDggMTNMNi41IDEwLjk0OTVMMi43OTIgMTNMMy41IDguNjU5MzFMMC41IDUuNTg2NzVMNC42NDYgNC45NDk1M0w2LjUgMVYxWiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPC9zdmc+Cg==')">
+            </div>
+          </div>
+        </div>
+
+        <span class="card-apple-watch-text04">
+            <span>${data[x].full_name}</span>
+          </span>
+          <span class="card-apple-watch-text06">
+            <span>${data[x].description}</span>
+          </span>
+
           <button class="card-apple-watch-wishlist-button">
             <div class="card-apple-watch-wishlist-button1">
               <div class="card-apple-watch-heart">
-                <div class="card-apple-watch-path" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTYnIGhlaWdodD0nMTUnIHZpZXdCb3g9JzAgMCAxNiAxNScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBjbGlwLXJ1bGU9J2V2ZW5vZGQnIGQ9J00xMy45MjA1IDIuMTQ5MjlDMTMuMjI5NiAxLjQxMzQzIDEyLjI5MjQgMSAxMS4zMTUxIDFDMTAuMzM3OCAxIDkuNDAwNjMgMS40MTM0MyA4LjcwOTc2IDIuMTQ5MjlMNy45OTk4MiAyLjkwNTEyTDcuMjg5ODggMi4xNDkyOUM1Ljg1MDk4IDAuNjE3NDEgMy41MTgwNyAwLjYxNzQxMSAyLjA3OTE3IDIuMTQ5MjlDMC42NDAyNzYgMy42ODExOCAwLjY0MDI3NiA2LjE2NDg1IDIuMDc5MTcgNy42OTY3NEwyLjc4OTExIDguNDUyNTZMNy45OTk4MiAxNEwxMy4yMTA1IDguNDUyNTZMMTMuOTIwNSA3LjY5Njc0QzE0LjYxMTcgNi45NjEyMiAxNSA1Ljk2MzQ0IDE1IDQuOTIzMDJDMTUgMy44ODI1OSAxNC42MTE3IDIuODg0ODEgMTMuOTIwNSAyLjE0OTI5Wicgc3Ryb2tlPSdibGFjaycgc3Ryb2tlLXdpZHRoPScyJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnLz4KPC9zdmc+Cg==')">
+                <div class="card-apple-watch-path" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNiAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9ImhlYXJ0Ij4KPHBhdGggaWQ9IlBhdGgiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuOTIwNSAyLjE0OTI5QzEzLjIyOTYgMS40MTM0MyAxMi4yOTI0IDEgMTEuMzE1MSAxQzEwLjMzNzggMSA5LjQwMDYzIDEuNDEzNDMgOC43MDk3NiAyLjE0OTI5TDcuOTk5ODIgMi45MDUxMkw3LjI4OTg4IDIuMTQ5MjlDNS44NTA5OCAwLjYxNzQxIDMuNTE4MDcgMC42MTc0MTEgMi4wNzkxNyAyLjE0OTI5QzAuNjQwMjc2IDMuNjgxMTggMC42NDAyNzYgNi4xNjQ4NSAyLjA3OTE3IDcuNjk2NzRMMi43ODkxMSA4LjQ1MjU2TDcuOTk5ODIgMTRMMTMuMjEwNSA4LjQ1MjU2TDEzLjkyMDUgNy42OTY3NEMxNC42MTE3IDYuOTYxMjIgMTUgNS45NjM0NCAxNSA0LjkyMzAyQzE1IDMuODgyNTkgMTQuNjExNyAyLjg4NDgxIDEzLjkyMDUgMi4xNDkyOVoiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPC9zdmc+Cg==')">
                 </div>
               </div>
               <span class="card-apple-watch-text"><span>WISHLIST</span></span>
@@ -34,37 +53,16 @@
                 <span>ADD TO CART</span>
               </span>
               <div class="card-apple-watch-shoppingbag">
-                <div class="card-apple-watch-path1" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTgnIGhlaWdodD0nMjAnIHZpZXdCb3g9JzAgMCAxOCAyMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggb3BhY2l0eT0nMC43MzcyMTInIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMy42NjY2NyAxTDEgNC42VjE3LjJDMSAxOC4xOTQxIDEuNzk1OTQgMTkgMi43Nzc3OCAxOUgxNS4yMjIyQzE2LjIwNDEgMTkgMTcgMTguMTk0MSAxNyAxNy4yVjQuNkwxNC4zMzMzIDFIMy42NjY2N1onIHN0cm9rZT0nd2hpdGUnIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJy8+Cjwvc3ZnPgo=')">
-                </div>
-                <div class="card-apple-watch-path2" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTgnIGhlaWdodD0nMycgdmlld0JveD0nMCAwIDE4IDMnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+CjxwYXRoIG9wYWNpdHk9JzAuNzM3MjEyJyBkPSdNMSAxLjVIMTcnIHN0cm9rZT0nd2hpdGUnIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJy8+Cjwvc3ZnPgo=')">
-                </div>
-                <div class="card-apple-watch-path3" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nOScgaGVpZ2h0PSc1JyB2aWV3Qm94PScwIDAgOSA1JyBmaWxsPSdub25lJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPgo8cGF0aCBvcGFjaXR5PScwLjczNzIxMicgZD0nTTggMUM4IDIuNjU2ODUgNi40MzMgNCA0LjUgNEMyLjU2NyA0IDEgMi42NTY4NSAxIDEnIHN0cm9rZT0nd2hpdGUnIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJy8+Cjwvc3ZnPgo=')">
+                <div class="card-apple-watch-path1" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9InNob3BwaW5nLWJhZyI+CjxwYXRoIGlkPSJQYXRoIiBvcGFjaXR5PSIwLjczNzIxMiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zLjY2NjY3IDFMMSA0LjZWMTcuMkMxIDE4LjE5NDEgMS43OTU5NCAxOSAyLjc3Nzc4IDE5SDE1LjIyMjJDMTYuMjA0MSAxOSAxNyAxOC4xOTQxIDE3IDE3LjJWNC42TDE0LjMzMzMgMUgzLjY2NjY3WiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlBhdGhfMiIgb3BhY2l0eT0iMC43MzcyMTIiIGQ9Ik0xIDUuNUgxNyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlBhdGhfMyIgb3BhY2l0eT0iMC43MzcyMTIiIGQ9Ik0xMyA5QzEzIDEwLjY1NjkgMTEuNDMzIDEyIDkuNSAxMkM3LjU2NyAxMiA2IDEwLjY1NjkgNiA5IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+Cjwvc3ZnPgo=')">
                 </div>
               </div>
             </div>
           </button>
-          <span class="card-apple-watch-text04">
-            <span>${data[x].full_name}</span>
-          </span>
-          <span class="card-apple-watch-text06">
-            <span>${data[x].description}</span>
-          </span>
-          <img
-            src=""
-            alt="${data[x].name}"
-            class="card-apple-watch-applewatch"
-          />
+          
+          
           <span class="card-apple-watch-text08"><span>$${data[x].price}</span></span>
-          <div class="card-apple-watch-rating">
-            <span class="card-apple-watch-text10"><span>3.4</span></span>
-            <div class="card-apple-watch-star">
-              <div class="card-apple-watch-path4" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0nMTMnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxMyAxNCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBjbGlwLXJ1bGU9J2V2ZW5vZGQnIGQ9J002LjUgMUw4LjM1NCA0Ljk0OTUzTDEyLjUgNS41ODY3NUw5LjUgOC42NTkzMUwxMC4yMDggMTNMNi41IDEwLjk0OTVMMi43OTIgMTNMMy41IDguNjU5MzFMMC41IDUuNTg2NzVMNC42NDYgNC45NDk1M0w2LjUgMVYxWicgc3Ryb2tlPSd3aGl0ZScgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJy8+Cjwvc3ZnPgo=')">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>`;
+         
+        </div>`;
      } 
   
     html+=`</div>`;
