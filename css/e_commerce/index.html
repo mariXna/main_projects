@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en-GB,en-US;q=0.9,en;q=0.8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="httpgo">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/style/jquery.jscrollpane.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <!-- Fav and touch icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="/css/prizm.css" media="screen">
+        <link rel="stylesheet" href="/css/styles.css" media="screen">
+        <link rel="stylesheet" href="/css/tables.css" media="screen">
+        <link rel="stylesheet" href="/css/e-commerce.css" media="screen">
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <!-- forms rendering & validation -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" async></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js" async></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" async></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" ></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" defer></script>
+    <!--[if lt IE 10]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js" defer></script>
+    <![endif]-->
+    <script src="https://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/latest/all/gauge.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min.js" defer></script>
+    <script  src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.min.js"></script>
+        <script src="/js/app.js" async></script>
+        <script src="/js/prizm.js" async></script>
+        <script src="/js/tables.js" async></script>
+        <script src="/js/forms.js" async></script>
+        <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/csv-to-array/csvToArray.v2.1.min.js" async></script>
+        <script src="/js/showObject_tiles.js" async></script>
+        <script>
+									function ChangeTheme(theme) {
+										console.log($('a[href="/themes/?id='+theme+'"]'));
+										$('a[href="/themes/?id='+theme+'"]').click();
+									}
+					</script>
+    <link href="https://cdn.jsdelivr.net/jquery.suggestions/16.8/css/suggestions.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/jquery.suggestions/16.8/js/jquery.suggestions.min.js" defer></script>
+
+</head>
+
+
+<body theme=e-commerce>
+
+<header class="main-header">
+<div class="topline">
+    <nav class="topline-navbar">
+        
+ <ul class=top-mnu-list><li class="top-mnu-item"><a href="#" title="">API Rest Docs</a>
+    
+ <ul class=dropdown><li class=""><a href="/swagger.io" title=""target="_blank">Swagger</a></li><li class=""><a href="/src/" title="">Source of project</a></li><li class=""><a href="/apis?json" title="">API routers json</a></li><li class=""><a href="/apis?diagram" title="">API routers diagram</a></li><li class=""><a href="/diagram/db" title="">DB diagram</a></li></ul> 
+
+</li><li class="top-mnu-item"><a href="/forms/custom" title="">Custom forms</a>
+    
+ <ul class=dropdown><li class=""><a href="/show/forms/commerce" title="">QB forms</a></li></ul> 
+
+</li><li class="top-mnu-item"><a href="#" title="list of tables">Tables</a>
+    
+ <ul class=dropdown><li class=""><a href="/table/category/browse?limit={page}" title="">category</a></li><li class=""><a href="/table/countries/browse?limit={page}" title="">countries</a></li><li class=""><a href="/table/inventories/browse?limit={page}" title="">inventories</a></li><li class=""><a href="/table/patterns_list/browse?limit={page}" title="List of pattern which help us to show edit of fields">patterns_list</a></li><li class=""><a href="/table/products/browse?limit={page}" title="">products</a></li></ul> 
+
+</li><li class="top-mnu-item"><a href="#" title="list of view">Reports</a></li></ul> 
+
+    </nav>
+    <div class="topline-btns">
+        <a href="/user/signout/" id="bLogOut" onclick="return logOut(this);">
+            <span class="glyphicon-log-out"> </span>
+        </a>
+        <a href="#" id="burger" class="brg-mnu"></a>
+        <a id="bLogin" href="/show/forms/signin" class="navbar-link btn-login" title="Open auth form" target="_modal" >SignIn
+        <span class="glyphicon-info-sign"> </span></a>
+    </div>
+</div>
+</header>
+
+<main class="content-wrap">
+	<div id="container-fluid">
+	        <div class="sidebar-section">
+	            <div id="catalog_pane"  class="well sidebar-nav">
+	                
+ <ul class=left-mnu-list></ul> 
+
+	            </div>
+	        </div>
+	        <div class="content-section">
+			    <div class="row-fluid">
+			           <form id="fSearch" action="/search/" method="GET" target="#content"
+   onsubmit="return saveForm(this, showObject, function(error, status) { $('#content').html(error.responseText); } );">
+         <input type="hidden" name="html" value=true />
+         <input type="hidden" name="counter" value=0 />
+         <input id="inpS" name="name" type="search" placeholder="Smart search" required
+         autocapitalize="none" autocorrect="off" autocomplete="off" autofocus=true
+/>
+        <output></output>
+        <progress value='0' max='100' hidden > </progress>
+    </form>
+
+			    </div>
+		        <div id="content" rel="" aria-busy="true" aria-describedby="progress-bar">
+	            
+		
+		
+    
+		        </div>
+	        </div>
+	        <progress id="progress-bar" aria-label="Content loading…"></progress>
+	</div>
+</main>
+
+<footer class="main-footer">
+    <nav class="footer-navbar">
+        <div class="footer-block">
+            <div class="footer-mnu">
+            
+ <ul class=foot-mnu-list><li class="foot-mnu-item"><a href="#" title="">About Us</a></li><li class="foot-mnu-item"><a href="#" title="">Support</a></li><li class="foot-mnu-item"><a href="#" title="">Lang </a><select name='lang' onchange='changeLang($("option:selected", this).text()); return false;'><option >en</option><option >ar</option><option >uk</option><option >he</option><option >fr</option></select></li></ul> 
+
+            </div>
+        </div>
+    </nav>
+</footer>
+
+</body>
