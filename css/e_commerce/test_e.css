@@ -35,7 +35,7 @@ header .topline-btns {
     color: #2C2C2C;
     background: white;
     margin-right: 60px;
-    margin-top: 22px;
+    margin-top: 16px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
     border-radius: 8px;
     font-size: 14px;
@@ -45,6 +45,7 @@ header .topline-btns:hover {
     font-size: 16px;
     background-color: #6447AF;
     color: white;
+    text-decoration: none;
 }
 
 header nav {
@@ -54,7 +55,7 @@ header nav {
     padding-left: 10px;
 }
 .top-mnu-list {
-    margin-top: 22px;
+    margin-top: 2px;
     margin-left: 60px;
     background: none;
 }
@@ -138,10 +139,14 @@ li:hover {
 }
 
 ul li ul.dropdown {
-  opacity: 100;
+  background-color: white;
+  border-radius: 8pt;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
+  font-size: 12px;
+  margin: 8px;
+  opacity: 80%;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 0;
   display: block;
 
 }
@@ -365,9 +370,9 @@ form#fSearch input[type=search]{
 
 form#fSearch {
   position: fixed;
-  width: 100%;
+  width: 70%;
   margin: 11px;
-  margin-left: 250px;
+  margin-left: 450px;
   align-items: center;
   vertical-align: middle;
   top: -2px;
