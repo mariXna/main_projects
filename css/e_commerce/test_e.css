@@ -376,6 +376,7 @@ form#fSearch {
   align-items: center;
   vertical-align: middle;
   top: -2px;
+  z-index: 100;
 }
 
 form span.hiddenInput {
