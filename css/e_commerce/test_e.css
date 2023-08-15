@@ -175,7 +175,6 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 600px;
     margin: revert;
 /*width: max-content;*/
 }
