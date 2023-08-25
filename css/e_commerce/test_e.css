@@ -54,6 +54,11 @@ header nav {
     height: 100%;
     padding-left: 10px;
 }
+
+ul.top-mnu-list li.top-mnu-item:nth-child(n+2) {
+  margin-top: 0px;
+}
+
 .top-mnu-list {
     margin-top: 2px;
     margin-left: 60px;
@@ -117,6 +122,8 @@ li {
  display: block;
  transition-duration: 0.5s;
  float: left;
+ letter-spacing: -0.5px;
+  margin-left: -15px;
 }
 
 li a {
@@ -126,7 +133,9 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+/*ToDo change the selected element */
+
+li a:hover { 
   text-decoration: none;
   color: #2C2C2C;
   font-size: larger;
@@ -361,7 +370,7 @@ form  span.hiddenInput:hover{
 form#fSearch input[type=search]{
 	align-items: center;
 	vertical-align: middle;
-  width: 30%;
+  width: 50%;
   border-radius: 8px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
   border-color: white;  
@@ -369,13 +378,13 @@ form#fSearch input[type=search]{
 
 form#fSearch {
   position: fixed;
-  width: 70%;
-  margin: 11px;
-  margin-left: 450px;
+  width: 30%;
+  margin-right: 11px;
   align-items: center;
   vertical-align: middle;
   top: -2px;
   z-index: 100;
+  right: 100px;
 }
 
 form span.hiddenInput {
