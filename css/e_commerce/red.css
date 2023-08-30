@@ -28,6 +28,7 @@ header .topline-btns {
     display: inline-block;
     width: auto;
     right: 0;
+    top: 5px;
     padding: 4px 8px;
     border: 0;
     position: absolute;
@@ -53,6 +54,7 @@ header nav {
     align-items: center;
     height: 100%;
     padding-left: 10px;
+    margin-left: 30%;
 }
 
 ul.top-mnu-list li.top-mnu-item:nth-child(n+2) {
@@ -370,7 +372,7 @@ form  span.hiddenInput:hover{
 form#fSearch input[type=search]{
 	align-items: center;
 	vertical-align: middle;
-  width: 50%;
+  width: 10%;
   border-radius: 8px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
   border-color: white;  
@@ -378,11 +380,11 @@ form#fSearch input[type=search]{
 
 form#fSearch {
   position: fixed;
-  width: 30%;
+  width: 50px;
   margin-right: 11px;
   align-items: center;
   vertical-align: middle;
-  top: -2px;
+  top: 20px;
   z-index: 100;
   right: 100px;
 }
