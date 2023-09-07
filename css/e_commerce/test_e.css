@@ -572,6 +572,8 @@ margin-right: 11px;
 .card-apple-watch-text06 {
   color: rgba(44, 44, 44, 1);
   height: auto;
+  max-height: 14px;
+  overflow: hidden;
   
   font-size: 12px;
   font-style: Light;
