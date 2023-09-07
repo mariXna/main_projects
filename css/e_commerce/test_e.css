@@ -649,6 +649,14 @@ margin-top: 6px;
   
 }
 
+.card-apple-watch-text06 p {
+  max-height: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 290px;
+}
+
 .wishlist_cart{
  display: flex;
 }
