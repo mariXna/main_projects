@@ -1,5 +1,17 @@
 //01.08.23 - 8pm BST
 
+
+function addEllipsis() {
+  const containers = document.querySelectorAll('.card-apple-watch-text06');
+  containers.forEach((container) => {
+    const content = container.innerHTML;
+    container.innerHTML = content + '<span class="ellipsis-mask"></span>';
+    while (container.scrollHeight > container.offsetHeight) {
+      container.innerHTML = content;
+      container.innerHTML = container.innerHTML.slice(0, -1);
+    }
+  });
+}
   function showObject(data, thisForm) {
       if (!data) {
         html = `<div class = "no_content">
@@ -13,7 +25,8 @@
       }
 
     var html = '';
-    html+=`<div class="search_tiles">`;
+    html+=`
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" /><div class="search_tiles">`;
      for (x in data){
       
     
@@ -31,10 +44,10 @@
             </div>
           </div>
         </div>
-        <span class="card-apple-watch-text08">$${data[x].price}</span>
+        <div class="card-apple-watch-text08">$${data[x].price}</div>
         </div>
-        <span class="card-apple-watch-text04">${data[x].full_name}</span>
-          <span class="card-apple-watch-text06">${data[x].description}</span>
+        <div class="card-apple-watch-text04">${data[x].full_name}</div>
+          <div class="card-apple-watch-text06">${data[x].description}</div>
           <div class="wishlist_cart">
           <button class="card-apple-watch-wishlist-button">
             <div class="card-apple-watch-wishlist-button1">
