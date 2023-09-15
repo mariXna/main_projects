@@ -29,7 +29,7 @@ header .topline-btns {
     width: auto;
     right: 0;
     top: 5px;
-    padding: 4px 8px;
+    padding: 6px 8px;
     border: 0;
     position: absolute;
     min-width: auto;
@@ -384,9 +384,9 @@ form#fSearch {
   margin-right: 11px;
   align-items: center;
   vertical-align: middle;
-  top: 20px;
+  top: 8px;
   z-index: 100;
-  right: 100px;
+  right: 900px;
 }
 
 form span.hiddenInput {
