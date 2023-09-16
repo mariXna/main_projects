@@ -27,7 +27,7 @@ header .topline {
 header .topline-btns {
     display: inline-block;
     width: auto;
-    right: 0;
+    right: 400px;
     top: 5px;
     padding: 6px 8px;
     border: 0;
