@@ -65,6 +65,7 @@ ul.top-mnu-list li.top-mnu-item:nth-child(n+2) {
     margin-top: 2px;
     margin-left: 60px;
     background: none;
+    color:#2C2C2C;
 }
 li.top-mnu-item a {
     margin: 0 10px;
