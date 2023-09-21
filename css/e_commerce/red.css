@@ -72,6 +72,7 @@ li.top-mnu-item a {
     padding: 4px 8px;
     border-radius: 8px;
     transition: color .3s ease-in-out;
+    color:#FFFFFF;
 }
 
 #catalog_pane {
