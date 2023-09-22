@@ -169,6 +169,8 @@
     line-height: 14px;
     font-stretch: normal;
     text-decoration: none;
+    max-height: 14px;
+    overflow: hidden;
   }
   .card-apple-watch-applewatch {
     top: 31px;
