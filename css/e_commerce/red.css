@@ -1,6 +1,11 @@
 body {
     color: rgb(10, 28, 59);
 
+}
+    .top-mnu-list {
+    margin-top: 70px;
+    margin-left: 60px;
+    background: none;
 
 }
 li.top-mnu-item a {
