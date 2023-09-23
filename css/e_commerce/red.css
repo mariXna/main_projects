@@ -46,7 +46,7 @@ input[type=text] {
 form#fSearch input[type=search]{
 	align-items: center;
 	vertical-align: middle;
-  width: 10%;
+  width: 90%;
   border-radius: 8px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
   border-color: white;  
@@ -54,11 +54,11 @@ form#fSearch input[type=search]{
 
 form#fSearch {
   position: fixed;
-  width: 50px;
+  width: 200px;
   margin-right: 11px;
   align-items: center;
   vertical-align: middle;
   top: 8px;
   z-index: 100;
-  right: 900px;
+  right: 65%;
 }
