@@ -8,6 +8,23 @@ li.top-mnu-item a {
   color:#2C2C2C;
 }
 
+header .topline-btns {
+    display: inline-block;
+    width: auto;
+    right: 15%;
+    padding: 6px 8px;
+    border: 0;
+    position: absolute;
+    min-width: auto;
+    color: #2C2C2C;
+    background: white;
+    margin-right: 60px;
+    margin-top: 16px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
 #catalog_pane {
    position: absolute;
     right: -10000px;
