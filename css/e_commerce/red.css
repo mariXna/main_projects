@@ -3,6 +3,12 @@ body {
 
 }
 
+header nav {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+}
 
 li.top-mnu-item a {
   color:#2C2C2C;
