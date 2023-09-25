@@ -38,7 +38,7 @@ function addEllipsis() {
           />
           <div class="rating_price">
           <div class="card-apple-watch-rating">
-          <span class="card-apple-watch-text10"><span>3.4</span></span>
+          <div class="card-apple-watch-text10"><span>3.4</span></div>
           <div class="card-apple-watch-star">
             <div class="card-apple-watch-path4" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMyAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9InN0YXIiPgo8cGF0aCBpZD0iUGF0aCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02LjUgMUw4LjM1NCA0Ljk0OTUzTDEyLjUgNS41ODY3NUw5LjUgOC42NTkzMUwxMC4yMDggMTNMNi41IDEwLjk0OTVMMi43OTIgMTNMMy41IDguNjU5MzFMMC41IDUuNTg2NzVMNC42NDYgNC45NDk1M0w2LjUgMVYxWiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPC9zdmc+Cg==')">
             </div>
