@@ -2,7 +2,17 @@ body {
     color: rgb(10, 28, 59);
 
 }
-
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #f6f7f8;
+    box-shadow: 0 0 6px -3px #f6f7f8;
+    box-sizing: border-box;
+    z-index: 9;
+    align-items: center;
+    background: white;
+}
 
 li.top-mnu-item a {
   color:#2C2C2C;
