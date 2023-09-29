@@ -16,6 +16,12 @@ header {
 
 ul.top-mnu-list li.top-mnu-item:nth-child(2) {
     margin-top: 2px;
+    background-color: black;
+}
+
+ul.top-mnu-list li.top-mnu-item:nth-child(3) {
+    margin-top: 16px;
+    margin-left: 250px;
 }
 
 li {
@@ -95,5 +101,5 @@ form#fSearch {
   vertical-align: middle;
   top: 8px;
   z-index: 100;
-  right: 65%;
+  left: 220px;
 }
