@@ -14,6 +14,14 @@ header {
     background: white;
 }
 
+ul.top-mnu-list li.top-mnu-item:nth-child(1) {
+    display: flex;
+    transition-duration: 0.5s;
+    float: left;
+    margin-top: 17px;
+    margin-right: 300px;
+}
+
 ul.top-mnu-list li.top-mnu-item:nth-child(2) {
     margin-top: 2px;
     background-color: black;
