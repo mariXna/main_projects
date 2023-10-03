@@ -53,8 +53,15 @@ header .topline-btns {
     font-size: 14px;
 }
 
+.sidebar-section {
+    width: 0;
+    display: table-cell;
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
 #catalog_pane {
-   position: absolute;
+   position: flex;
     right: -10000px;
 }
 
