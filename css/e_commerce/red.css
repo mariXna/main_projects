@@ -25,7 +25,7 @@ ul.top-mnu-list li.top-mnu-item:nth-child(3) {
 }
 
 li {
-    display: block;
+    display: flex;
     transition-duration: 0.5s;
     float: left;
     margin-top: 17px;
