@@ -14,7 +14,7 @@ header {
     background: white;
 }
 
-ul.top-mnu-list li.top-mnu-item:nth-child(1) {
+body[theme=red] li {
     display: flex;
     transition-duration: 0.5s;
     float: left;
