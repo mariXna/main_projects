@@ -14,7 +14,7 @@ header {
     background: white;
 }
 
-body[theme=red] li.top-mnu-item a {
+li.top-mnu-item a {
     color: #2C2C2C;
     background-color: transparent;
 }
