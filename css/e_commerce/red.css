@@ -90,6 +90,7 @@ ul.foot-mnu-list {
 }
 li.foot-mnu-item a {
     color: #FFFFFF;
+    background-color: transparent;
 }
 
 
