@@ -14,6 +14,11 @@ header {
     background: white;
 }
 
+body[theme=red] li.top-mnu-item a {
+    color: #2C2C2C;
+    background-color: transparent;
+}
+
 ul.top-mnu-list li.top-mnu-item:nth-child(1) {
     display: flex;
     transition-duration: 0.5s;
