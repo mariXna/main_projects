@@ -166,6 +166,7 @@ display: block;
 
 }
 
+
 ul li:hover > ul.dropdown,
 /*ul li:focus-within > ul.dropdown,*/
 ul li ul.dropdown:hover {
@@ -292,7 +293,7 @@ font-style: normal;
 font-weight: 300;
 line-height: 32px;
 }
-}
+
 /*label > input:not([value]):focus + span::before, label > textarea:focus + span::before, label > input[value] + span::before  {
   width:100%
 }
