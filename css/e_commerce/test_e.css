@@ -1,5 +1,8 @@
 body {
     color: rgb(10, 28, 59);
+    display: block;
+    height: fit-content;
+    width: 1927px;
 }
 header {
     position: sticky;
@@ -87,12 +90,15 @@ li.top-mnu-item a {
 #content {
     overflow: scroll;
     height: 99%;
+    margin-left: 70px;
 }
 .sidebar-section {
-    width: 15%;
+
     display: table-cell;
 /* padding-left: 15px;*/
         padding-top: 3px;
+  width: 371px;
+  height: 1822px;
 }
 .row-fluid {
     width: 100%;
@@ -101,6 +107,7 @@ li.top-mnu-item a {
 .content-section {
     width: 85%;
     display: table-cell;
+    margin-left: 105px;
 }
 .left-mnu-list {
     margin-left: 5px;
@@ -176,23 +183,67 @@ ul li ul.dropdown li {
   width: 100%;
 }
 
+.form-actions{
+   margin-top: 30px;
+}
+
+.button {
+  color: #fff;
+  border-color: transparent;
+  background: #093b9a;
+  border-radius: 8px;
+  background: #6447AF;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
+  width: 371px;
+  height: 56px;
+  margin-left: -25px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
 form.form-horizontal {
-    width: max-content;
+  width: 371px;
+  left: 81px;
+  position: absolute;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
+  margin-top: 50px;
+  height: 1519px;
 }
 figure {
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    margin: revert;
-/*width: max-content;*/
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  border-top-color: #D6D6D6;
+  width: 323px;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  margin-bottom: 42px;
 }
 figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
+  background: transparent;
+  color: black;
+  font: italic smaller sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: smaller;
+    line-height: normal;
+    font-family: sans-serif;
+  padding: 3px;
+  text-align: left;
+  margin-top: 33.5px;
+  color: #2C2C2C;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-left: -10px;
 }
 
 input[type=text] {
@@ -227,12 +278,19 @@ margin-bottom:37px;*/
 }
 label > span {
     position: absolute;
-    display: block;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    pointer-events:none;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 30px;
+  pointer-events: none;
+  color: #2C2C2C;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
 }
 /*label > input:not([value]):focus + span::before, label > textarea:focus + span::before, label > input[value] + span::before  {
     width:100%
@@ -296,6 +354,10 @@ figure label > select {
 figure label > input[type="checkbox"] {
 	position: relative;
 	right: 15px;
+	top: 0;
+	left: -150px;
+	border-radius: 3px;
+	border: 1px solid #999;
 }
 figure label > input {
     position: absolute;
@@ -562,7 +624,7 @@ margin-right: 11px;
   font-style: Regular;
   text-align: left;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 19px;
   font-stretch: normal;
   text-decoration: none;
@@ -577,7 +639,7 @@ margin-right: 11px;
   font-style: Light;
   text-align: left;
   font-family: Montserrat;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 14px;
   font-stretch: normal;
   text-decoration: none;
@@ -603,7 +665,7 @@ margin: 0px 0px 16px 23px;
   font-style: Regular;
   text-align: left;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 21px;
   font-stretch: normal;
   text-decoration: none;
@@ -627,7 +689,7 @@ margin-right: 225px;
   font-style: Regular;
   text-align: left;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 17px;
   font-stretch: normal;
   text-decoration: none;
@@ -664,6 +726,28 @@ margin-top: 6px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
   margin-left: 52px;
-  margin-top: 28px;
+  margin-top: 120px;
   margin-right: 162px;
+}
+
+#block0 {
+  border-top-color: transparent;
+}
+#block5 {
+  border-top-color: transparent;
+}
+
+#navBlocks {
+  height: 0;
+  border: none;
+  margin-top: -60px;
+}
+
+#Filters_form h2 {
+  color: #2C2C2C;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: -40px;
 }
