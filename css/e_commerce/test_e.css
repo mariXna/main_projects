@@ -7,7 +7,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 80%;
   height: 60px;
   border-bottom: 1px solid #f6f7f8;
   box-shadow: 0 0 6px -3px #f6f7f8;
@@ -90,8 +90,8 @@ li.top-mnu-item a {
 #content {
   overflow: scroll;
   height: 99%;
-  margin-left: 70px;
 }
+
 .sidebar-section {
 
   display: table-cell;
@@ -727,7 +727,7 @@ display: flex;
 .search_tiles {
 display: grid;
 grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-margin-left: 52px;
+margin-left: 10px;
 margin-top: 120px;
 margin-right: 162px;
 }
