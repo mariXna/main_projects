@@ -1,15 +1,8 @@
 body {
-<<<<<<< HEAD
   color: rgb(10, 28, 59);
   display: block;
   height: fit-content;
   width: 1927px;
-=======
-    color: rgb(10, 28, 59);
-    display: block;
-    height: fit-content;
-    width: 1927px;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 header {
   position: sticky;
@@ -95,7 +88,6 @@ li.top-mnu-item a {
 }
 
 #content {
-<<<<<<< HEAD
   overflow: scroll;
   height: 99%;
   margin-left: 70px;
@@ -107,34 +99,15 @@ li.top-mnu-item a {
       padding-top: 3px;
 width: 371px;
 height: 1822px;
-=======
-    overflow: scroll;
-    height: 99%;
-    margin-left: 70px;
-}
-.sidebar-section {
-
-    display: table-cell;
-/* padding-left: 15px;*/
-        padding-top: 3px;
-  width: 371px;
-  height: 1822px;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 .row-fluid {
   width: 100%;
   display: flex;
 }
 .content-section {
-<<<<<<< HEAD
   width: 85%;
   display: table-cell;
   margin-left: 105px;
-=======
-    width: 85%;
-    display: table-cell;
-    margin-left: 105px;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 .left-mnu-list {
   margin-left: 5px;
@@ -232,29 +205,7 @@ font-weight: 500;
 line-height: 21px;
 }
 
-.form-actions{
-   margin-top: 30px;
-}
-
-.button {
-  color: #fff;
-  border-color: transparent;
-  background: #093b9a;
-  border-radius: 8px;
-  background: #6447AF;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
-  width: 371px;
-  height: 56px;
-  margin-left: -25px;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-}
-
 form.form-horizontal {
-<<<<<<< HEAD
 width: 371px;
 left: 81px;
 position: absolute;
@@ -294,47 +245,6 @@ font-style: normal;
 font-weight: 600;
 line-height: 22px;
 margin-left: -10px;
-=======
-  width: 371px;
-  left: 81px;
-  position: absolute;
-  border-radius: 8px;
-  background: #FFF;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
-  margin-top: 50px;
-  height: 1519px;
-}
-figure {
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  border-top-color: #D6D6D6;
-  width: 323px;
-  border-bottom: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  margin-bottom: 42px;
-}
-figcaption {
-  background: transparent;
-  color: black;
-  font: italic smaller sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: smaller;
-    line-height: normal;
-    font-family: sans-serif;
-  padding: 3px;
-  text-align: left;
-  margin-top: 33.5px;
-  color: #2C2C2C;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  margin-left: -10px;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 
 input[type=text] {
@@ -368,7 +278,6 @@ z-index: 100;
   margin-top: 10px;
 }
 label > span {
-<<<<<<< HEAD
   position: absolute;
 display: block;
 width: 100%;
@@ -382,21 +291,6 @@ font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: 32px;
-=======
-    position: absolute;
-  display: block;
-  width: 100%;
-  height: 0;
-  top: 0;
-  left: 30px;
-  pointer-events: none;
-  color: #2C2C2C;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 32px;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 }
 /*label > input:not([value]):focus + span::before, label > textarea:focus + span::before, label > input[value] + span::before  {
@@ -459,21 +353,12 @@ figure label > select {
   width: inherit;
 }
 figure label > input[type="checkbox"] {
-<<<<<<< HEAD
 position: relative;
 right: 15px;
 top: 0;
 left: -150px;
 border-radius: 3px;
 border: 1px solid #999;
-=======
-	position: relative;
-	right: 15px;
-	top: 0;
-	left: -150px;
-	border-radius: 3px;
-	border: 1px solid #999;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 figure label > input {
   position: absolute;
@@ -733,7 +618,6 @@ opacity: 0.74;
 
 }
 .card-apple-watch-text04 {
-<<<<<<< HEAD
 color: rgba(44, 44, 44, 1);
 height: auto;
 
@@ -762,36 +646,6 @@ font-stretch: normal;
 text-decoration: none;
 margin-bottom: 22px;
 margin-left: 22px;
-=======
-  color: rgba(44, 44, 44, 1);
-  height: auto;
-  
-  font-size: 16px;
-  font-style: Regular;
-  text-align: left;
-  font-family: Montserrat;
-  font-weight: 600;
-  line-height: 19px;
-  font-stretch: normal;
-  text-decoration: none;
-  margin-bottom: 3px;
-  margin-left: 22px;
-}
-.card-apple-watch-text06 {
-  color: rgba(44, 44, 44, 1);
-  max-height: 14px;
-  overflow: hidden;
-  font-size: 12px;
-  font-style: Light;
-  text-align: left;
-  font-family: Montserrat;
-  font-weight: 400;
-  line-height: 14px;
-  font-stretch: normal;
-  text-decoration: none;
-  margin-bottom: 22px;
-  margin-left: 22px;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 .card-apple-watch-applewatch {
 width: 220px;
@@ -805,7 +659,6 @@ display: flex;
 margin: 0px 0px 16px 23px;
 }
 .card-apple-watch-text08 {
-<<<<<<< HEAD
 color: rgba(44, 44, 44, 1);
 height: auto;
 
@@ -817,19 +670,6 @@ font-weight: 600;
 line-height: 21px;
 font-stretch: normal;
 text-decoration: none;
-=======
-  color: rgba(44, 44, 44, 1);
-  height: auto;
-  
-  font-size: 18px;
-  font-style: Regular;
-  text-align: left;
-  font-family: Montserrat;
-  font-weight: 600;
-  line-height: 21px;
-  font-stretch: normal;
-  text-decoration: none;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 }
 .card-apple-watch-rating {
 width: 60px;
@@ -843,7 +683,6 @@ background: #6447AF;
 margin-right: 225px;
 }
 .card-apple-watch-text10 {
-<<<<<<< HEAD
 color: rgba(255, 255, 255, 1);
 height: auto;
 
@@ -855,19 +694,6 @@ font-weight: 500;
 line-height: 17px;
 font-stretch: normal;
 text-decoration: none;
-=======
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  
-  font-size: 14px;
-  font-style: Regular;
-  text-align: left;
-  font-family: Montserrat;
-  font-weight: 500;
-  line-height: 17px;
-  font-stretch: normal;
-  text-decoration: none;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
 margin-left: 10px;
 margin-right: 6.5px;
 margin-top: 6px;
@@ -898,7 +724,6 @@ max-width: 290px;
 display: flex;
 }
 .search_tiles {
-<<<<<<< HEAD
 display: grid;
 grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
 margin-left: 52px;
@@ -926,33 +751,4 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 margin-top: -40px;
-=======
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  margin-left: 52px;
-  margin-top: 120px;
-  margin-right: 162px;
->>>>>>> a5e9560319c12805a7cb46ac53fd628a12004f29
-}
-
-#block0 {
-  border-top-color: transparent;
-}
-#block5 {
-  border-top-color: transparent;
-}
-
-#navBlocks {
-  height: 0;
-  border: none;
-  margin-top: -60px;
-}
-
-#Filters_form h2 {
-  color: #2C2C2C;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  margin-top: -40px;
 }
