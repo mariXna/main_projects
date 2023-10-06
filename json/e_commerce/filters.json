@@ -158,7 +158,7 @@
         "id": 5, 
           "buttons": [
           {
-            "title": "Clear All Filters",
+            "title": "CLEAR ALL FILTERS",
             "type": "submit"
           }
         ]
