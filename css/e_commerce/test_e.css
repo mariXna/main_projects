@@ -90,6 +90,7 @@ li.top-mnu-item a {
 #content {
   overflow: scroll;
   height: 99%;
+  margin-left: 52px;
 }
 
 .sidebar-section {
