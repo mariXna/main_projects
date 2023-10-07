@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Form styles */
+    .form-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container figure {
+      margin-bottom: 15px;
+    }
+
+    .form-container figure figcaption {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-container figure .input-wrap {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .form-container figure .input-wrap input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    /* Rating stars styles */
+    .star-rating {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .star-rating .star {
+      width: 20px;
+      height: 20px;
+      background: url('https://imageurl.com/empty-star.png');
+      background-size: cover;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .star-rating .star.checked {
+      background: url('https://imageurl.com/filled-star.png');
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+<form id="Filters_form" name="Filters" role="form" class="form-horizontal" target="content" action="/table/items/put" method="POST" enctype="multipart/form-data" oninput="return FormIsModified(event, this);" onchange="return FormIsModified(event, this);" onsubmit="return saveForm(this, afterSaveAnyForm);" novalidate="true" caption="Filters">
+  <h2>Filters</h2>
+
+  <div class="form-container">
+    <figure id="block0">
+      <figcaption>Multi Range</figcaption>
+      <div id="divField0" class="input-wrap">
+        <input type="checkbox" name="range_10" id="id_range_10">
+        <label class="input-label" for="id_range_10">
+          <span data-placeholder="$10"></span>
+        </label>
+      </div>
+
+      <div id="divField1" class="input-wrap">
+        <input type="checkbox" name="range_10_100" id="id_range_10_100">
+        <label class="input-label" for="id_range_10_100">
+          <span data-placeholder="$10-$100"></span>
+        </label>
+      </div>
+
+      <!-- Add more checkboxes and labels for multi range here -->
+    </figure>
+
+    <figure id="block1">
+      <figcaption>Slider</figcaption>
+      <div id="divField0" class="input-wrap">
+        <input type="number" name="slider_1_99_4098" id="id_slider_1_99_4098">
+        <label class="input-label" for="id_slider_1_99_4098">
+          <span data-placeholder="slider"></span>
+        </label>
+      </div>
+    </figure>
+
+    <figure id="block2">
+      <figcaption>Category</figcaption>
+      <div id="divField0" class="input-wrap">
+        <input type="checkbox" name="smartphones" id="id_smartphones">
+        <label class="input-label" for="id_smartphones">
+          <span data-placeholder="Smartphones"></span>
+        </label>
+      </div>
+
+      <div id="divField1" class="input-wrap">
+        <input type="checkbox" name="computers" id="id_computers">
+        <label class="input-label" for="id_computers">
+          <span data-placeholder="Computers"></span>
+        </label>
+      </div>
+
+      <!-- Add more checkboxes and labels for categories here -->
+    </figure>
+
+    <figure id="block3">
+      <figcaption>Brand</figcaption>
+      <div id="divField0" class="input-wrap">
+        <input type="checkbox" name="insigni" id="id_insigni">
+        <label class="input-label" for="id_insigni">
+          <span data-placeholder="insigni"></span>
+        </label>
+      </div>
+
+      <div id="divField1" class="input-wrap">
+        <input type="checkbox" name="samsung" id="id_samsung">
+        <label class="input-label" for="id_samsung">
+          <span data-placeholder="samsung"></span>
+        </label>
+      </div>
+
+      <!-- Add more checkboxes and labels for brands here -->
+    </figure>
+
+    <figure id="block4">
+      <figcaption>Rating</figcaption>
+      <div id="divField0" class="input-wrap">
+        <input type="checkbox" name="rating_5" id="id_rating_5">
+        <label class="input-label" for="id_rating_5">
+          <span data-placeholder="5 &amp; Up"></span>
+        </label>
+      </div>
+      <div class="star-rating">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+      <!-- Add more checkboxes and star ratings for other options -->
+    </figure>
+
+    <figure id="block5">
+      <div class="form-actions">
+        <button class="button" type="submit">Clear All Filters</button>
+      </div>
