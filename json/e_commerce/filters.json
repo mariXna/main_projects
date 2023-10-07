@@ -107,17 +107,52 @@
                 {
                     "name": "insigni",
                     "type": "checkbox",
-                    "title": "insigni"
+                    "title": "Insigni"
                   },
                   {
                     "name": "samsung",
                     "type": "checkbox",
-                    "title": "samsung"
+                    "title": "Samsung"
                   },
                   {
                     "name": "apple",
                     "type": "checkbox",
                     "title": "apple"
+                  },
+                  {
+                    "name": "hp",
+                    "type": "checkbox",
+                    "title": "HP"
+                  },
+                  {
+                    "name": "sony",
+                    "type": "checkbox",
+                    "title": "Sony"
+                  },
+                  {
+                    "name": "metra",
+                    "type": "checkbox",
+                    "title": "Metra"
+                  },
+                  {
+                    "name": "dyne",
+                    "type": "checkbox",
+                    "title": "Dyne"
+                  },
+                  {
+                    "name": "lg",
+                    "type": "checkbox",
+                    "title": "LG"
+                  },
+                  {
+                    "name": "canon",
+                    "type": "checkbox",
+                    "title": "Canon"
+                  },
+                  {
+                    "name": "speck",
+                    "type": "checkbox",
+                    "title": "Speck"
                   }
                 ]
             },
