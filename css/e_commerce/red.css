@@ -3,14 +3,6 @@ body {
 
 }
 header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid #f6f7f8;
-    box-shadow: 0 0 6px -3px #f6f7f8;
-    box-sizing: border-box;
-    z-index: 9;
-    align-items: center;
     background: white;
 }
 
@@ -20,10 +12,6 @@ li.top-mnu-item a {
 }
 
 ul.top-mnu-list li.top-mnu-item:nth-child(1) {
-    display: flex;
-    transition-duration: 0.5s;
-    float: left;
-    margin-top: 17px;
     margin-right: 300px;
 }
 
@@ -49,44 +37,30 @@ li.top-mnu-item a {
 }
 
 ul li ul.dropdown li {
-    clear: both;
-    width: 100%;
     margin-top: -5px;
 }
 
 header .topline-btns {
-    display: inline-block;
     width: auto;
     right: 15%;
     padding: 6px 8px;
-    border: 0;
-    position: absolute;
-    min-width: auto;
     color: #2C2C2C;
     background: white;
     margin-right: 60px;
     margin-top: 16px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
     border-radius: 8px;
-    font-size: 14px;
 }
 
 .sidebar-section {
     width: 0;
-    display: table-cell;
-    padding-left: 15px;
-    padding-top: 3px;
 }
 
 #catalog_pane {
-   position: flex;
+   position: unset;
     right: -10000px;
 }
 
-.content-section {
-    width: 85%;
-    display: table-cell;
-}
+
 ul.foot-mnu-list {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -111,20 +85,14 @@ input[type=text] {
 }
 
 form#fSearch input[type=search]{
-	align-items: center;
-	vertical-align: middle;
   width: 90%;
-  border-radius: 8px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.14);
-  border-color: white;  
 }
 
 form#fSearch {
   position: fixed;
   width: 200px;
   margin-right: 11px;
-  align-items: center;
-  vertical-align: middle;
   top: 17px;
   z-index: 100;
   left: 140px;
@@ -339,4 +307,51 @@ form#fSearch {
     flex-shrink: 1;
   }
 
-  
+  .frame-group17 {
+    background: center center no-repeat scroll;
+    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='white'/%3E%3C/svg%3E");
+    top: 0px;
+    left: 0px;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .frame-group18 {
+    background: center center no-repeat scroll;
+    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='white'/%3E%3C/svg%3E");
+    top: 0px;
+    left: 0px;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .frame-group19 {
+    background: center center no-repeat scroll;
+    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='white'/%3E%3C/svg%3E");
+    top: 0px;
+    left: 0px;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .frame-group20 {
+    background: center center no-repeat scroll;
+    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='white'/%3E%3C/svg%3E");
+    top: 4367px;
+    left: 303px;
+    width: 1314px;
+    height: 624px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
