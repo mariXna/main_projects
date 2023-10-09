@@ -37,7 +37,7 @@ li.top-mnu-item a {
   color:#2C2C2C;
 }
 
-ul li ul.dropdown li.top-mnu-item:nth-child(1) {
+ul li ul.dropdown li:nth-child(1) {
     margin-top: -5px;
 }
 
