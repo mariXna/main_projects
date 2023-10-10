@@ -73,10 +73,7 @@ ul.foot-mnu-list {
 li.foot-mnu-item a {
     color: #FFFFFF;
     background-color: transparent;
-}
-
-ul.foot-mnu-list li.foot-mnu-item {
-  margin-top: -5px;
+    margin-top: 35px;
 }
 
 input[type=text] {
