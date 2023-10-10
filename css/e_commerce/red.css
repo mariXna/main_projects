@@ -34,7 +34,7 @@ li.top-mnu-item {
     color:#2C2C2C;
 }
 
-li.top-mnu-item:nth-child(n+4) {
+li.top-mnu-item:nth-child(3) {
   margin-top: -7px;
 }
 
