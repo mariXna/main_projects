@@ -34,7 +34,7 @@ li.top-mnu-item {
     color:#2C2C2C;
 }
 
-ul.burger-list ul li ul.dropdown {
+li.top-mnu-item:nth-child(4) {
   margin-top: -7px;
 }
 
