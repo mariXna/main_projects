@@ -75,7 +75,9 @@ li.foot-mnu-item a {
     background-color: transparent;
 }
 
-
+ul.foot-mnu-list li.foot-mnu-item {
+  margin-top: -5px;
+}
 
 input[type=text] {
     padding: 8px;
