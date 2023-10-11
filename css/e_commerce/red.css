@@ -74,6 +74,7 @@ li.foot-mnu-item a {
     color: #FFFFFF;
     background-color: transparent;
     margin-top: 35px;
+    margin-left: 10px;
 }
 
 input[type=text] {
