@@ -76,10 +76,6 @@ li.foot-mnu-item a {
     margin-top: 35px;
 }
 
-ul.foot-mnu-list li ul.dropdown li {
-  margin-left: -15px;
-}
-
 input[type=text] {
     padding: 8px;
     border: 1px solid #c2c7d1;
