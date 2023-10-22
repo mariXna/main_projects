@@ -129,18 +129,75 @@ form#fSearch {
 }
 
      
- .mine-div { 
-    background: center center no-repeat scroll; 
-    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='black'/%3E%3C/svg%3E");
-  } 
-  .frame-group {
-    background: center center no-repeat scroll; 
-    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='white'/%3E%3C/svg%3E");
-    width: 1920px;
-    height: 5568px;
-    display: flex;
-    align-items: flex-start;
-    flex-shrink: 1; 
-   }
-   
-   
+      
+.mine-div { 
+  background: center center no-repeat scroll; 
+  background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='black'/%3E%3C/svg%3E");
+} 
+.frame-group {
+  background: center center no-repeat scroll; 
+  background-image: url("data:image/svg+xml,%3Csvg width='1920' height='5536' viewBox='0 0 1920 5536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 0H0V5536H1920V0Z' fill='white'/%3E%3C/svg%3E");
+  top: -32px;
+  left: 0px;
+  width: 1920px;
+  height: 5568px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 1;
+ }
+
+
+
+.frame-box {
+height: 730px;
+width: 1900px; 
+position: absolute;
+}
+
+
+.frame-group1 {
+width: 950px; 
+height: 730px; 
+flex-shrink: 0;
+position: relative;
+background: center center no-repeat scroll;
+}        
+        
+
+.lorem-ipsum {
+top: 90px;
+left: 159px;
+width: 633px;
+height: 138px;
+position: relative;
+}  
+
+
+.lorem-ipsum2 {
+top: 248px;
+left: 162px;
+width: 601px;
+height: 138px;
+position: relative;
+}
+
+         
+
+.frame-container {
+  left: 970px;
+  width: 950px; 
+  height: 730px; 
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+
+.frame-frame {
+  bottom: 789px;
+  left: 1171px;
+  width: 547px;
+  height: 789px;
+  position: relative;
+}
+
