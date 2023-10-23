@@ -181,7 +181,21 @@ height: 138px;
 position: relative;
 }
 
-         
+.add-to-cart {
+  top: 408px;
+  left: 152px;
+  width: 601px;
+  height: 106px;
+  position: relative; 
+}
+ 
+.text-add-to-cart {
+  bottom: 90px;
+  left: 200px;
+  width: 183px;
+  height: 59px;
+  position: relative;  
+}
 
 .frame-container {
   left: 970px;
