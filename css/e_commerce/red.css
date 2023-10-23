@@ -150,8 +150,8 @@ form#fSearch {
 
 .frame-box {
 height: 730px;
-width: 1900px; 
-position: absolute;
+width: 1920px; 
+position: relative;
 }
 
 
@@ -165,24 +165,24 @@ background: center center no-repeat scroll;
         
 
 .lorem-ipsum {
-top: 90px;
-left: 159px;
-width: 633px;
-height: 138px;
-position: relative;
-}  
+  top: 90px;
+  left: 159px;
+  width: 633px;
+  height: 138px;
+  position: relative;
+}   
 
 
 .lorem-ipsum2 {
-top: 248px;
-left: 162px;
-width: 601px;
-height: 138px;
-position: relative;
+  top: 148px;
+  left: 162px;
+  width: 601px;
+  height: 138px;
+  position: relative;
 }
 
 .add-to-cart {
-  top: 408px;
+  top: 208px;
   left: 152px;
   width: 601px;
   height: 106px;
@@ -198,6 +198,7 @@ position: relative;
 }
 
 .frame-container {
+  bottom: 730px;
   left: 970px;
   width: 950px; 
   height: 730px; 
@@ -205,10 +206,8 @@ position: relative;
   position: relative;
 }
 
-
-
 .frame-frame {
-  bottom: 789px;
+  bottom: 1500px;
   left: 1171px;
   width: 547px;
   height: 789px;
