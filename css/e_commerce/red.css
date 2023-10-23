@@ -215,3 +215,16 @@ position: relative;
   position: relative;
 }
 
+.frame-box2 {
+  top: 730px;
+  left: 0px;
+  width: 1920px;
+  height: 550px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-box3 {
+  top:2000px;
+  position: relative;
+}
