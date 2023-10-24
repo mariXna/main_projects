@@ -223,16 +223,43 @@ background: center center no-repeat scroll;
   position: relative;
 }
 
-.frame-box3 {
-  top:2000px;
+.frame-box3 { 
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 738px;
+  position: relative; 
+}
+
+.frame-container2 {
+  top: 57px;
+  left: 158px;
+  width: 1712px;
+  height: 591px;
+  position: relative; 
+}
+
+.frame-frame2 {
+  width: 591px;
+  left: 0px;
+  position: relative;
+}
+
+.frame-frame3 {
+  bottom: 580px;
+  width: 591px;
+  left: 562px;
+  position: relative;
+}
+
+.frame-frame4 {
+  bottom: 1160px;
+  width: 591px;
+  left: 1131px;
   position: relative;
 }
 
 .frame-box4 {
-  top: 100px;
-  left: 162px;
-  width: 1920px;
-  height: 738px;
-  flex-shrink: 0;
+  top:2000px;
   position: relative; 
 }
