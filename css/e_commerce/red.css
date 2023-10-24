@@ -227,3 +227,12 @@ background: center center no-repeat scroll;
   top:2000px;
   position: relative;
 }
+
+.frame-box4 {
+  top: 100px;
+  left: 162px;
+  width: 1920px;
+  height: 738px;
+  flex-shrink: 0;
+  position: relative; 
+}
