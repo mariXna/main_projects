@@ -260,6 +260,11 @@ background: center center no-repeat scroll;
 }
 
 .frame-box4 {
-  top:2000px;
+  top: 0px;
   position: relative; 
+}
+
+.about-us {
+  bottom: 730px;  
+  position: relative;
 }
