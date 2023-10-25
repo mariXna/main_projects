@@ -268,3 +268,40 @@ background: center center no-repeat scroll;
   bottom: 730px;  
   position: relative;
 }
+
+.frame-box5 {
+  width: 1920px;
+  height: 865px;
+  bottom: 575px;
+  position: relative;
+}
+
+.popular-items {
+  bottom: 860px;
+  left: 817px;
+  position: relative;
+}
+
+.picture1 {
+  bottom: 735px;
+  left: 159px;
+  position: relative;
+}
+
+.picture2 {
+  bottom: 1237px;
+  left: 567px;
+  position: relative;
+}
+
+.picture3 {
+  bottom: 1739px;
+  left: 975px;
+  position: relative;
+}
+
+.picture4 {
+  bottom: 2255px;
+  left: 1383px;
+  position: relative;
+}
