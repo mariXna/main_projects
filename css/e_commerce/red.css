@@ -148,10 +148,11 @@ form#fSearch {
 
 
 
-.frame-box {
-height: 730px;
-width: 1920px; 
-position: relative;
+ .frame-box {
+  left: 20px;
+  height: 730px;
+  width: 1900px; 
+  position: relative;
 }
 
 
@@ -182,6 +183,7 @@ background: center center no-repeat scroll;
 }
 
 .add-to-cart {
+  background-color: red;
   top: 208px;
   left: 152px;
   width: 601px;
@@ -190,8 +192,8 @@ background: center center no-repeat scroll;
 }
  
 .text-add-to-cart {
-  bottom: 90px;
-  left: 200px;
+  top: 137px;
+  left: 360px;
   width: 183px;
   height: 59px;
   position: relative;  
