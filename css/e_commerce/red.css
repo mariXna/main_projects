@@ -201,7 +201,7 @@ background: center center no-repeat scroll;
 
 .frame-container {
   bottom: 730px;
-  left: 970px;
+  left: 950px;
   width: 950px; 
   height: 730px; 
   flex-shrink: 0;
@@ -218,8 +218,8 @@ background: center center no-repeat scroll;
 
 .frame-box22 {
   top: 0px;
-  left: 0px;
-  width: 1920px;
+  left: 20px;
+  width: 1900px;
   height: 550px;
   flex-shrink: 0;
   position: relative;
@@ -227,8 +227,8 @@ background: center center no-repeat scroll;
 
 .frame-box3 { 
   top: 0px;
-  left: 0px;
-  width: 1920px;
+  left: 20px;
+  width: 1900px;
   height: 738px;
   position: relative; 
 }
@@ -263,6 +263,8 @@ background: center center no-repeat scroll;
 
 .frame-box4 {
   top: 0px;
+  left: 20px;
+  width: 1900px;
   position: relative; 
 }
 
@@ -272,7 +274,8 @@ background: center center no-repeat scroll;
 }
 
 .frame-box5 {
-  width: 1920px;
+  left: 20px;
+  width: 1900px;
   height: 865px;
   bottom: 575px;
   position: relative;
