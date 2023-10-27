@@ -239,6 +239,18 @@ background: center center no-repeat scroll;
   position: relative;
 }
 
+.add-to-cart2 {
+  border-radius: 6px;
+  background: #FD011B;
+  box-shadow: 4px 4px 12px 0px #983A43;
+  top: 138px;
+  left: 972px;
+  width: 608px;
+  height: 106px;
+  flex-shrink: 0;
+  position: relative;
+}
+
 .frame-box3 { 
   top: 0px;
   left: 20px;
