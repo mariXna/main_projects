@@ -6,6 +6,11 @@ header {
     background: white;
 }
 
+.content-section {
+  width: 98%;
+  display: table-cell;
+}
+
 li.top-mnu-item a {
     color: #2C2C2C;
     background-color: transparent;
