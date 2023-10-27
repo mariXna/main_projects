@@ -225,6 +225,20 @@ background: center center no-repeat scroll;
   position: relative;
 }
 
+.lorem-ipsum3 {
+  left: 972px;
+  top: 97px;
+  line-height: 42px; /* 131.25% */
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  width: 781px;
+  height: 126px;
+  flex-shrink: 0;
+  letter-spacing: 2.5px;
+  position: relative;
+}
+
 .frame-box3 { 
   top: 0px;
   left: 20px;
