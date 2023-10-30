@@ -256,6 +256,23 @@ background: center center no-repeat scroll;
   position: relative;
 }
 
+.switch1 {
+  top: 20px;
+  left: 149;
+  width: 47.5px;
+  height: 19px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.switch2 {
+  left: 1752px; 
+  width: 47.5px;
+  height: 19px;
+  flex-shrink: 0;
+  position: relative;
+  }
+
 .frame-box3 { 
   top: 0px;
   left: 20px;
