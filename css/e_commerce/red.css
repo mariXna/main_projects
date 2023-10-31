@@ -156,7 +156,7 @@ form#fSearch {
  .frame-box {
   left: 20px;
   height: 730px;
-  width: 1900px; 
+  width: 0px; 
   position: relative;
 }
 
@@ -207,7 +207,7 @@ background: center center no-repeat scroll;
 .frame-container {
   bottom: 730px;
   left: 950px;
-  width: 950px; 
+  width: 0px; 
   height: 730px; 
   flex-shrink: 0;
   position: relative;
@@ -216,7 +216,7 @@ background: center center no-repeat scroll;
 .frame-frame {
   bottom: 1500px;
   left: 1171px;
-  width: 547px;
+  width: 0px;
   height: 789px;
   position: relative;
 }
