@@ -358,3 +358,65 @@ background: center center no-repeat scroll;
   left: 1383px;
   position: relative;
 }
+
+.framebox6 {
+  bottom: 575px;
+  left: 20px;
+  width: 1900px;
+  height: 866px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.contacts {
+  left: 187px;
+  bottom: 822px;
+  width: 1733px;
+  height: 819px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.send {
+  left: 1323px;
+  bottom: 952px;
+  width: 597px;
+  height: 130px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.framebox7 {
+  left: 20px;
+  width: 1900px;
+  height: 1098px;
+  bottom: 575px;
+  position: relative;
+}
+
+.customers-reviews {
+  left: 162px;
+  top: 50px;
+  height: 848px;
+  position: relative;
+}
+
+.jane-dou {
+  left: 504px;
+  bottom: 604px;
+  right: 0px;
+  position: relative;
+}
+
+.lorem-ipsum4 {
+  left: 504px;
+  bottom: 574px;
+  width: 834px;
+  position: relative;
+}
+
+.date {
+  left: 1196px;
+  bottom: 467px;
+  position: relative;
+}
