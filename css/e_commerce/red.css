@@ -207,7 +207,7 @@ background: center center no-repeat scroll;
 .frame-container {
   bottom: 730px;
   left: 950px;
-  width: 0px; 
+  width: 950px; 
   height: 730px; 
   flex-shrink: 0;
   position: relative;
