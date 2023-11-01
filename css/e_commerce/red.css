@@ -156,19 +156,20 @@ form#fSearch {
  .frame-box {
   left: 20px;
   height: 730px;
-  width: px; 
+  width: 1900px; 
   position: relative;
+  display: flex;
 }
 
 
 .frame-group1 {
-width: 950px; 
-height: 730px; 
-flex-shrink: 0;
-position: relative;
-background: center center no-repeat scroll;
-display: flex;
-}        
+  min-width: 950px;
+  width: 30%; 
+  height: 730px; 
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+}       
         
 
 .lorem-ipsum {
@@ -178,12 +179,12 @@ display: flex;
   height: 138px;
   position: relative;
   display: flex;
-}   
+}  
 
 
 .lorem-ipsum2 {
-  top: 148px;
-  left: 162px;
+  top: 268px;
+  right: 400px;
   width: 601px;
   height: 138px;
   position: relative;
@@ -191,13 +192,16 @@ display: flex;
 }
 
 .add-to-cart {
-  background-color: red;
-  top: 208px;
-  left: 152px;
-  width: 601px;
+  top: 450px;
+  right: 1000px;
+  border-radius: 6px;
+  background: #FD011B;
+  box-shadow: 4px 4px 12px 0px #983A43;
+  width: 608px;
   height: 106px;
+  flex-shrink: 0;
   position: relative;
-  display: flex; 
+  display: flex;
 }
  
 .text-add-to-cart {
