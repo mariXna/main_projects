@@ -167,6 +167,7 @@ height: 730px;
 flex-shrink: 0;
 position: relative;
 background: center center no-repeat scroll;
+display: flex;
 }        
         
 
@@ -176,6 +177,7 @@ background: center center no-repeat scroll;
   width: 633px;
   height: 138px;
   position: relative;
+  display: flex;
 }   
 
 
@@ -185,6 +187,7 @@ background: center center no-repeat scroll;
   width: 601px;
   height: 138px;
   position: relative;
+  display: flex;
 }
 
 .add-to-cart {
@@ -193,7 +196,8 @@ background: center center no-repeat scroll;
   left: 152px;
   width: 601px;
   height: 106px;
-  position: relative; 
+  position: relative;
+  display: flex; 
 }
  
 .text-add-to-cart {
@@ -205,20 +209,25 @@ background: center center no-repeat scroll;
 }
 
 .frame-container {
-  bottom: 730px;
-  left: 950px;
+  bottom: 0px;
+  left: 0px;  
   width: 950px; 
   height: 730px; 
   flex-shrink: 0;
   position: relative;
+  display: flex;
+  border: 1px solid #B5A7A7;
+  background: #B5A7A7;
 }
 
 .frame-frame {
-  bottom: 1500px;
-  left: 1171px;
-  width: 80%;
+  bottom: 0px;
+  right: 749px;
+  width: 30%;
+  min-width: 200px;
   height: 789px;
   position: relative;
+  display: flex;
 }
 
 .frame-box22 {
@@ -228,6 +237,7 @@ background: center center no-repeat scroll;
   height: 550px;
   flex-shrink: 0;
   position: relative;
+  display: flex;
 }
 
 .lorem-ipsum3 {
@@ -242,6 +252,7 @@ background: center center no-repeat scroll;
   flex-shrink: 0;
   letter-spacing: 2.5px;
   position: relative;
+  display: flex;
 }
 
 .add-to-cart2 {
@@ -254,6 +265,7 @@ background: center center no-repeat scroll;
   height: 106px;
   flex-shrink: 0;
   position: relative;
+  display: flex;
 }
 
 .switch1 {
@@ -263,6 +275,7 @@ background: center center no-repeat scroll;
   height: 19px;
   flex-shrink: 0;
   position: relative;
+  display: flex;
 }
 
 .switch2 {
@@ -271,6 +284,7 @@ background: center center no-repeat scroll;
   height: 19px;
   flex-shrink: 0;
   position: relative;
+  display: flex;
   }
 
 .frame-box3 { 
