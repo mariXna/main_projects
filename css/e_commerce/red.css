@@ -157,6 +157,7 @@ form#fSearch {
   left: 20px;
   height: 730px;
   width: 1900px; 
+  min-width: 300px;
   position: relative;
   display: flex;
 }
@@ -227,8 +228,8 @@ form#fSearch {
 .frame-frame {
   bottom: 0px;
   right: 749px;
-  width: 30%;
-  min-width: 200px;
+  width: 547px;
+  min-width: 100px;
   height: 789px;
   position: relative;
   display: flex;
