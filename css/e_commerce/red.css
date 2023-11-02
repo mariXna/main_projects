@@ -156,7 +156,7 @@ form#fSearch {
  .frame-box {
   left: 20px;
   height: 730px;
-  width: 1900px; 
+  width: 99%; 
   min-width: 300px;
   position: relative;
   display: flex;
@@ -164,42 +164,43 @@ form#fSearch {
 
 
 .frame-group1 {
-  min-width: 950px;
-  width: 30%; 
+  width: 49%; 
+  max-width: 950px;
   height: 730px; 
   flex-shrink: 0;
   position: relative;
   display: flex;
-}       
+}      
         
 
 .lorem-ipsum {
-  top: 90px;
+  top: 123px;
   left: 159px;
-  width: 633px;
+  width: 60%; 
   height: 138px;
   position: relative;
   display: flex;
-}  
+}   
 
 
 .lorem-ipsum2 {
-  top: 268px;
+  top: 300px;
   right: 400px;
-  width: 601px;
+  width: 60%;
   height: 138px;
   position: relative;
   display: flex;
 }
 
 .add-to-cart {
-  top: 450px;
-  right: 1000px;
+  top: 480px;
+  right: 980px;
   border-radius: 6px;
   background: #FD011B;
   box-shadow: 4px 4px 12px 0px #983A43;
-  width: 608px;
-  height: 106px;
+  width: 60%;
+  max-width: 608px;
+  height: 15%;
   flex-shrink: 0;
   position: relative;
   display: flex;
@@ -216,7 +217,8 @@ form#fSearch {
 .frame-container {
   bottom: 0px;
   left: 0px;  
-  width: 950px; 
+  width: 49%; 
+  max-width: 950px;
   height: 730px; 
   flex-shrink: 0;
   position: relative;
@@ -229,8 +231,10 @@ form#fSearch {
   bottom: 0px;
   right: 749px;
   width: 547px;
-  
-  height: 789px;
+  min-width: 100px;
+  width: 20%;
+  max-height: 789px;
+  flex-shrink: 0;
   position: relative;
   display: flex;
 }
