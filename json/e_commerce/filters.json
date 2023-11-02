@@ -53,10 +53,12 @@
       "columns": [
       {
         "name": "slider_1_99_4098",
-        "type": "number",
+        "type": "slider",
         "title": "slider",
-        "min": 1.99,
-        "max": 4098
+        "step": 1,
+        "min": 0,
+        "max": 10000,
+        "value": "0-10000" 
       }]},
       {
         "id": 2,
