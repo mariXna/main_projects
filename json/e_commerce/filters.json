@@ -50,16 +50,13 @@
     {
       "id": 1,
       "title": "Slider",
-      "columns": [
-      {
         "name": "slider_1_99_4098",
         "type": "slider",
-        "title": "slider",
         "step": 1,
         "min": 0,
         "max": 10000,
         "value": "0-10000" 
-      }]},
+      },
       {
         "id": 2,
         "title": "Category",
