@@ -54,9 +54,10 @@
       {
         "name": "slider_1_99_4098",
         "type": "slider",
-        "step": 0.1,
+        "title": "slider",
         "min": 1.99,
-        "max": 5000,
+        "max": 4098,
+        "step": 0.01,
         "value": "1-1000" 
       }]},
       {
