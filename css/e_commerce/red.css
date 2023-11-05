@@ -231,11 +231,10 @@ form#fSearch {
   bottom: 0px;
   right: 749px;
   width: 547px;
-  min-width: 100px;
+  min-width: 200px;
   width: 20%;
   max-height: 789px;
   flex-shrink: 0;
-  position: relative;
   display: flex;
 }
 
