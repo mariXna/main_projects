@@ -222,8 +222,7 @@ form#fSearch {
   max-width: 950px;
   height: 730px; 
   flex-shrink: 0;
-  position: relative;
-  display: flex;
+  display: block;
   border: 1px solid #B5A7A7;
   background: #B5A7A7;
 }
