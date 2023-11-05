@@ -166,10 +166,10 @@ form#fSearch {
 .frame-group1 {
   width: 49%; 
   max-width: 950px;
+  min-width: 250px;
   height: 730px; 
   flex-shrink: 0;
-  position: relative;
-  display: flex;
+  display: block;
 }      
         
 
@@ -177,8 +177,8 @@ form#fSearch {
   top: 123px;
   left: 159px;
   width: 60%; 
+  min-width: 250px;
   height: 138px;
-  position: relative;
   display: flex;
 }   
 
@@ -187,8 +187,8 @@ form#fSearch {
   top: 300px;
   right: 400px;
   width: 60%;
+  min-width: 250px;
   height: 138px;
-  position: relative;
   display: flex;
 }
 
@@ -199,10 +199,11 @@ form#fSearch {
   background: #FD011B;
   box-shadow: 4px 4px 12px 0px #983A43;
   width: 60%;
+  min-width: 250px;
+  padding-left: 10%;
   max-width: 608px;
   height: 15%;
   flex-shrink: 0;
-  position: relative;
   display: flex;
 }
  
