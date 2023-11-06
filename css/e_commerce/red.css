@@ -337,17 +337,21 @@ form#fSearch {
     display: flex;
   }
 
-.frame-box4 {
-  top: 0px;
-  left: 20px;
-  width: 1900px;
-  position: relative; 
-}
-
-.about-us {
-  bottom: 730px;  
-  position: relative;
-}
+  .frame-box4 {
+    top: 0px;
+    left: 20px;
+    width: 100%;
+    display: block;
+    height: 730px;
+    max-width: 1900px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #C0B4B4 0%, rgba(225, 221, 221, 0.45) 100%);
+  }
+  
+  .about-us {
+    bottom: 730px;  
+    display: flex;
+  }
 
 .frame-box5 {
   left: 20px;
