@@ -241,6 +241,7 @@ form#fSearch {
   top: 0px;
   left: 20px;
   width: 100%;
+  max-width: 1900px;
   min-width: 500px;
   height: 550px;
   flex-shrink: 0;
