@@ -359,102 +359,124 @@ form#fSearch {
     display: flex;
   }
 
-.frame-box5 {
-  left: 20px;
-  width: 1900px;
-  height: 865px;
-  bottom: 575px;
-  position: relative;
-}
-
-.popular-items {
-  bottom: 860px;
-  left: 817px;
-  position: relative;
-}
-
-.picture1 {
-  bottom: 735px;
-  left: 159px;
-  position: relative;
-}
-
-.picture2 {
-  bottom: 1237px;
-  left: 567px;
-  position: relative;
-}
-
-.picture3 {
-  bottom: 1739px;
-  left: 975px;
-  position: relative;
-}
-
-.picture4 {
-  bottom: 2255px;
-  left: 1383px;
-  position: relative;
-}
-
-.framebox6 {
-  bottom: 575px;
-  left: 20px;
-  width: 1900px;
-  height: 866px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.contacts {
-  left: 187px;
-  bottom: 822px;
-  width: 1733px;
-  height: 819px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.send {
-  left: 1323px;
-  bottom: 952px;
-  width: 597px;
-  height: 130px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.framebox7 {
-  left: 20px;
-  width: 1900px;
-  height: 1098px;
-  bottom: 575px;
-  position: relative;
-}
-
-.customers-reviews {
-  left: 162px;
-  top: 50px;
-  height: 848px;
-  position: relative;
-}
-
-.jane-dou {
-  left: 504px;
-  bottom: 604px;
-  right: 0px;
-  position: relative;
-}
-
-.lorem-ipsum4 {
-  left: 504px;
-  bottom: 574px;
-  width: 834px;
-  position: relative;
-}
-
-.date {
-  left: 1196px;
-  bottom: 467px;
-  position: relative;
-}
+  .frame-box5 {
+    left: 20px;
+    max-width: 1900px;
+    width: 100%;
+    height: 865px;
+    bottom: 575px;
+    display: flex;
+  }
+  
+  .popular-items {
+    bottom: 860px;
+    left: 817px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .picture1 {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    min-width: 50px;
+    display: flex;
+  }
+  
+  .picture2 {
+    bottom: 1237px;
+    left: 567px;
+    width: 100%;
+    min-width: 50px;
+    display: flex;
+  }
+  
+  .picture3 {
+    bottom: 1739px;
+    left: 975px;
+    width: 100%;
+    min-width: 50px;
+    display: flex;;
+  }
+  
+  .picture4 {
+    bottom: 2255px;
+    left: 1383px;
+    width: 100%;
+    min-width: 50px;
+    display: flex;
+  }
+  
+  .framebox6 {
+    bottom: 0px;
+    left: 20px;
+    max-width: 1900px;
+    width: 100%;
+    height: 866px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+  }
+  
+  .contacts {
+    left: 187px;
+    bottom: 822px;
+    max-width: 1733px;
+    width: 100%;
+    height: 819px;
+    flex-shrink: 0;
+    display: flex;
+  }
+  
+  .send {
+    left: 1323px;
+    bottom: 952px;
+    max-width: 597px;
+    width: 100%;
+    height: 130px;
+    flex-shrink: 0;
+    display: flex;
+  }
+  
+  .framebox7 {
+    left: 20px;
+    max-width: 1900px;
+    width: 100%;
+    height: 1098px;
+    bottom: 575px;
+    position: relative;
+  }
+  
+  .customers-reviews {
+    left: 162px;
+    top: 50px;
+    height: 848px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .jane-dou {
+    left: 504px;
+    bottom: 604px;
+    width: 100%;
+    max-width: 200px;
+    right: 0px;
+    display: flex;
+  }
+  
+  .lorem-ipsum4 {
+    left: 504px;
+    bottom: 574px;
+    max-width: 834px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .date {
+    left: 1196px;
+    bottom: 467px;
+    max-width: 70px;
+    width: 100%;
+    display: flex;
+  }
