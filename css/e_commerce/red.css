@@ -448,10 +448,11 @@ form#fSearch {
   }
   
   .customers-reviews {
-    left: 162px;
-    top: 50px;
+    left: 0px;
+    top: 0px;
+    margin-left: 200px;
     height: 848px;
-    max-width: 1000px;
+    max-width: 1900;
     width: 100%;
     display: flex;
   }
