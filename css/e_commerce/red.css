@@ -414,7 +414,6 @@ form#fSearch {
     width: 100%;
     height: 866px;
     flex-shrink: 0;
-    position: relative;
     display: flex;
   }
   
@@ -444,7 +443,7 @@ form#fSearch {
     width: 100%;
     height: 1098px;
     bottom: 575px;
-    position: relative;
+    display: flex;
   }
   
   .customers-reviews {
