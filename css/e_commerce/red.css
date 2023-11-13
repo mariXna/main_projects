@@ -355,6 +355,7 @@ form#fSearch {
   }
   
   .about-us {
+    width: 100%;
     bottom: 730px;  
     display: flex;
   }
