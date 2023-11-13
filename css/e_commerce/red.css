@@ -154,11 +154,11 @@ form#fSearch {
 
 
  .frame-box {
-  left: 20px;
+  left: 0px;
   height: 730px;
   width: 99%; 
   min-width: 300px;
-  position: relative;
+  display: flex;
   display: flex;
 }
 
@@ -216,7 +216,7 @@ form#fSearch {
   left: 360px;
   width: 183px;
   height: 59px;
-  position: relative;  
+  display: flex;  
 }
 
 .frame-container {
@@ -252,7 +252,6 @@ form#fSearch {
   min-width: 500px;
   height: 550px;
   flex-shrink: 0;
-  position: relative;
   display: flex;
 }
 
@@ -267,7 +266,6 @@ form#fSearch {
   height: 126px;
   flex-shrink: 0;
   letter-spacing: 2.5px;
-  position: relative;
   display: flex;
 }
 
@@ -280,7 +278,6 @@ form#fSearch {
   width: 608px;
   height: 106px;
   flex-shrink: 0;
-  position: relative;
   display: flex;
 }
 
@@ -290,7 +287,6 @@ form#fSearch {
   width: 47.5px;
   height: 19px;
   flex-shrink: 0;
-  position: relative;
   display: flex;
 }
 
@@ -299,7 +295,6 @@ form#fSearch {
   width: 47.5px;
   height: 19px;
   flex-shrink: 0;
-  position: relative;
   display: flex;
   }
 
