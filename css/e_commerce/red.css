@@ -309,6 +309,7 @@ form#fSearch {
   .frame-container2 {
     top: 57px;
     left: 158px;
+    margin-left: 150px;
     max-width: 1712px;
     height: 591px;
     display: flex;
