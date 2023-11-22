@@ -1,4 +1,4 @@
-/*Обнуление*/
+/*zero*/
 *{
 	padding: 0;
 	margin: 0;
@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     align-items: center;
 }
 
-/* --------ШАПКА------------ */
+/* --------HEAD------------ */
 
 .header {
 }
@@ -461,4 +461,12 @@ box-shadow:none;
     height: 26px;
     flex-shrink: 0;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAzNiAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjM2IiBoZWlnaHQ9IjQiIHJ4PSIyIiBmaWxsPSIjMTgxODE4Ii8+CjxyZWN0IHk9IjExIiB3aWR0aD0iMzYiIGhlaWdodD0iNCIgcng9IjIiIGZpbGw9IiMxODE4MTgiLz4KPHJlY3QgeT0iMjIiIHdpZHRoPSIzNiIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iIzE4MTgxOCIvPgo8L3N2Zz4K);
+}
+
+.arrow{
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    margin-right: 6px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNiAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTEzIDBMMTAuNzAwNiAyLjI5OTM4TDE5Ljc3NjMgMTEuMzc1TDAgMTEuMzc1TDAgMTQuNjI1TDE5Ljc3NjMgMTQuNjI1TDEwLjcwMDYgMjMuNzAwNkwxMyAyNkwyNiAxM0wxMyAwWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
 }
