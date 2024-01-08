@@ -59,9 +59,7 @@ header .topline-btns {
     border-radius: 8px;
 }
 
-.sidebar-section {
-    width: 0;
-}
+
 
 #catalog_pane {
    position: unset;
