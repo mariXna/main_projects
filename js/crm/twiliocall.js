@@ -1,6 +1,6 @@
 function twilio_call(incoming_num, from_num) {
- 
-    const token_link = 'http://164.68.125.44:32957/twillio/token';
+
+    const token_link = '/twillio/token';
     async function fetchToken() {
       try {
           const response = await fetch(token_link);
