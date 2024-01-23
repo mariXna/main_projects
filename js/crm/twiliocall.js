@@ -17,6 +17,7 @@ function twilio_call(incoming_num, from_num) {
   
     fetchToken().then(token => {
       if (!token) {
+        fancyOpen("<span>'No token received'</span>")
         console.error('No token received');
         return;
       }
@@ -32,10 +33,12 @@ function twilio_call(incoming_num, from_num) {
       });
   
       device.on('ready', function (device) {
+        fancyOpen("<span>'Twilio.Device is ready to make calls!'</span>")
         console.log('Twilio.Device is ready to make calls!');
       });
   
       device.on('error', function (error) {
+        fancyOpen(`<span>'Twilio.Device Error: ' + error.message</span>`)
         console.error('Twilio.Device Error: ' + error.message);
       });
   
@@ -50,7 +53,9 @@ function twilio_call(incoming_num, from_num) {
           device.connect({params:params});
     
   
+      
       device.on('disconnect', function (call) {
+        fancyOpen(`<span>'Call ended'</span>`)
         console.log('Call ended');
       });
     });
