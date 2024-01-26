@@ -38,7 +38,7 @@ function twilio_call(incoming_num, from_num) {
       });
   
       device.on('error', function (error) {
-        fancyOpen(`<span>'Twilio.Device Error: ' + error.message</span>`)
+        fancyOpen(`<span>'Twilio.Device Error: ${error.message}</span>`)
         console.error('Twilio.Device Error: ' + error.message);
       });
   
