@@ -1,0 +1,44 @@
+{
+ "title": "Call",
+ "action": "#",
+ "description": "",
+ "method": "POST",
+ "blocks":[ 
+    { 
+    "id": 1, 
+    "title": "", 
+    "description": "", 
+    "columns": [ 
+        { 
+            "name": "incoming_num", 
+            "title": "Calling to", 
+            "required": true, 
+            "type": "number"
+            
+        },
+        { 
+            "name": "from_num", 
+            "title": "Calling from", 
+            "required": true, 
+            "type": "number"
+        }
+    ] 
+
+    },
+    {
+        "buttons": [
+            {
+                "title": "Call",
+                "type": "custom",
+                "OnClick": "return device_call(this.form)"
+              },
+              {
+                "title": "Hang up",
+                "type": "custom",
+                "OnClick": "return hang_up_call(this.form)"
+              }
+              ]
+          
+    }
+  ]
+} 

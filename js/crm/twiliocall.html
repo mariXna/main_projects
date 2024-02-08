@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twilio Call</title>
+  <!-- Ensure you are using the latest version of the Twilio Voice SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@twilio/voice-sdk@2.0.1/dist/twilio.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+ 
+  async function fetchToken() {
+    try {
+        const response = await fetch('http://164.68.125.44:32957/twillio/token'); // Replace with your actual URL
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const token = await response.text();
+        console.log(token);
+        return token;
+    } catch (error) {
+        console.error('Error fetching token:', error);
+    }
+}
+
+
+  fetchToken().then(token => {
+    if (!token) {
+      console.error('No token received');
+      return;
+    }
+
+    
+    const device = new Twilio.Device(token, {
+      // Device options like debug logging, codec preferences, etc.
+    });
+
+    device.on('ready', function (device) {
+      console.log('Twilio.Device is ready to make calls!');
+    });
+
+    device.on('error', function (error) {
+      console.error('Twilio.Device Error: ' + error.message);
+    });
+
+    document.getElementById('callButton').addEventListener('click', function () {
+        // Make an outbound call
+        const params = {
+          To: '+447526019288', // Replace with the destination phone number
+          From: '+14695186346',
+          agent: "Smith"
+        };
+
+        console.log(`Calling ${params.To} from ${params.From}...'`);
+        device.connect({params:params});
+      });
+
+    device.on('disconnect', function (call) {
+      console.log('Call ended');
+    });
+  });
+    });
+  </script>
+</head>
+<body>
+  <input type="text" placeholder="Enter which number to call:" onblur="getPhone()">
+  <button id="callButton">Make a call</button>
+</body>
+</html>
