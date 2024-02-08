@@ -54,7 +54,7 @@ function device_call(form){
 
     console.log(`Calling ${params.To} from ${params.From}...`);
     
-    //device.connect({params:params});
+    device.connect({params:params});
 
 
 
