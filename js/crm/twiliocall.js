@@ -63,3 +63,15 @@ function hang_up_call(device){
     fancyOpen(`<span>'Call ended'</span>`)
   });
 }
+function twilio_call(incoming_num, from_num) {
+
+  html_form = `<form name="call_form" action="" method="GET"><label for="calling_to">Calling:</label>
+      <label for="calling_to">${incoming_num}</label><br>
+      <label for="calling_from">from:</label>
+      <input type="text" id="calling_from" name="calling_from" value=${from_num}><br><br>
+      <button type="button" onclick="device_call(${incoming_num}, this.form)">Call</button></form>`;
+
+  fancyOpen(html_form);
+  
+    
+};
