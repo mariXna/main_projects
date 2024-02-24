@@ -69,9 +69,8 @@ function device_call(form){
 return false;
 } 
 
-function hang_up_call(device){
+function hang_up_call(){
   device.on('disconnect', function (call) {
-    fancyOpen(`<span>'Call ended'</span>`)
   });
   return false;
 }
