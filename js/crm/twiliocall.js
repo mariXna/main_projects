@@ -56,6 +56,17 @@ function device_call(form){
     device.connect({params:params});
 });
 
+const buttons = document.querySelectorAll(".button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    buttons.forEach(btn => {
+      btn.toggleAttribute("hidden");
+    });
+  });
+});
+
+
 return false;
 } 
 
