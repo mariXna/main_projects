@@ -58,13 +58,17 @@ function device_call(form){
 
 const buttons = document.querySelectorAll(".button");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      buttons.forEach(btn => {
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    buttons.forEach(btn => {
+      if (btn === button) {
         btn.toggleAttribute("hidden");
-      });
+      } else {
+        btn.removeAttribute("hidden");
+      }
     });
   });
+});
 
 return false;
 } 
@@ -79,7 +83,11 @@ function hang_up_call(){
   buttons.forEach(button => {
     button.addEventListener("click", () => {
       buttons.forEach(btn => {
-        btn.toggleAttribute("hidden");
+        if (btn === button) {
+          btn.toggleAttribute("hidden");
+        } else {
+          btn.removeAttribute("hidden");
+        }
       });
     });
   });
