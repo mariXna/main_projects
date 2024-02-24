@@ -2,6 +2,16 @@
 
 function device_call(form){
 
+  const buttons = document.querySelectorAll(".button");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => {
+        btn.toggleAttribute("hidden");
+      });
+    });
+  });
+
   var calling_to = form.calling_to.value;
   var calling_from = form.calling_from.value;
 
@@ -55,17 +65,6 @@ function device_call(form){
     console.log(`calling ${calling_to} from ${calling_from}`)
     device.connect({params:params});
 });
-
-const buttons = document.querySelectorAll(".button");
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    buttons.forEach(btn => {
-      btn.toggleAttribute("hidden");
-    });
-  });
-});
-
 
 return false;
 } 
