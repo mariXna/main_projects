@@ -20,8 +20,6 @@ function device_call(form){
     }
 }
 
-
-
   fetchToken().then(token => {
     if (!token) {
       fancyOpen("<span>'No token received'</span>")
@@ -56,18 +54,14 @@ function device_call(form){
     device.connect({params:params});
 });
 
-const buttons = document.querySelectorAll(".button");
+  const hang_up_btn = document.getElementById('btnHang_up');
+  const call_btn = document.getElementById('btnCall');
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    buttons.forEach(btn => {
-      if (btn === button) {
-        btn.toggleAttribute("hidden");
-      } else {
-        btn.removeAttribute("hidden");
-      }
-    });
-  });
+  call_btn.addEventListener('click', function() {
+    
+    call_btn.setAttribute('hidden','true');
+    
+    hang_up_btn.removeAttribute('hidden');
 });
 
 return false;
@@ -78,19 +72,16 @@ function hang_up_call(){
   device.on('disconnect', function (call) {
   });
 
-  const buttons = document.querySelectorAll(".button");
+  const hang_up_btn = document.getElementById('btnHang_up');
+  const call_btn = document.getElementById('btnCall');
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      buttons.forEach(btn => {
-        if (btn === button) {
-          btn.toggleAttribute("hidden");
-        } else {
-          btn.removeAttribute("hidden");
-        }
-      });
-    });
-  });
+  hang_up_btn.addEventListener('click', function() {
+    
+    hang_up_btn.setAttribute('hidden','true');
+    
+    call_btn.removeAttribute('hidden');
+});
+
 
   return false;
 }
